@@ -17,8 +17,8 @@ include('inc/header.php');?>
 
 
 <div class="wrap">
+    <h2>Calendriers vaccinaux</h2>
     <div id="content">
-        <h2>Calendriers vaccinaux</h2>
           <section class="calendriers">
               <p><a href="asset/pdf/calendrier_vaccinations.pdf" target="_blank">Calendrier des vaccinations et recommandations vaccinales 2018</a></p>
               <p><a href="asset/pdf/calendrier_simplifie.pdf" target="_blank">Calendrier vaccinal simplifié 2018</a></p>
