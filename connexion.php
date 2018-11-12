@@ -24,6 +24,7 @@ if (!empty($_POST['submitted'])) {
   $query -> execute();
   $user = $query -> fetch();
 
+
   // print_r($user);
   if (!empty($user)) {
      if (!password_verify($password, $user['password'])) {

@@ -104,8 +104,8 @@ if (!empty($_POST['submitted']) ) {
 <?php include('inc/header.php'); ?>
 <div id="content">
     <div class="wrap">
+      
         <form class="inscription" action="" method="post">
-
 
           <label for="firstlastname">Votre Nom et Prénom* :</label><br>
           <input type="text" name="firstlastname" id="firstlastname" value="<?php if(!empty($_POST['firstlastname'])) {echo $_POST['firstlastname']; } ?>">
@@ -125,6 +125,7 @@ if (!empty($_POST['submitted']) ) {
 
           <input type="submit" name="submitted" id="submit" value="Je m'inscris">
           <p><span class="needed">* = Champs obligatoires</span></p>
+
         </form>
     </div>
 </div>

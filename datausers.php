@@ -3,12 +3,8 @@ include('inc/pdo.php');
 include('inc/functions.php');
 include('inc/requests.php');
 
-//Requête BDD affichage users
-$sql = "SELECT * FROM yjlv_users";
-$query = $pdo -> prepare($sql);
-$query -> execute();
-$users = $query -> fetchAll();
-//Fin requête BDD
+//Affiche tous les utilisateurs présents dans la BDD
+$users = showAllUsers();
 
 //Pagination
 require('vendor/autoload.php');
@@ -29,18 +25,10 @@ if (!empty($_GET['page']) && is_numeric($_GET['page'])){
 
 //récupère nos données, pour affichage plus bas
 //inclus les paramètres d'offset pour la pagination
-$sql = "SELECT * FROM yjlv_users
-        ORDER BY id ASC
-        LIMIT $offset,$itemsPerPage";
-$stmt = $pdo->prepare($sql);
-$stmt->execute();
-$users = $stmt->fetchAll();
+$users = showUsersInPagination($offset, $itemsPerPage);
 
 //requête pour compter le nombre de lignes dans la table
-$sql = "SELECT COUNT(*) FROM yjlv_users";
-$stmt = $pdo->prepare($sql);
-$stmt->execute();
-$totalItems = $stmt->fetchColumn();
+$totalItems = countAllUsers();
 
 
 $paginator = new Paginator($totalItems, $itemsPerPage, $currentPage, $urlPattern);
