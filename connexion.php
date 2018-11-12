@@ -1,6 +1,7 @@
 <?php include('inc/pdo.php'); ?>
 <?php include('inc/functions.php'); ?>
 <?php include('inc/requests.php'); ?>
+
 <?php
 
 
@@ -49,29 +50,28 @@ if (!empty($_POST['submitted'])) {
     }
 }
 
+
 $title = 'Connexion'; ?>
 <?php include('inc/header.php'); ?>
 
 <div class="wrap">
-  <h2>Connectez-vous à votre compte :</h2><br>
 
   <form class="connexion" action="" method="post">
 
-    <label for="login">Votre Email* :</label><br>
-    <input type="text" name="login" id="login" value=""><br><br>
+    <label for="login" >Votre Email* :</label><br>
+    <input type="text" name="login" id="login" value="">
 
-    <label for="password">Votre Mot de Passe* :</label><br>
-    <input type="password" name="password" id="password" value=""><br><br>
+    <label for="password" >Votre Mot de Passe* :</label><br>
+    <input type="password" name="password" id="password" value="">
 
     <input type="submit" name="submitted" id="submit" value="Connexion">
 
   </form>
 
-  <p><span class="needeed">* = Champs obligatoires</span></p><br>
+  <p><span class="needed">* = Champs obligatoires</span></p>
 
-  <p><a href="passwordforget.php">Mot de passe oublié ?</a></p><br>
-
-  <p><span><em>Pas encore inscrit ? Cliquez <a href="inscription.php">ici </a>!</em></span></p><br>
+  <p><a href="passwordforget.php">Mot de passe oublié ?</a></p>
+  <p><span><em>Pas encore inscrit ? Cliquez <a href="inscription.php">ici </a>!</em></span></p>
 </div>
 
 <?php include('inc/footer.php');
