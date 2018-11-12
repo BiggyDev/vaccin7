@@ -1,7 +1,7 @@
 <?php include('inc/pdo.php'); ?>
 <?php include('inc/functions.php'); ?>
 <?php include('inc/requests.php'); ?>
-<?php $title = 'Inscription';
+<?php $title = 'INSCRIPTION';
 
 //initialise la variable contenant les messages d'erreurs à... rien
 $error = array();
@@ -96,7 +96,6 @@ if (!empty($_POST['submitted']) ) {
       $query->execute();
       // redirection vers page connexion
       header('Location: connexion.php');
-      die;
     }
 
 }
@@ -144,4 +143,4 @@ if (!empty($_POST['submitted']) ) {
 
 
 
-<?php //include('inc/footer.php');
+<?php include('inc/footer.php');

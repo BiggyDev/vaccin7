@@ -1,5 +1,7 @@
 <?php include('inc/pdo.php'); ?>
-<?php include('inc/functions.php'); ?>
+<?php include('inc/functions.php');
+$title ='CONNEXION';
+?>
 <?php
 // form soumis ??
 $error = array();
@@ -32,12 +34,12 @@ if(!empty($_POST['submitted'])) {
         header('Location: index.php');
   }
 }
-
+include('inc/header.php');
 ?>
 
 
 <!-- formulaire de connexion -->
-<form class="" action="" method="post">
+<form class="connexion" action="" method="post">
 
   <label for="login">pseudo or email</label>
   <input type="text" name="login" id="login" value="">
@@ -46,7 +48,7 @@ if(!empty($_POST['submitted'])) {
 <label for="password">password</label>
 <input type="password" name="password" id="password" value="">
 
-<input type="submit" name="submitted" value="connexion">
+<input type="submit" name="submitted" id="submit" value="connexion">
 
 </form>
 
