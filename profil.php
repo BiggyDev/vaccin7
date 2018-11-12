@@ -1,11 +1,12 @@
 <!-- traitement du form en php -->
 <?php
 include('inc/header.php');
+include('inc/functions.php');
 include('inc/pdo.php');
 // declaration d un tableau vide error
 $error = array();
 //si le user est connecté
-//if(is_logged())  {
+if(is_Logged())  {
 // form soumis ?
 if(!empty($_POST['submitted'])) {
   //protection faille xxss
@@ -58,7 +59,7 @@ if(empty($taille)) {
 } // fin condition form soumis
  else { $error[''] = 'Veuillez completer votre profil';}
 
-//fin}
+}
 
 //var_dump($error);
 
