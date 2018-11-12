@@ -29,6 +29,9 @@ include('inc/header.php');?>
             <li>Confidentiel et sécurisé</li>
             <li>Independant des firmes pharmaceutiques</li>
         </ul>
+        <a href="http://www.vaccinesafetynet.org/#gsc.tab=0" target="_blank">
+            <img src="asset/img/vaccine_safety_net.png" alt="Vaccine Safety Net Member">
+        </a>
     </section>
     <div class="wrap">
         <div id="content">
@@ -36,6 +39,5 @@ include('inc/header.php');?>
         </div>
     </div>
 
-
-
-<?php include('inc/footer.php');
+    
+<?php include('inc/footer.php'); 

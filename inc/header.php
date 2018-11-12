@@ -10,7 +10,7 @@
   <body>
 <header id="header">
     <nav class="firstnavbar">
-        <h1><img src="asset/img/logo_vactualise.svg" alt="Logo Vactualise" width="300"></h1>
+        <h1><img class="logo" src="asset/img/logo_vactualise.svg" alt="Logo Vactualise" ></h1>
         <ul class="menu">
             <li><a href="index.php">Accueil</a></li>
             <li><a href="#">Vaccination</a>
@@ -34,7 +34,7 @@
         </ul>
     </nav>
     <nav class="firstnavbar" id="navbarsmall">
-        <h1>Vactualize</h1>
+        <h1><img class="logo" src="asset/img/logo_vactualise.svg" alt="Logo Vactualise" ></h1>
         <ul class="menu">
             <li><a href="index.php">Accueil</a></li>
             <li><a href="#">Vaccination</a>
