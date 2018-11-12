@@ -21,7 +21,7 @@ body {
 /*}*/
 
 .wrap {
-    max-width: 1200px;
+    max-width: 900px;
     width: 100%;
     margin: 0 auto;
 }
@@ -152,6 +152,18 @@ form.inscription .needed {
     font-size: 0.7em;
 }
 
+form.connexion {
+    margin: auto;
+    text-transform: uppercase;
+    text-align: center;
+    width:100%;
+    max-width:50%;
+    min-height:21.875em;
+    position:relative;
+    padding: 20px;
+    background-color: cadetblue;
+}
+
 label, input {
     margin: auto;
     display: block;
@@ -176,7 +188,6 @@ input#submit {
     height: 60px;
     background:#BF406B;
     border-radius: 50px;
-    /*box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);*/
     border-bottom: none;
 }
 
