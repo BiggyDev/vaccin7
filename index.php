@@ -1,6 +1,23 @@
 <?php
 include('inc/pdo.php');
 include('inc/functions.php');
+include('inc/requests.php');
+
+//Requête BDD affichage données utilisateur
+$sql ="SELECT * FROM yjlv_users WHERE id = :id";
+$query = $pdo -> prepare($sql);
+$query -> bindValue(':id', $_GET['id'], PDO::PARAM_INT);
+$query -> execute();
+$user = $query -> fetch();
+//Fin requête BDD
+
+
+
+
+
+
+
+
 $title = 'Accueil';
 include('inc/header.php');?>
 

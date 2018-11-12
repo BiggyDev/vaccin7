@@ -232,7 +232,7 @@ input#submit {
         margin-bottom: 5px;
     }
 
-<<<<<<< HEAD
+
 }
 
 #footer {
@@ -240,7 +240,7 @@ input#submit {
     width: 100%;
     height: 18em;
 }
-=======
+
     #footer {
         position: absolute; bottom: 0; left: 0; right: 0;
         background-color:#686868;
@@ -256,4 +256,3 @@ input#submit {
       .contact {
         margin: 20px;
       }
->>>>>>> 1dbcfaee2168038084a3372f685fe0359c5d6cd1
