@@ -20,9 +20,13 @@
                 </ul>
             </li>
             <li><a href="#">Support</a></li>
+            <?php if(!isLogged()) { ?>
             <li><a href="inscription.php">Inscription</a></li>
             <li><a href="connexion.php">Connexion</a></li>
+            <?php } else { ?>
             <li><a href="#">Mon compte</a></li>
+            <li><a href="deconnexion.php">Déconnexion</a></li>
+            <?php } ?>
         </ul>
     </nav>
     <nav class="firstnavbar" id="navbarsmall">
@@ -36,14 +40,13 @@
                 </ul>
             </li>
             <li><a href="#">Support</a></li>
+            <?php if(!isLogged()) { ?>
             <li><a href="inscription.php">Inscription</a></li>
             <li><a href="connexion.php">Connexion</a></li>
+            <?php } else { ?>
             <li><a href="#">Mon compte</a></li>
-
+            <li><a href="deconnexion.php">Déconnexion</a></li>
+            <?php } ?>
         </ul>
     </nav>
 </header>
-
-
-
-

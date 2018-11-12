@@ -27,9 +27,31 @@ function verificationField($field, $textfield, $min, $max) {
  }
 }
 
-
 function debug($debug) {
   echo '<pre>';
   print_r($debug);
   echo '</pre>';
+}
+
+function isLogged () {
+    if(!empty($_SESSION['yjlv_users']) &&
+        !empty($_SESSION['yjlv_users']['id']) &&
+        !empty($_SESSION['yjlv_users']['email']) &&
+        !empty($_SESSION['yjlv_users']['role']) &&
+        !empty($_SESSION['yjlv_users']['ip'])) {
+        if($_SESSION['yjlv_users']['ip'] == $_SERVER['REMOTE_ADDR']) {
+            return true;
+        }
+    } else {
+      return false;
+    }
+}
+
+function isAdmin () {
+    if(isLogged()){
+        if($_SESSION['yjlv_users']['role'] == 'admin'){
+            return true;
+        }
+    }
+    return false;
 }

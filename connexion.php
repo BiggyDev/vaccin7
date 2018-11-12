@@ -59,10 +59,10 @@ $title = 'Connexion'; ?>
   <form class="connexion" action="" method="post">
 
     <label for="login" >Votre Email* :</label><br>
-    <input type="text" name="login" id="login" value="">
+    <input type="text" name="login" id="login" value=""><br><br>
 
     <label for="password" >Votre Mot de Passe* :</label><br>
-    <input type="password" name="password" id="password" value="">
+    <input type="password" name="password" id="password" value=""><br><br>
 
     <input type="submit" name="submitted" id="submit" value="Connexion">
 
