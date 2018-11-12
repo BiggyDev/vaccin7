@@ -1,11 +1,18 @@
 @import 'reset.css';
 @import url(https://fonts.googleapis.com/css?family=Pacifico|Roboto:400,500);
 
+html {
+  height: 100%;
+}
 
 body {
     font: 400 16px/1.3 verdana, arial, sans-serif;
     color: #000;
     background-color: #fff;
+    min-height: 100%;
+   margin: 0;
+   padding: 0;
+   position: relative;
 }
 
 /*body header h1 {*/
@@ -195,6 +202,7 @@ input#submit {
         font-size: 2.2em;
         display: block;
         float: none;
+        font-family: 'Amaranth';
         text-align: center;
         padding: 10px;
     }
@@ -224,6 +232,7 @@ input#submit {
         margin-bottom: 5px;
     }
 
+<<<<<<< HEAD
 }
 
 #footer {
@@ -231,3 +240,20 @@ input#submit {
     width: 100%;
     height: 18em;
 }
+=======
+    #footer {
+        position: absolute; bottom: 0; left: 0; right: 0;
+        background-color:#686868;
+        box-shadow: 0px 0px 18px #888888;
+      }
+
+     #footer .coordonnee {
+       list-style:none;
+       text-align: center;
+       color: red;
+      }
+
+      .contact {
+        margin: 20px;
+      }
+>>>>>>> 1dbcfaee2168038084a3372f685fe0359c5d6cd1

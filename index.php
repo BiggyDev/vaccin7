@@ -18,8 +18,16 @@ include('inc/header.php');?>
 
         </div>
     </div>
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+<?php include('inc/footer.php'); 
+=======
+>>>>>>> 1dbcfaee2168038084a3372f685fe0359c5d6cd1
 <?php include('inc/footer.php');
 
 
 
 
+>>>>>>> 87fe06c15c6690562c7501843a12234b6e28dea0
