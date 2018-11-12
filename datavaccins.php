@@ -3,41 +3,6 @@ include('inc/pdo.php');
 include('inc/functions.php');
 include('inc/requests.php');
 
-require 'vendor/autoload.php';
-
-use JasonGrimes\Paginator;
-
-$totalItems = 1;
-$itemsPerPage = 50;
-$currentPage = 1;
-$offset = 0;
-$urlPattern = '/foo/page/(:num)';
-
-$paginator = new Paginator($totalItems, $itemsPerPage, $currentPage, $urlPattern);
-
-//écrasée par celui de l'URL si get['page'] n'est pas vide
-if (!empty($_GET['currentPage'])){
-    $currentPage = $_GET['currentPage'];
-    $offset = $currentPage * $itemsPerPage - $itemsPerPage;
-}
-
-//récupère nos données, pour affichage plus bas
-//inclus les paramètres d'offset pour la pagination
-$sql = "SELECT * FROM yjlv_vaccins
-        ORDER BY id ASC
-        LIMIT $offset,$itemsPerPage";
-
-$stmt = $pdo->prepare($sql);
-$stmt->execute();
-$vac = $stmt->fetchAll();
-
-//requête pour compter le nombre de lignes dans la table
-$sql = "SELECT COUNT(*) FROM yjlv_vaccins";
-$stmt = $pdo->prepare($sql);
-$stmt->execute();
-$count = $stmt->fetchColumn();
-
-
 //Requête BDD affichage vaccins
 $sql = "SELECT * FROM yjlv_vaccins";
 $query = $pdo -> prepare($sql);
@@ -45,29 +10,40 @@ $query -> execute();
 $vaccins = $query -> fetchAll();
 //Fin requête BDD
 
+//Pagination
+require('vendor/autoload.php');
+
+use JasonGrimes\Paginator;
+
+$totalItems = 200; //Nombre total d'articles
+$itemsPerPage = 25; // Nombre d'articles par page
+$currentPage = 1; // Page par défaut
+$offset = 0; // offset par défaut
+$urlPattern = '?page=(:num)';
+
+//écrasée par celui de l'URL si get['page'] n'est pas vide
+if (!empty($_GET['page']) && is_numeric($_GET['page'])){
+  $currentPage = $_GET['page'];
+  $offset = $currentPage * $itemsPerPage - $itemsPerPage;
+}
+
+//récupère nos données, pour affichage plus bas
+//inclus les paramètres d'offset pour la pagination
+$sql = "SELECT * FROM yjlv_vaccins
+        ORDER BY name ASC
+        LIMIT $offset,$itemsPerPage";
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+$vaccins = $stmt->fetchAll();
+
+//requête pour compter le nombre de lignes dans la table
+$sql = "SELECT COUNT(*) FROM yjlv_vaccins";
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+$totalItems = $stmt->fetchColumn();
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$paginator = new Paginator($totalItems, $itemsPerPage, $currentPage, $urlPattern);
 
 $title = 'Vaccins'; ?>
 <?php include('inc/headerb.php'); ?>

@@ -10,25 +10,40 @@ $query -> execute();
 $users = $query -> fetchAll();
 //Fin requête BDD
 
+//Pagination
+require('vendor/autoload.php');
+
+use JasonGrimes\Paginator;
+
+$totalItems = 1; //Nombre total d'articles
+$itemsPerPage = 25; // Nombre d'articles par page
+$currentPage = 1; // Page par défaut
+$offset = 0; // offset par défaut
+$urlPattern = '?page=(:num)';
+
+//écrasée par celui de l'URL si get['page'] n'est pas vide
+if (!empty($_GET['page']) && is_numeric($_GET['page'])){
+  $currentPage = $_GET['page'];
+  $offset = $currentPage * $itemsPerPage - $itemsPerPage;
+}
+
+//récupère nos données, pour affichage plus bas
+//inclus les paramètres d'offset pour la pagination
+$sql = "SELECT * FROM yjlv_users
+        ORDER BY id ASC
+        LIMIT $offset,$itemsPerPage";
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+$users = $stmt->fetchAll();
+
+//requête pour compter le nombre de lignes dans la table
+$sql = "SELECT COUNT(*) FROM yjlv_users";
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+$totalItems = $stmt->fetchColumn();
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$paginator = new Paginator($totalItems, $itemsPerPage, $currentPage, $urlPattern);
 
 
 $title = 'Utilisateurs'; ?>
@@ -83,6 +98,7 @@ $title = 'Utilisateurs'; ?>
                                   <?php } ?>
                                 </tbody>
                                 </table>
+                                <?= $paginator; ?>
                             </div>
                             <!-- /.table-responsive -->
                         </div>

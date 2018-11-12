@@ -278,10 +278,18 @@
                         </li>
                         </li>
                         <li>
-                            <a href="datavaccins.php"><i class="fa fa-table fa-fw"></i> Vaccins</a>
+                            <a href="datausers.php"><i class="fa fa-table fa-fw"></i> Utilisateurs</a>
                         </li>
                         <li>
-                            <a href="datausers.php"><i class="fa fa-table fa-fw"></i> Utilisateurs</a>
+                            <a href="#"><i class="fa fa-list fa-fw"></i> Vaccins<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="datavaccins.php"><i class="fa fa-table fa-fw"></i> Liste des vaccins</a>
+                                </li>
+                                <li>
+                                    <a href="addvaccins.php"><i class="fa fa-edit fa-fw"></i> Nouveau vaccin</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
