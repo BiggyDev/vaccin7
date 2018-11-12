@@ -13,8 +13,9 @@ include('inc/header.php');?>
 <!--////utiliser;-->
 <!--////global($pdo);-->
 <div class="wrap">
+    <h2>Les vaccins</h2>
     <div id="content">
-        <h2>Les vaccins</h2>
+
     </div>
 </div>
 

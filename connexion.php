@@ -54,8 +54,9 @@ if (!empty($_POST['submitted'])) {
 
 $title = 'Connexion'; ?>
 <?php include('inc/header.php'); ?>
-<div id="content">
     <div class="wrap">
+<div id="content">
+
 
       <form class="connexion" action="" method="post">
 
@@ -66,10 +67,10 @@ $title = 'Connexion'; ?>
         <input type="password" name="password" id="password" value=""><br><br>
 
         <input type="submit" name="submitted" id="submit" value="Connexion">
-
+        <p><span class="needed">* = Champs obligatoires</span></p>
       </form>
 
-      <p><span class="needed">* = Champs obligatoires</span></p>
+
 
       <p><a href="passwordforget.php">Mot de passe oublié ?</a></p>
       <p><span><em>Pas encore inscrit ? Cliquez <a href="inscription.php">ici </a>!</em></span></p>

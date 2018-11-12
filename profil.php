@@ -19,40 +19,50 @@ $title = 'Mon compte';
 include('inc/header.php'); ?>
 
 <div class="wrap">
-  <div class="profile">
-      <h2>Mon profil</h2>
-  </div>
+    <div class="profil">
+        <div class="profile">
+            <h2>Mon profil</h2>
+        </div>
 
-  <div class="connexionInfos">
-      <h3>Votre nom et prénom :</h3>
-      <p><?= $user['firstlastname']; ?></p><br>
+        <div class="connexionInfos">
+            <div class="float-label">
+                   <input type="text" name="f-name" value="" id="userName" placeholder="Nom et Prénom ">
+                   <p><?= $user['firstlastname']; ?></p><br>
+            </div>
 
-      <h3>Votre adresse e-mail :</h3>
-      <p><?= $user['email']; ?></p><br>
+            <div class="float-label">
+                  <input type="text" name="f-name" value="" id="userMail" placeholder="E-mail ">
+                  <p><?= $user['email']; ?></p><br>
+            </div>
+        </div>
+        <div class="ProfileInfos">
+            <div class="float-label">
+                   <input type="text" name="f-name" value="" id="userAge" placeholder="Age">
+                   <p><?= $user['age']; ?></p><br>
+            </div>
 
-      <p><a href="modifpassword.php">Modifier le mot de passe</a></p><br>
-  </div>
+            <div class="float-label">
+                   <input type="text" name="f-name" value="" id="userHeight" placeholder="Taille">
+                   <p><?= $user['height']; ?></p><br>
+            </div>
 
-  <div class="profileInfos">
-      <h3>Votre âge :</h3>
-      <p><?= $user['age']; ?></p><br>
+            <div class="float-label">
+                   <input type="text" name="f-name" value="" id="userWeigt" placeholder="Poids ">
+                   <p><?= $user['weight']; ?></p><br>
+            </div>
 
-      <h3>Votre taille :</h3>
-      <p><?= $user['height']; ?></p><br>
+            <div class="float-label">
+                   <input type="text" name="f-name" value="" id="userSex" placeholder="Sexe ">
+                   <p><?= $user['sex']; ?></p><br>
+            </div>
+        </div>
 
-      <h3>Votre poids :</h3>
-      <p><?= $user['weight']; ?></p><br>
 
-      <h3>Votre sexe :</h3>
-      <p><?= $user['sex']; ?></p><br>
-  </div>
-
-  <div class="modifProfileInfos">
-      <p><a href="addprofilinfo.php">Modifier mes données</a></p>
-  </div>
-
+        <div class="modifProfileInfos">
+            <p><a href="addprofilinfo.php">Modifier mes données</a></p>
+        </div>
+    </div>
 </div>
-
 
 
 <?php include('inc/footer.php');

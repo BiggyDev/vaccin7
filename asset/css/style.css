@@ -6,10 +6,13 @@ html {
 }
 
 body {
-    font: 400 16px/1.3 verdana, arial, sans-serif;
-    color: #000;
-    background-color: #fff;
-    min-height: 100%;
+
+   font: 400 16px/1.3 verdana, arial, sans-serif;
+   color: #000;
+    /*background-color: aquamarine;*/
+   background-image: url("../img/pattern.jpg");
+   opacity: 10%;
+   min-height: 100%;
    margin: 0;
    padding: 0;
    position: relative;
@@ -101,26 +104,14 @@ nav.firstnavbar#navbarsmall {
     height: 8em;
 }
 
-nav.firstnavbar#navbarsmall h1,
-nav.firstnavbar#navbarsmall a {
-    color: #333;
-}
-
-nav.firstnavbar#navbarsmall h1 {
-    font-size: 2.5em;
-}
-
-nav.firstnavbar#navbarsmall h1 a {
-    color: #C18055;
-}
-
-nav.firstnavbar#navbarsmall h1 a:hover {
-    color: #3ab4a6;
+nav.firstnavbar#navbarsmall h1 img.logo{
+    width: 15%;
+    float: left;
 }
 
 div#content {
     height: 2200px;
-    background-color: #999999;
+    background-color: white;
     opacity: 80%;
     padding-top: 150px;
 
@@ -129,6 +120,7 @@ div#content {
 section.leftcolumn {
     float: left;
     width: 15%;
+    position: fixed;
     /*padding: 25px;*/
 }
 
@@ -231,12 +223,23 @@ input#submit {
 
 
 @media (max-width: 700px) {
-    nav.firstnavbar ul.menu {
-        display: none;
-        padding: 10px;
+    nav.firstnavbar {
+        background: #2e6da4;
+        padding: 60px;
+        position: relative;
+        z-index: 2;
+        height: 21em;
     }
-    nav.firstnavbar h1 {
+
+
+    nav.firstnavbar ul.menu {
+        /*display: none;*/
+        padding: 10px;
+        float: left;
+    }
+    nav.firstnavbar h1 img.logo {
         font-size: 2.2em;
+        width: 60%;
         display: block;
         float: none;
         text-align: center;
@@ -249,7 +252,7 @@ input#submit {
     }
     nav.firstnavbar ul.submenu {
         font-size: 1em;
-        float: none;
+        float: left;
         padding: 10px;
     }
     div#content h2 {
@@ -257,41 +260,65 @@ input#submit {
     }
     nav.firstnavbar#navbarsmall {
         font-size: 0.8em;
+        height: 14em;
         padding: 10px;
     }
     nav.firstnavbar#navbarsmall ul {
         padding: 5px;
+        float: left;
     }
-    nav.firstnavbar#navbarsmall h1 {
+    nav.firstnavbar#navbarsmall ul.submenu {
+        font-size: 1em;
+        float: left;
+        padding: 10px;
+    }
+    nav.firstnavbar#navbarsmall h1 img.logo {
         padding: 10px;
         font-size: 1.8em;
         margin-bottom: 5px;
+        width: 30%;
+        display: block;
+        float: none;
+        text-align: center;
     }
 
-
-}
-
-<<<<<<< HEAD
-#footer {
-    background-color: #2e6da4;
-    width: 100%;
-    height: 18em;
 }
 
     #footer {
         position: absolute; bottom: 0; left: 0; right: 0;
-        background-color:#686868;
+        background-color:blue;
         box-shadow: 0px 0px 18px #888888;
+
       }
 
      #footer .coordonnee {
        list-style:none;
        text-align: center;
-       color: red;
+       color: white;
+      }
+
+    .coordonnee h3 {
+        font-size: 32px;
       }
 
       .contact {
         margin: 20px;
       }
-=======
->>>>>>> 819507ec2f8ad3e5cf1bd15ebb84add9fb38a6f9
+
+      .float-label input {
+        -webkit-appearance: none;
+        outline: none;
+        border: none;
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+        background: transparent;
+        color: #757575;
+        padding: 5px 15px 7px 10px;
+      }
+      

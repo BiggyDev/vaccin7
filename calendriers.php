@@ -4,21 +4,12 @@ include('inc/functions.php');
 include('inc/requests.php');
 $title = 'Vaccination - Calendriers vaccinaux';
 
-//$im = new Imagick('asset/pdf/calendrier_vaccinations.pdf');
-//$im->setIteratorIndex(0);
-//$im->setCompression(Imagick::COMPRESSION_LZW);
-//$im->setCompressionQuality(90);
-//$im->writeImage('asset/pdf/calendrier_vaccinations.pdf');
+
 include('inc/header.php');?>
 
-
-
-
-
-
 <div class="wrap">
+    <h2>Calendriers vaccinaux</h2>
     <div id="content">
-        <h2>Calendriers vaccinaux</h2>
           <section class="calendriers">
               <p><a href="asset/pdf/calendrier_vaccinations.pdf" target="_blank">Calendrier des vaccinations et recommandations vaccinales 2018</a></p>
               <p><a href="asset/pdf/calendrier_simplifie.pdf" target="_blank">Calendrier vaccinal simplifié 2018</a></p>
@@ -37,4 +28,4 @@ include('inc/header.php');?>
     </div>
 </div>
 
-<?php include('inc/footer.php');
+<?php include('inc/footer.php'); ?>

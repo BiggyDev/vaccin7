@@ -20,6 +20,7 @@
                 </ul>
             </li>
             <li><a href="#">Support</a></li>
+
             <?php if(!isLogged()) { ?>
                     <li><a href="inscription.php">Inscription</a></li>
                     <li><a href="connexion.php">Connexion</a></li>
@@ -31,9 +32,11 @@
             <?php if (isLogged()) { ?>
                     <li><a href="deconnexion.php">Déconnexion</a></li>
             <?php } ?>
+
+
         </ul>
     </nav>
-    <!-- <nav class="firstnavbar" id="navbarsmall">
+    <nav class="firstnavbar" id="navbarsmall">
         <h1><img class="logo" src="asset/img/logo_vactualise.svg" alt="Logo Vactualise" ></h1>
         <ul class="menu">
             <li><a href="index.php">Accueil</a></li>
@@ -56,5 +59,5 @@
                     <li><a href="deconnexion.php">Déconnexion</a></li>
             <?php } ?>
         </ul>
-    </nav> -->
+    </nav>
 </header>

@@ -6,6 +6,7 @@ include('inc/requests.php');
 //Requête BDD affichage données utilisateur
 $user = showConnectedUserInfo($id);
 
+
 $title = 'Accueil';
 include('inc/header.php');?>
 

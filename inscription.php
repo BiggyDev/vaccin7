@@ -102,9 +102,10 @@ if (!empty($_POST['submitted']) ) {
 
 ?>
 <?php include('inc/header.php'); ?>
-<div id="content">
-    <div class="wrap">
-      
+
+<div class="wrap">
+    <div id="content">
+
         <form class="inscription" action="" method="post">
 
           <label for="firstlastname">Votre Nom et Prénom* :</label><br>
@@ -129,21 +130,6 @@ if (!empty($_POST['submitted']) ) {
         </form>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <?php include('inc/footer.php');
