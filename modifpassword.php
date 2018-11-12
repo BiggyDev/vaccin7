@@ -1,6 +1,8 @@
 <?php include('inc/pdo.php'); ?>
 <?php include('inc/functions.php'); ?>
+<?php include('inc/requests.php'); ?>
 <?php
+
 $error = array();
 
 if(!empty($_GET['email']) && !empty($_GET['token'])) {
@@ -13,9 +15,7 @@ if(!empty($_GET['email']) && !empty($_GET['token'])) {
   $query -> execute();
   $user = $query -> fetch();
 
-  // print_r($user);
   if (!empty($user)) {
-    //si le formulaire est soumis
     if (!empty($_POST['submitted']) ) {
         // Protection faille XSS
         $password    = trim(strip_tags($_POST['password']));
@@ -28,19 +28,22 @@ if(!empty($_GET['email']) && !empty($_GET['token'])) {
             } elseif(strlen($password) > 255) {
                 $error['password'] = 'Le mot de passe est trop long. (Maximum 255 caractères)';
             }
-        } else {$error['password'] = 'Veuillez renseigner un mot de passe';}
+        } else {
+          $error['password'] = 'Veuillez renseigner un mot de passe';
+        }
 
         // verification password2
         if (!empty($password2)){
             if($password2 !== $password) {
               $error['password2'] = 'Les mots de passes renseignés ne correspondent pas';
             }
-        } else {$error['password2'] = 'Veuillez réécrire le mot de passe rensigné ci-dessus';
-            }
+        } else {
+          $error['password2'] = 'Veuillez réécrire le mot de passe rensigné ci-dessus';
+        }
 
         if (count($error) == 0) {
           $hash = password_hash($password, PASSWORD_DEFAULT);
-          $token = generateRandomString(90);
+          $token = generateRandomString(120);
           $sql = "UPDATE yjlv_users SET password = :password, token = :token WHERE id = :id";
           $query = $pdo -> prepare($sql);
           $query -> bindValue(':password', $hash, PDO::PARAM_STR);
@@ -54,20 +57,22 @@ if(!empty($_GET['email']) && !empty($_GET['token'])) {
 } else {
   die('404 1');
 }
-} //else {
-  //die('404 2');
-//}
+} else {
+  die('404 2');
+}
 
 $title = 'Changement de mot de passe'?>
 <?php include('inc/header.php'); ?>
 
+<div class="wrap">
+
   <form class="passwordmodif" action="" method="post">
 
       <label for="">Votre nouveau mot de passe : </label><br>
-      <input type="password" name="password" value=""><br><br>
+      <input type="password" name="password" id="password" value=""><br><br>
 
       <label for="">Confirmez votre nouveau mot de passe : </label><br>
-      <input type="password" name="password2" value=""><br><br>
+      <input type="password" name="password2" id="password2" value=""><br><br>
 
       <input type="submit" name="submitted" value="Modifier">
 
