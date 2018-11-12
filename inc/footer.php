@@ -1,28 +1,18 @@
 <footer id="footer">
 
+  <div class="contact">
+  <ul class="coordonnee">
+    <li>Adresse</li>
+    <li>Tel</li>
+    <li>Mail</li>
+  </ul>
+</div>
 
-
-
-  <div class="lastnavbar">
-    <div class="sectionfooter1">
-      <h3>Contactez nous</h3>
-      <ul>
-        <li>Addresse : 16 place Saint-Marc76000 Rouen</li>
-        <li>Tel : 00000000</li>
-        <li>Mail : @@@@@@</li>
-      </ul>
-    </div>
-
-  </div>
+  <hr align="center" width="60%">
+    <p>&copy 20018 | Tout droit reservé</p>
 
 <!-- Réseaux sociaux, contacts, ect -->
-
 </footer>
-
-
-
-
-
 
 </body>
 </html>

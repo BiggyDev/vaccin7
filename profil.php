@@ -60,7 +60,7 @@ if(empty($taille)) {
 
 //fin}
 
-var_dump($error);
+//var_dump($error);
 
 
 
@@ -76,24 +76,24 @@ var_dump($error);
 
 <h2>MON PROFIL</h2>
 
-<form class="" action="" method="post">
+<form class="profil" action="" method="post">
 
-  <div class="">
+  <div class="age">
     <label for="userage">Age</label>
     <input type="number" name="userage" id = "userage" value="" min="0" max="140" placeholder="ans">
   </div>
 
-  <div class="">
+  <div class="poid">
     <label for="userweight">Poid</label>
     <input type="number" name="userweight" id = "userweight" value="" min="0" max="300" placeholder="kilo">
   </div>
 
-  <div class="">
+  <div class="taille">
     <label for="userheight">Taille</label>
     <input type="number" name="userheight" id = "userheight" value="" min="0" max="300" placeholder="cm">
   </div>
 
-  <div class="">
+  <div class="sexe">
     <label for="">Sexe :</label>
     <label for="homme">homme</label>
     <input type="radio" name="usersex" id = "homme" value="1">

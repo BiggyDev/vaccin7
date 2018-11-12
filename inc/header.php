@@ -2,6 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
     <link rel="stylesheet" href="asset/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo $title; ?></title>
@@ -20,7 +21,7 @@
             </li>
             <li><a href="#">Support</a></li>
             <li><a href="inscription.php">Inscription/Connexion</a></li>
-            <li><a href="#">Mon compte</a></li>
+            <li><a href="profil.php">Mon compte</a></li>
         </ul>
     </nav>
     <nav class="firstnavbar" id="navbarsmall">
@@ -40,7 +41,3 @@
         </ul>
     </nav>
 </header>
-
-
-
-
