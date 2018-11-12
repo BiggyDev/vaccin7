@@ -3,12 +3,8 @@ include('inc/pdo.php');
 include('inc/functions.php');
 include('inc/requests.php');
 
-//Requête BDD affichage vaccins
-$sql = "SELECT * FROM yjlv_vaccins";
-$query = $pdo -> prepare($sql);
-$query -> execute();
-$vaccins = $query -> fetchAll();
-//Fin requête BDD
+//Requête pour montrer les vaccins dans la table
+$vaccins = showAllVaccin();
 
 //Pagination
 require('vendor/autoload.php');
@@ -29,19 +25,10 @@ if (!empty($_GET['page']) && is_numeric($_GET['page'])){
 
 //récupère nos données, pour affichage plus bas
 //inclus les paramètres d'offset pour la pagination
-$sql = "SELECT * FROM yjlv_vaccins
-        ORDER BY name ASC
-        LIMIT $offset,$itemsPerPage";
-$stmt = $pdo->prepare($sql);
-$stmt->execute();
-$vaccins = $stmt->fetchAll();
+$vaccins = showVaccinInPagination($offset, $itemsPerPage);
 
 //requête pour compter le nombre de lignes dans la table
-$sql = "SELECT COUNT(*) FROM yjlv_vaccins";
-$stmt = $pdo->prepare($sql);
-$stmt->execute();
-$totalItems = $stmt->fetchColumn();
-
+$totalItems = countAllVaccin();
 
 $paginator = new Paginator($totalItems, $itemsPerPage, $currentPage, $urlPattern);
 

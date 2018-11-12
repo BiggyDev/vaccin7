@@ -1,7 +1,7 @@
 <?php include('inc/pdo.php'); ?>
 <?php include('inc/functions.php'); ?>
 <?php include('inc/requests.php'); ?>
-<?php $title = 'INSCRIPTION';
+<?php $title = 'Inscription';
 
 //initialise la variable contenant les messages d'erreurs à... rien
 $error = array();

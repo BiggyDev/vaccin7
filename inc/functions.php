@@ -15,16 +15,19 @@ function transformdate($date){
   return $newdate;
 }
 
-function verificationField($field, $textfield, $min, $max) {
+function verificationField($error,$field, $textfield, $min, $max) {
+
   if(!empty($field)){
       if(strlen($field) < $min ) {
           $error[$textfield] = 'Champ trop court. (Minimum ' . $min . ' caractères)';
       } elseif(strlen($field) > $max) {
           $error[$textfield] = 'Champ trop long. (Maximum ' . $max . ' caractères)';
   } else {
-  $error[$textfield] = 'Veuillez renseigner ce champ';
+      $error[$textfield] = 'Veuillez renseigner ce champ';
   }
  }
+
+ return $error;
 }
 
 function debug($debug) {
