@@ -20,10 +20,6 @@
                 </ul>
             </li>
             <li><a href="#">Support</a></li>
-<<<<<<< HEAD
-
-=======
->>>>>>> 9aeb61338bdc58f526d89a0e3b8410d8c231d292
             <?php if(!isLogged()) { ?>
                     <li><a href="inscription.php">Inscription</a></li>
                     <li><a href="connexion.php">Connexion</a></li>
@@ -35,10 +31,6 @@
             <?php if (isLogged()) { ?>
                     <li><a href="deconnexion.php">Déconnexion</a></li>
             <?php } ?>
-<<<<<<< HEAD
-
-=======
->>>>>>> 9aeb61338bdc58f526d89a0e3b8410d8c231d292
         </ul>
     </nav>
     <nav class="firstnavbar" id="navbarsmall">
