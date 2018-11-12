@@ -14,3 +14,22 @@ function transformdate($date){
   $newdate = date("d/m/Y H:i", strtotime($date));
   return $newdate;
 }
+
+function verificationField($field, $textfield, $min, $max) {
+  if(!empty($field)){
+      if(strlen($field) < $min ) {
+          $error[$textfield] = 'Champ trop court. (Minimum ' . $min . ' caractères)';
+      } elseif(strlen($field) > $max) {
+          $error[$textfield] = 'Champ trop long. (Maximum ' . $max . ' caractères)';
+  } else {
+  $error[$textfield] = 'Veuillez renseigner ce champ';
+  }
+ }
+}
+
+
+function debug($debug) {
+  echo '<pre>';
+  print_r($debug);
+  echo '</pre>';
+}
