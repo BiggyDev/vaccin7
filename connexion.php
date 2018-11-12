@@ -1,53 +1,77 @@
 <?php include('inc/pdo.php'); ?>
 <?php include('inc/functions.php'); ?>
+<?php include('inc/requests.php'); ?>
 <?php
-// form soumis ??
+
+
 $error = array();
-if(!empty($_POST['submitted'])) {
-  $login    = trim(strip_tags($_POST['login']));
-  $password = trim(strip_tags($_POST['password']));
+$success = false;
 
-  $sql = "SELECT * FROM yjlv_users
-        WHERE pseudo = :login OR email = :login";
-        $query = $pdo->prepare($sql);
-        $query->bindValue(':login',$login);
-        $query->execute();
-  $user = $query->fetch();
-  if(!empty($user)) {
-    if(!password_verify($password,$user['password'])) {
-      $error['password'] = 'mauvais mot de passe';
-    }
+//Formulaire Soumis
+if (!empty($_POST['submitted'])) {
+
+    // Protection faille XSS
+    $login      = trim(strip_tags($_POST['login']));
+    $password   = trim(strip_tags($_POST['password']));
+
+//Requete sur identité utilisateur (s'il existe)
+  $sql   = "SELECT *
+            FROM yjlv_users
+            WHERE email = :login";
+  $query = $pdo -> prepare($sql);
+  $query -> bindValue(':login', $login, PDO::PARAM_STR);
+  $query -> execute();
+  $user = $query -> fetch();
+
+  // print_r($user);
+  if (!empty($user)) {
+     if (!password_verify($password, $user['password'])) {
+       $error['password'] = 'Mot de passe erroné';
+     }
   } else {
-    $error['login'] = 'veuillez vous inscrire';
+    $error['login'] = 'Veuillez vous inscrire';
   }
 
-  if(count($error) == 0) {
-        $_SESSION['user'] = array(
-          'id' => $user['id'],
-          'pseudo' => $user['pseudo'],
-          'email' => $user['email'],
-          'role'  => $user['role'],
-          'ip'  => $_SERVER['REMOTE_ADDR']
-        );
+    if (count($error) == 0) {
+
+      $success = true;
+      $_SESSION['yjlv_users'] = array(
+        'id'      => $user['id'],
+        'email'   => $user['email'],
+        'role'    => $user['role'],
+        'ip'      => $_SERVER['REMOTE_ADDR']
+      );
+      if (isAdmin()) {
+        header('Location: indexb.php');
+      } else {
         header('Location: index.php');
-  }
+      }
+    }
 }
 
-?>
+$title = 'Connexion'; ?>
+<?php include('inc/header.php'); ?>
 
+<div class="wrap">
+  <h2>Connectez-vous à votre compte :</h2><br>
 
-<!-- formulaire de connexion -->
-<form class="" action="" method="post">
+  <form class="connexion" action="" method="post">
 
-  <label for="login">pseudo or email</label>
-  <input type="text" name="login" id="login" value="">
+    <label for="login">Votre Email* :</label><br>
+    <input type="text" name="login" id="login" value=""><br><br>
 
+    <label for="password">Votre Mot de Passe* :</label><br>
+    <input type="password" name="password" id="password" value=""><br><br>
 
-<label for="password">password</label>
-<input type="password" name="password" id="password" value="">
+    <input type="submit" name="submitted" id="submit" value="Connexion">
 
-<input type="submit" name="submitted" value="connexion">
+  </form>
 
-</form>
+  <p><span class="needeed">* = Champs obligatoires</span></p><br>
+
+  <p><a href="passwordforget.php">Mot de passe oublié ?</a></p><br>
+
+  <p><span><em>Pas encore inscrit ? Cliquez <a href="inscription.php">ici </a>!</em></span></p><br>
+</div>
 
 <?php include('inc/footer.php');
