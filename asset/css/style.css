@@ -1,0 +1,214 @@
+@import 'reset.css';
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Roboto:400,500);
+
+
+body {
+    font: 400 16px/1.3 verdana, arial, sans-serif;
+    color: #000;
+    background-color: #fff;
+}
+
+/*body header h1 {*/
+    /*position: absolute;*/
+    /*left: -50000px;*/
+/*}*/
+
+.wrap {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#header {
+    height: 15em;
+}
+
+nav.firstnavbar {
+    background: darkcyan;
+    padding: 60px;
+    position: relative;
+    z-index: 2;
+    height: 15em;
+}
+
+nav.firstnavbar h1 {
+    color: #eee;
+    font-family: 'Pacifico', cursive;
+    font-size: 2.7em;
+    float: left;
+}
+
+ul.menu {
+    text-align: center;
+    float: right;
+}
+
+ul.menu li {
+    float: left;
+}
+
+ul.menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    /*margin: 0 10px;*/
+    color: #eee;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    line-height: 2em;
+    font-weight: bold;
+    transition: all 200ms linear;
+}
+
+ul.submenu {
+    text-align: justify;
+}
+
+ul.submenu li {
+    float: none;
+    font-size: 0.7em ;
+}
+
+ul.menu li:hover > ul.submenu {
+    display: block;
+    /*position: absolute;*/
+}
+
+ul.menu ul.submenu {
+    display: none;
+}
+
+nav.firstnavbar a:hover,
+nav.firstnavbar#navbarsmall a:hover {
+    color: #C18055;
+    background: #fff;
+}
+
+nav.firstnavbar#navbarsmall {
+    background: darkcyan;
+    padding: 20px 40px;
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    height: 12em;
+}
+
+nav.firstnavbar#navbarsmall h1,
+nav.firstnavbar#navbarsmall a {
+    color: #333;
+}
+
+nav.firstnavbar#navbarsmall h1 {
+    font-size: 2.5em;
+}
+
+nav.firstnavbar#navbarsmall h1 a {
+    color: #C18055;
+}
+
+nav.firstnavbar#navbarsmall h1 a:hover {
+    color: #3ab4a6;
+}
+
+div#content {
+    height: 2200px;
+
+}
+
+h2 {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: royalblue;
+}
+
+form.inscription {
+    margin: auto;
+    text-transform: uppercase;
+    text-align: center;
+    width:100%;
+    max-width:50%;
+    min-height:21.875em;
+    position:relative;
+    padding: 20px;
+    background-color: cadetblue;
+}
+
+form.inscription .needed {
+    font-size: 0.7em;
+}
+
+label, input {
+    margin: auto;
+    display: block;
+    width: 80%;
+}
+
+input {
+    font-size: 18px;
+    -webkit-appearance: none;
+    display: block;
+    background: rgba(34, 33, 73, .0);
+    width: 300px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid antiquewhite;
+}
+
+input#submit {
+    text-transform: uppercase;
+    font-size: 1em;
+    width: 70%;
+    height: 60px;
+    background:#BF406B;
+    border-radius: 50px;
+    /*box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);*/
+    border-bottom: none;
+}
+
+@media (max-width: 700px) {
+    nav.firstnavbar ul.menu {
+        display: none;
+        padding: 10px;
+    }
+    nav.firstnavbar h1 {
+        font-size: 2.2em;
+        display: block;
+        float: none;
+        text-align: center;
+        padding: 10px;
+    }
+    nav.firstnavbar ul {
+        font-size: 0.7em;
+        float: none;
+        padding: 10px;
+    }
+    nav.firstnavbar ul.submenu {
+        font-size: 1em;
+        float: none;
+        padding: 10px;
+    }
+    div#content h2 {
+        width: 30%;
+    }
+    nav.firstnavbar#navbarsmall {
+        font-size: 0.8em;
+        padding: 10px;
+    }
+    nav.firstnavbar#navbarsmall ul {
+        padding: 5px;
+    }
+    nav.firstnavbar#navbarsmall h1 {
+        padding: 10px;
+        font-size: 1.8em;
+        margin-bottom: 5px;
+    }
+
+}
