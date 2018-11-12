@@ -1,7 +1,7 @@
 <?php include('inc/pdo.php'); ?>
 <?php include('inc/functions.php'); ?>
 <?php include('inc/requests.php'); ?>
-<?php $title = 'INSCRIPTION';
+<?php $title = 'Inscription';
 
 //initialise la variable contenant les messages d'erreurs à... rien
 $error = array();
@@ -102,29 +102,31 @@ if (!empty($_POST['submitted']) ) {
 
 ?>
 <?php include('inc/header.php'); ?>
-<div class="wrap">
-<form class="inscription" action="" method="post">
+<div id="content">
+    <div class="wrap">
+        <form class="inscription" action="" method="post">
 
 
-  <label for="firstlastname">Votre Nom et Prénom* :</label><br>
-  <input type="text" name="firstlastname" id="firstlastname" value="<?php if(!empty($_POST['firstlastname'])) {echo $_POST['firstlastname']; } ?>">
-  <span class="error" style="color:red"><?php if(!empty($error['firstlastname'])) { echo $error['firstlastname']; } ?></span><br><br>
+          <label for="firstlastname">Votre Nom et Prénom* :</label><br>
+          <input type="text" name="firstlastname" id="firstlastname" value="<?php if(!empty($_POST['firstlastname'])) {echo $_POST['firstlastname']; } ?>">
+          <span class="error" style="color:red"><?php if(!empty($error['firstlastname'])) { echo $error['firstlastname']; } ?></span><br><br>
 
-  <label for="email">Votre email* :</label><br>
-  <input type="email" name="email" id="email" value="<?php if(!empty($_POST['email'])) {echo $_POST['email'];} ?>">
-  <span class="error" style="color:red"><?php if(!empty($error['email'])) { echo $error['email']; } ?></span><br><br>
+          <label for="email">Votre email* :</label><br>
+          <input type="email" name="email" id="email" value="<?php if(!empty($_POST['email'])) {echo $_POST['email'];} ?>">
+          <span class="error" style="color:red"><?php if(!empty($error['email'])) { echo $error['email']; } ?></span><br><br>
 
-  <label for="password">Votre Mot de Passe* :</label><br>
-  <input type="password" name="password" id="password" value="<?php if(!empty($_POST['password'])) {echo $_POST['password'];} ?>">
-  <span class="error" style="color:red"><?php if(!empty($error['password'])) { echo $error['password']; } ?></span><br><br>
+          <label for="password">Votre Mot de Passe* :</label><br>
+          <input type="password" name="password" id="password" value="<?php if(!empty($_POST['password'])) {echo $_POST['password'];} ?>">
+          <span class="error" style="color:red"><?php if(!empty($error['password'])) { echo $error['password']; } ?></span><br><br>
 
-  <label for="password2">Confirmez votre Mot de Passe* :</label><br>
-  <input type="password" name="password2" id="password2" value="<?php if(!empty($_POST['password2'])) {echo $_POST['password2'];} ?>">
-  <span class="error" style="color:red"><?php if(!empty($error['password2'])) { echo $error['password2']; } ?></span><br><br>
+          <label for="password2">Confirmez votre Mot de Passe* :</label><br>
+          <input type="password" name="password2" id="password2" value="<?php if(!empty($_POST['password2'])) {echo $_POST['password2'];} ?>">
+          <span class="error" style="color:red"><?php if(!empty($error['password2'])) { echo $error['password2']; } ?></span><br><br>
 
-  <input type="submit" name="submitted" id="submit" value="Je m'inscris">
-  <p><span class="needed">* = Champs obligatoires</span></p>
-</form>
+          <input type="submit" name="submitted" id="submit" value="Je m'inscris">
+          <p><span class="needed">* = Champs obligatoires</span></p>
+        </form>
+    </div>
 </div>
 
 
@@ -143,5 +145,8 @@ if (!empty($_POST['submitted']) ) {
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> d917f63ee2d6d23de4fbc0fada6fcdf518231c7d
 <?php include('inc/footer.php');

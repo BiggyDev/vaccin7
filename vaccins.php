@@ -1,14 +1,14 @@
 <?php
 include('inc/pdo.php');
 include('inc/functions.php');
-$title = 'VACCINATION - LES VACCINS';
+include('inc/requests.php');
+$title = 'Vaccination - Les Vaccins';
 
 
 
 
 
 include('inc/header.php');?>
-<!--// fichier request.php-->
 <!--//fonctions qui a pour resultat une requete-->
 <!--////utiliser;-->
 <!--////global($pdo);-->

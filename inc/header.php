@@ -10,7 +10,7 @@
   <body>
 <header id="header">
     <nav class="firstnavbar">
-        <h1><img src="asset/img/logo_vactualise.svg" alt="Logo Vactualise" width="300"></h1>
+        <h1><img class="logo" src="asset/img/logo_vactualise.svg" alt="Logo Vactualise" ></h1>
         <ul class="menu">
             <li><a href="index.php">Accueil</a></li>
             <li><a href="#">Vaccination</a>
@@ -21,27 +21,25 @@
             </li>
             <li><a href="#">Support</a></li>
 
-            <li><a href="inscription.php">Inscription/Connexion</a></li>
-
-
             <?php if(!isLogged()) { ?>
                     <li><a href="inscription.php">Inscription</a></li>
                     <li><a href="connexion.php">Connexion</a></li>
             <?php } elseif (isAdmin()) { ?>
                     <li><a href="indexb.php">Admin Dashboard</a></li>
             <?php } else { ?>
-                    <li><a href="profil.php">Mon compte</a></li>
+                    <li><a href="profil.php?id=<?= $user['id']; ?>">Mon compte</a></li>
             <?php } ?>
             <?php if (isLogged()) { ?>
                     <li><a href="deconnexion.php">Déconnexion</a></li>
             <?php } ?>
 
+
         </ul>
     </nav>
     <nav class="firstnavbar" id="navbarsmall">
-        <h1>Vactualize</h1>
+        <h1><img class="logo" src="asset/img/logo_vactualise.svg" alt="Logo Vactualise" ></h1>
         <ul class="menu">
-            <li><a href="#">Accueil</a></li>
+            <li><a href="index.php">Accueil</a></li>
             <li><a href="#">Vaccination</a>
                 <ul class="submenu">
                     <li><a href="calendriers.php">les calendriers vaccinaux</a></li>
@@ -55,7 +53,7 @@
             <?php } elseif (isAdmin()) { ?>
                     <li><a href="indexb.php">Admin Dashboard</a></li>
             <?php } else { ?>
-                    <li><a href="profil.php">Mon compte</a></li>
+              <li><a href="profil.php?id=<?= $user['id']; ?>">Mon compte</a></li>
             <?php } ?>
             <?php if (isLogged()) { ?>
                     <li><a href="deconnexion.php">Déconnexion</a></li>

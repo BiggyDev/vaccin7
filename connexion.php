@@ -53,25 +53,25 @@ if (!empty($_POST['submitted'])) {
 
 $title = 'Connexion'; ?>
 <?php include('inc/header.php'); ?>
+<div id="content">
+    <div class="wrap">
 
-<div class="wrap">
+      <form class="connexion" action="" method="post">
 
-  <form class="connexion" action="" method="post">
+        <label for="login" >Votre Email* :</label><br>
+        <input type="text" name="login" id="login" value=""><br><br>
 
-    <label for="login" >Votre Email* :</label><br>
-    <input type="text" name="login" id="login" value=""><br><br>
+        <label for="password" >Votre Mot de Passe* :</label><br>
+        <input type="password" name="password" id="password" value=""><br><br>
 
-    <label for="password" >Votre Mot de Passe* :</label><br>
-    <input type="password" name="password" id="password" value=""><br><br>
+        <input type="submit" name="submitted" id="submit" value="Connexion">
 
-    <input type="submit" name="submitted" id="submit" value="Connexion">
+      </form>
 
-  </form>
+      <p><span class="needed">* = Champs obligatoires</span></p>
 
-  <p><span class="needed">* = Champs obligatoires</span></p>
-
-  <p><a href="passwordforget.php">Mot de passe oublié ?</a></p>
-  <p><span><em>Pas encore inscrit ? Cliquez <a href="inscription.php">ici </a>!</em></span></p>
+      <p><a href="passwordforget.php">Mot de passe oublié ?</a></p>
+      <p><span><em>Pas encore inscrit ? Cliquez <a href="inscription.php">ici </a>!</em></span></p>
+    </div>
 </div>
-
 <?php include('inc/footer.php');
