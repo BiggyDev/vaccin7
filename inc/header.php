@@ -21,11 +21,15 @@
             </li>
             <li><a href="#">Support</a></li>
             <?php if(!isLogged()) { ?>
-            <li><a href="inscription.php">Inscription</a></li>
-            <li><a href="connexion.php">Connexion</a></li>
+                    <li><a href="inscription.php">Inscription</a></li>
+                    <li><a href="connexion.php">Connexion</a></li>
+            <?php } elseif (isAdmin()) { ?>
+                    <li><a href="indexb.php">Admin Dashboard</a></li>
             <?php } else { ?>
-            <li><a href="#">Mon compte</a></li>
-            <li><a href="deconnexion.php">Déconnexion</a></li>
+                    <li><a href="profil.php">Mon compte</a></li>
+            <?php } ?>
+            <?php if (isLogged()) { ?>
+                    <li><a href="deconnexion.php">Déconnexion</a></li>
             <?php } ?>
         </ul>
     </nav>
@@ -41,11 +45,15 @@
             </li>
             <li><a href="#">Support</a></li>
             <?php if(!isLogged()) { ?>
-            <li><a href="inscription.php">Inscription</a></li>
-            <li><a href="connexion.php">Connexion</a></li>
+                    <li><a href="inscription.php">Inscription</a></li>
+                    <li><a href="connexion.php">Connexion</a></li>
+            <?php } elseif (isAdmin()) { ?>
+                    <li><a href="indexb.php">Admin Dashboard</a></li>
             <?php } else { ?>
-            <li><a href="#">Mon compte</a></li>
-            <li><a href="deconnexion.php">Déconnexion</a></li>
+                    <li><a href="profil.php">Mon compte</a></li>
+            <?php } ?>
+            <?php if (isLogged()) { ?>
+                    <li><a href="deconnexion.php">Déconnexion</a></li>
             <?php } ?>
         </ul>
     </nav>
