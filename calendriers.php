@@ -1,7 +1,8 @@
 <?php
 include('inc/pdo.php');
 include('inc/functions.php');
-$title = 'VACCINATION - CALENDRIERS VACCINAUX';
+include('inc/requests.php');
+$title = 'Vaccination - Calendriers vaccinaux';
 
 //$im = new Imagick('asset/pdf/calendrier_vaccinations.pdf');
 //$im->setIteratorIndex(0);
@@ -36,8 +37,4 @@ include('inc/header.php');?>
     </div>
 </div>
 
-<<<<<<< HEAD
-<?php include('inc/footer.php'); ?>
-=======
 <?php include('inc/footer.php');
->>>>>>> 87fe06c15c6690562c7501843a12234b6e28dea0

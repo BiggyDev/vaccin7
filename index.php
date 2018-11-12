@@ -1,11 +1,11 @@
 <?php
 include('inc/pdo.php');
 include('inc/functions.php');
-$title = 'ACCUEIL';
+$title = 'Accueil';
 include('inc/header.php');?>
 
     <section class="leftcolumn">
-        <p>Pourquoi le carnet de vaccination electronique ?</p>
+        <p>Pourquoi le carnet de vaccination électronique ?</p>
         <ul>
             <li>Simple, pratique et gratuit</li>
             <li>Centralisez les vaccins de toute la famille</li>
@@ -18,5 +18,6 @@ include('inc/header.php');?>
 
         </div>
     </div>
+
 
 <?php include('inc/footer.php'); 
