@@ -25,20 +25,19 @@ include('inc/header.php'); ?>
         </div>
 
         <div class="connexionInfos">
+            <h3>Vos informations de connexion</h3>
             <div class="float-label">
-                   <input type="text" name="f-name" value="" id="userName">Nom et Prénom
-                   <p><?= $user['firstlastname']; ?></p><br>
+                  <p>Votre nom et prénom : <?= $user['firstlastname']; ?></p><br>
             </div>
 
             <div class="float-label">
-                  <input type="text" name="f-name" value="" id="userMail">Adresse e-mail
-                  <p><?= $user['email']; ?></p><br>
+                  <p>Votre adresse e-mail : <?= $user['email']; ?></p><br>
             </div>
         </div>
         <div class="ProfileInfos">
+            <h3>Vos informations personnelles</h3>
             <div class="float-label">
-                   <input type="text" name="f-name" value="" id="userAge">Age
-                   <p><?php if(!empty($user['age'])) {
+                   <p>Votre âge : <?php if(!empty($user['age'])) {
                      echo $user['age'];
                    } else {
                      echo 'Non renseigné';
@@ -46,8 +45,7 @@ include('inc/header.php'); ?>
             </div>
 
             <div class="float-label">
-                   <input type="text" name="f-name" value="" id="userHeight">Taille
-                   <p><?php if(!empty($user['height'])) {
+                   <p>Votre taille : <?php if(!empty($user['height'])) {
                      echo $user['height'];
                    } else {
                      echo 'Non renseigné';
@@ -55,8 +53,7 @@ include('inc/header.php'); ?>
             </div>
 
             <div class="float-label">
-                   <input type="text" name="f-name" value="" id="userWeigt">Poids
-                   <p><?php if(!empty($user['weight'])) {
+                   <p>Votre poids : <?php if(!empty($user['weight'])) {
                      echo $user['weight'];
                    } else {
                      echo 'Non renseigné';
@@ -64,8 +61,7 @@ include('inc/header.php'); ?>
             </div>
 
             <div class="float-label">
-                   <input type="text" name="f-name" value="" id="userSex">Sexe
-                   <p><?php if(!empty($user['sex'])) {
+                   <p>Votre sexe : <?php if(!empty($user['sex'])) {
                      echo $user['sex'];
                    } else {
                      echo 'Non renseigné';
