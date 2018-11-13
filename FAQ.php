@@ -168,8 +168,12 @@ include('inc/header.php');?>
                 <input id="q13" type="checkbox" class="panel">
                 <div class="plus">+</div>
                 <label for="q13" class="panel-title">De quoi se composent les vaccins ?</label>
-                <div class="panel-content">Les vaccins comportent des antigènes c'est-à-dire des éléments qui vont induire une réponse immunitaire capable de protéger l’individu contre l’infection naturelle ou d’en atténuer les conséquences. (bactéries ou virus vivants atténués, agent bactérien ou viral entier inactivé, fractions antigéniques ou sous-unités vaccinantes).
-                    Les autres composants sont les adjuvants (sels d’aluminium, adjuvant lipidique..) qui stimulent la réaction immunitaire induite par les vaccins, les conservateurs (thiomersal) qui évitent le risque infectieux principalement retrouvé dans les présentations multidoses, et des agents inactivants (formaldéhyde) pour l’inactivation et la détoxification des agents infectieux.
+                <div class="panel-content">Les vaccins comportent des antigènes c'est-à-dire des éléments qui vont induire
+                    une réponse immunitaire capable de protéger l’individu contre l’infection naturelle ou d’en atténuer les conséquences.
+                    (bactéries ou virus vivants atténués, agent bactérien ou viral entier inactivé, fractions antigéniques ou sous-unités vaccinantes).
+                    Les autres composants sont les adjuvants (sels d’aluminium, adjuvant lipidique..) qui stimulent la réaction immunitaire induite par les vaccins,
+                    les conservateurs (thiomersal) qui évitent le risque infectieux principalement retrouvé dans les présentations multidoses,
+                    et des agents inactivants (formaldéhyde) pour l’inactivation et la détoxification des agents infectieux.
                     Source : ANSM.
                 </div>
             </div>
