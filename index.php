@@ -9,6 +9,9 @@ $user = showConnectedUserInfo($id);
 
 $title = 'Accueil';
 include('inc/header.php');?>
+    <section>
+        
+    </section>
 
     <section class="leftcolumn">
         <p>Pourquoi le carnet de vaccination électronique ?</p>
