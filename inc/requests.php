@@ -97,7 +97,7 @@ function showConnectedUserInfo($id) {
 
 
 //Met à jour les données du profil de l'utilisateur
-function updateProfileUserInfo(){
+function updateProfileUserInfo($age, $sex, $weight, $height) {
   global $pdo;
   $sql = "UPDATE yjlv_users SET (age,sex,weight,height,modified_at)
           VALUES (:age, :sex, :weight, :height, NOW())";

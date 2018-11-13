@@ -25,7 +25,7 @@ if (!empty($_POST['submitted']) ) {
     // Si aucune erreur
     if (count($error) == 0){
       $success = true;
-      updateProfileUserInfo();
+      updateProfileUserInfo($age, $sex, $weight, $height);
       // Redirection vers page profil
       header('Location: profil.php');
     }
@@ -35,51 +35,36 @@ if (!empty($_POST['submitted']) ) {
  include('inc/header.php'); ?>
 
  <div class="wrap">
-   <h2>Mon profil</h2>
-      <form class="profil" action="" method="post">
+   <div class="profil">
+     <h2>Mon profil</h2>
+        <form class="profil" action="" method="post">
 
-         <div class="age">
-           <label for="userage">Age</label><br>
-           <input type="number" name="userage" id="userage" value="" min="0" max="140" placeholder="ans"><br><br>
-         </div>
+             <label for="userage">Age</label><br>
+             <input type="number" name="age" class="userinfo" value="" min="0" max="140" placeholder="ans"><br><br>
 
-         <div class="weight">
-           <label for="userweight">Poids</label><br>
-           <input type="number" name="userweight" id="userweight" value="" min="0" max="300" placeholder="en Kg"><br><br>
-         </div>
+             <label for="userweight">Poids</label><br>
+             <input type="number" name="weight" class="userinfo" value="" min="0" max="300" placeholder="en Kg"><br><br>
 
-         <div class="height">
-           <label for="userheight">Taille</label><br>
-           <input type="number" name="userheight" id="userheight" value="" min="0" max="300" placeholder="en Cm"><br><br>
-         </div>
+             <label for="userheight">Taille</label><br>
+             <input type="number" name="height" class="userinfo" value="" min="0" max="300" placeholder="en Cm"><br><br>
 
-         <div class="sex">
-           <div class="radio">
-               <label>
-                   <input type="radio" value="" name="sexe">Homme
-               </label><br>
-           </div>
-           <div class="radio">
-               <label>
-                   <input type="radio" value="" name="sexe">Femme
-               </label><br>
-           </div>
-         </div>
+             <label for="usersex">Sexe</label><br>
+             <input type="radio" name="sex" class="userinfo" value="Homme">
+             <input type="radio" name="sex" class="userinfo" value="Femme">
 
-         <div class="">
-           <label for="enregistrer"></label>
-           <input type="submit" name="submitted" id="submit" value="Enregistrer">
-         </div>
+             <input type="submit" name="submitted" id="submit" value="Enregistrer">
 
-       </form>
 
-       <?php
-       if (!empty($user)) {
-         $body = '<p>Veuillez cliquer sur le lien ci-dessous</p>';
-         $body .= '<a href="passwordmodif.php?email='.urlencode($user['email']).'&token='.urlencode($user['token']).'">ici !</a>';
+         </form>
 
-         echo $body;
-       } ?>
+         <?php
+         if (!empty($user)) {
+           $body = '<p>Veuillez cliquer sur le lien ci-dessous</p>';
+           $body .= '<a href="passwordmodif.php?email='.urlencode($user['email']).'&token='.urlencode($user['token']).'">ici !</a>';
+
+           echo $body;
+         } ?>
+    </div>
 </div>
 
 
