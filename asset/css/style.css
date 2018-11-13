@@ -327,8 +327,6 @@ input#submit {
   padding: 10px 0;
 }
 
-
-
 @media screen and (max-width: 700px) {
     nav.firstnavbar {
         background: #2e6da4;
@@ -373,10 +371,7 @@ input#submit {
     .slicknav_menu {
         display:block;
     }
-
 }
-
-
 
      #footer .cordonnees {
 
@@ -442,7 +437,6 @@ footer .container-fluid {
         margin-right: 6%;
 }
 
-
 footer .list-unstyled img:hover  {
         background-color: white;
         border-radius: 5px;
@@ -459,16 +453,10 @@ footer {
     margin-left: 15px;
 }
 
-
-
-<<<<<<< HEAD
-=======
-
 @media (min-width: 768px ) {
     .col-md-3 {
         flex: 0 0 25%;
         max-width: 25%;
->>>>>>> 94c0d9cb570ee6ae595a6a87e4da1dcea4a8a6b6
     }
 
     .col-md-6 {
@@ -476,8 +464,10 @@ footer {
         max-width: 50%;
     }
 
+    .col-md-6 .mail a:hover {
+      font-weight: bold;
+    }
 
-<<<<<<< HEAD
 .col-md-3 .col-md-6 {
     position: relative;
     width: 100%;
@@ -494,8 +484,8 @@ footer {
 .text-uppercase {
     text-transform: uppercase;
 }
-=======
-    .col-md-3, .col-md-6 {
+
+    .col-md-3 .col-md-6 {
         position: relative;
         width: 100%;
         min-height: 1px;
@@ -507,4 +497,3 @@ footer {
         text-transform: uppercase;
     }
 }
->>>>>>> 94c0d9cb570ee6ae595a6a87e4da1dcea4a8a6b6

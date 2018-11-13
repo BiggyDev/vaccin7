@@ -27,11 +27,11 @@
             <ul class="list-unstyled">
               <li><a href="#">Mentions légales</a></li>
               <li><a href="FAQ.php">FAQ</a></li>
-<<<<<<< HEAD
+
               <li><a href="#haut">Retour en haut de la page</a></li>
-=======
+
               <li><a href="#">Plan du site</a></li>
->>>>>>> 94c0d9cb570ee6ae595a6a87e4da1dcea4a8a6b6
+
             </ul>
 
           </div>

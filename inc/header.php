@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="asset/slicknav/slicknav.css" />
     <link rel="stylesheet" href="asset/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" type="image/png" href="asset/img/flavicon.png" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo $title; ?></title>
