@@ -17,7 +17,7 @@
               </div>
               <div class="mail">
                 <i class="material-icons">email</i>
-                <span>vactualise@gmail.com</span>
+                <span><a href="mailto:vactualise@gmail.com">vactualise@gmail.com</a></span>
               </div>
           </div>
 
@@ -27,8 +27,13 @@
             <ul class="list-unstyled">
               <li><a href="#">Mentions légales</a></li>
               <li><a href="FAQ.php">FAQ</a></li>
+
+              <li><a href="#haut">Retour en haut de la page</a></li>
+
               <li><a href="#">Plan du site</a></li>
+
             </ul>
+
           </div>
 
 

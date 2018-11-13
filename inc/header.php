@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="asset/slicknav/slicknav.css" />
     <link rel="stylesheet" href="asset/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" type="image/png" href="asset/img/flavicon.png" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo $title; ?></title>
   </head>
   <body>
+    <a id="haut"></a>
 <header id="header">
     <nav class="firstnavbar">
         <h1><img class="logo" src="asset/img/logo_vactualise.svg" alt="Logo Vactualise" ></h1>
