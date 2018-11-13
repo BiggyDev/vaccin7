@@ -329,28 +329,20 @@ input#submit {
         padding: 5px 15px 7px 10px;
       }
 
-<<<<<<< HEAD
 footer{
         bottom: 0;
         padding: 20px 60px;
         background-color:#2e6da4;
         box-shadow: 0px 0px 18px #888888;
-=======
-footer
-{
-    bottom: 0;
-    padding: 20px 60px;
-    background-color:darkcyan;
-    box-shadow: 0px 0px 18px #888888;
->>>>>>> ac8156fb74ecb4831a702e36633d1f3c12376b42
 }
+
 
  footer h5{
         font-family: 'Amaranth', sans-serif;
         color: #fff;
  }
 
-<<<<<<< HEAD
+
  footer a {
         color: #fff;
  }
@@ -364,15 +356,6 @@ footer .container-fluid {
 footer .list-unstyled img:hover  {
         background-color: white;
         border-radius: 5px;
-=======
-footer a {
-    color: #fff;
- }
-footer .container-fluid {
-    width: auto;
-    margin-left: 6%;
-    margin-right: 6%;
->>>>>>> ac8156fb74ecb4831a702e36633d1f3c12376b42
 }
 
 footer {
