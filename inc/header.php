@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+    <link rel="stylesheet" href="asset/slicknav/slicknav.css" />
     <link rel="stylesheet" href="asset/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
@@ -21,7 +22,6 @@
                     <li><a href="vaccins.php">les vaccins</a></li>
                 </ul>
             </li>
-            <li><a href="#">Support</a></li>
 
             <?php if(!isLogged()) { ?>
                     <li><a href="inscription.php">Inscription</a></li>
