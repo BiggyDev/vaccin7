@@ -1,8 +1,8 @@
 @import 'reset.css';
 
-html {
+/* html {
   height: 100%;
-}
+} */
 
 body {
 
@@ -10,7 +10,7 @@ body {
    color: #000;
     /*background-color: aquamarine;*/
    opacity: 10%;
-   min-height: 100%;
+   /* min-height: 100%; */
    margin: 0;
    padding: 0;
    position: relative;
@@ -216,6 +216,20 @@ input#submit {
     margin: 20px;
 }
 
+.profil
+{
+  margin: 50px 0;
+}
+
+.profil h3
+{
+  text-align: center;
+  border: 2px solid #2E6DA4;
+  border-radius: 5px;
+  background-color: #2E6DA4;
+  padding: 10px 0;
+}
+
 
 
 @media (max-width: 700px) {
@@ -300,39 +314,56 @@ input#submit {
         padding: 5px 15px 7px 10px;
       }
 
-
-
-
-
-
-
-
-
-
+<<<<<<< HEAD
 footer{
-    bottom: 0;
-       padding: 20px 60px;
-        background-color:darkcyan;
+        bottom: 0;
+        padding: 20px 60px;
+        background-color:#2e6da4;
         box-shadow: 0px 0px 18px #888888;
+=======
+footer
+{
+    bottom: 0;
+    padding: 20px 60px;
+    background-color:darkcyan;
+    box-shadow: 0px 0px 18px #888888;
+>>>>>>> ac8156fb74ecb4831a702e36633d1f3c12376b42
 }
- footer h5{
 
-font-family: 'Amaranth', sans-serif;
-color: #fff;
+ footer h5{
+        font-family: 'Amaranth', sans-serif;
+        color: #fff;
  }
 
+<<<<<<< HEAD
  footer a {
+        color: #fff;
+ }
+footer .container-fluid {
+        width: auto;
+        margin-left: 6%;
+        margin-right: 6%;
+}
+
+
+footer .list-unstyled img:hover  {
+        background-color: white;
+        border-radius: 5px;
+=======
+footer a {
     color: #fff;
  }
 footer .container-fluid {
     width: auto;
-        margin-left: 6%;
+    margin-left: 6%;
     margin-right: 6%;
+>>>>>>> ac8156fb74ecb4831a702e36633d1f3c12376b42
 }
 
-footer{
+footer {
     color: #fff;
 }
+
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -345,13 +376,21 @@ footer{
 .col-md-3 {
     flex: 0 0 25%;
     max-width: 25%;
+
+
+@media(min-width: 768px ) {
+  .col-md-3 {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+  .col-md-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
 }
-.col-md-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-}}
-.col-md-3,
-.col-md-6{
+
+.col-md-3, .col-md-6 {
     position: relative;
     width: 100%;
     min-height: 1px;

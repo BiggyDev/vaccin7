@@ -3,9 +3,6 @@ include('inc/pdo.php');
 include('inc/functions.php');
 include('inc/requests.php');
 
-//Requête BDD affichage données utilisateur
-$user = showConnectedUserInfo($id);
-
 
 $title = 'Accueil';
 include('inc/header.php');?>

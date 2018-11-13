@@ -7,7 +7,7 @@
             <h5 class="text-uppercase">NOUS CONTACTER</h5>
               <div>
                 <i class="material-icons">room</i>
-                <span>24 Place Saint-Marc 7600 Rouen</span>
+                <span>24 Place Saint-Marc 76000 Rouen</span>
               </div>
 
               <div class="telephone">
@@ -17,7 +17,7 @@
               </div>
               <div class="mail">
                 <i class="material-icons">email</i>
-                <span>vactualize@gmail.com</span>
+                <span>vactualise@gmail.com</span>
               </div>
           </div>
 
@@ -25,7 +25,7 @@
           <div class="col-md-3 ">
             <h5 class="text-uppercase">Liens Utiles</h5>
             <ul class="list-unstyled">
-              <li><a href="#">Mention legale</a></li>
+              <li><a href="#">Mentions légales</a></li>
               <li><a href="#">FAQ</a></li>
               <li><a href="#">Plan du site</a></li>
             </ul>
@@ -33,11 +33,12 @@
 
 
           <div class="col-md-3 ">
-            <h5 class="text-uppercase">Reseaux Sociaux</h5>
+            <h5 class="text-uppercase">Réseaux Sociaux</h5>
 
             <ul class="list-unstyled">
-                <li><a target="_blank" href="https://fr-fr.facebook.com/"> <img src="asset" alt=""> </a></li>
-                <li><a href="#">Twitter</a></li>
+                <li><a target="_blank" href="https://fr-fr.facebook.com/"><img src="asset/img/facebookcarre.png" alt="facebook"></a></li>
+                <li><a target="_blank" href="https://twitter.com/?lang=fr"><img src="asset/img/twittercarre.png" alt="twitter"></a></li>
+
             </ul>
 
           </div>
