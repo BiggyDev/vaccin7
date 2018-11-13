@@ -97,15 +97,15 @@ function showConnectedUserInfo($id) {
 
 
 //Met à jour les données du profil de l'utilisateur
-function updateProfileUserInfo($age, $sex, $weight, $height) {
+function updateProfileUserInfo($user, $age, $weight, $height, $sex) {
   global $pdo;
-  $sql = "UPDATE yjlv_users SET (age,sex,weight,height,modified_at)
-          VALUES (:age, :sex, :weight, :height, NOW())";
-  $query = $pdo->prepare($sql);
-  $query->bindValue(':age',$age, PDO::PARAM_INT);
-  $query->bindValue(':sex',$sex, PDO::PARAM_STR);
-  $query->bindValue(':weight',$weight, PDO::PARAM_INT);
-  $query->bindValue(':height',$height, PDO::PARAM_INT);
-  $query->execute();
+  $sql = "UPDATE yjlv_users SET age = :age, weight = :weight , height = :height, sex = :sex, modified_at = NOW() WHERE id = :id";
+  $query = $pdo -> prepare($sql);
+  $query ->bindValue(':age',$age, PDO::PARAM_INT);
+  $query ->bindValue(':weight',$weight, PDO::PARAM_INT);
+  $query ->bindValue(':height',$height, PDO::PARAM_INT);
+  $query ->bindValue(':sex',$sex, PDO::PARAM_STR);
+  $query ->bindValue(':id',$user['id'], PDO::PARAM_INT);
+  $query ->execute();
 }
 //Fin fonction

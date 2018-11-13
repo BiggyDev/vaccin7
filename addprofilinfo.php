@@ -3,34 +3,43 @@
 <?php include('inc/requests.php'); ?>
 <?php $title = 'Mon compte';
 
-//initialise la variable contenant les messages d'erreurs à... rien
-$error = array();
-$success = false;
+if(isLogged()) {
+        $id = $_SESSION['yjlv_users']['id'];
+        //Requête BDD affichage données utilisateur
+        $user = showConnectedUserInfo($id);
+          if(!empty($user)) {
 
-//si le formulaire est soumis
-if (!empty($_POST['submitted']) ) {
-    // Protection faille XSS
-    $age       = trim(strip_tags($_POST['age']));
-    $sex       = trim(strip_tags($_POST['sex']));
-    $weight    = trim(strip_tags($_POST['weight']));
-    $height    = trim(strip_tags($_POST['height']));
+              $error = array();
+              $success = false;
 
-    //Vérification de la conformité des champs du formulaire
-    verificationField($error, $age, 'age', 1, 3);
-    verificationField($error, $sex, 'sex', 5, 5);
-    verificationField($error, $weight, 'weight', 1, 3);
-    verificationField($error, $height, 'height', 2, 3);
+              //si le formulaire est soumis
+              if (!empty($_POST['submitted']) ) {
+                  // Protection faille XSS
+                  $age       = trim(strip_tags($_POST['age']));
+                  $sex       = trim(strip_tags($_POST['sex']));
+                  $weight    = trim(strip_tags($_POST['weight']));
+                  $height    = trim(strip_tags($_POST['height']));
 
+                  //Vérification de la conformité des champs du formulaire
+                  verificationLenghtField($error, $age, 'age', 1, 3);
+                  verificationLenghtField($error, $sex, 'sex', 5, 5);
+                  verificationLenghtField($error, $weight, 'weight', 1, 3);
+                  verificationLenghtField($error, $height, 'height', 2, 3);
 
-    // Si aucune erreur
-    if (count($error) == 0){
-      $success = true;
-      updateProfileUserInfo($age, $sex, $weight, $height);
-      // Redirection vers page profil
-      header('Location: profil.php');
-    }
+                  // Si aucune erreur
+                  if (count($error) == 0){
+                    $success = true;
+                    updateProfileUserInfo($user, $age, $weight, $height, $sex);
+                    // Redirection vers page profil
+                    header('Location: profil.php');
+                  }
+              }
+          } else {
+            header('Location: 403.php');
+          }
+} else {
+header('Location: 403.php');
 }
-
 
  include('inc/header.php'); ?>
 
@@ -39,29 +48,27 @@ if (!empty($_POST['submitted']) ) {
      <h2>Mon profil</h2>
         <form class="profil" action="" method="post">
 
-             <label for="userage">Age</label><br>
+             <label for="userage">Age<span class="error"><?php if (!empty($error['age'])) { echo $error['age'];}?></span></label><br>
              <input type="number" name="age" class="userinfo" value="" min="0" max="140" placeholder="ans"><br><br>
 
-             <label for="userweight">Poids</label><br>
+             <label for="userweight">Poids<span class="error"><?php if (!empty($error['weight'])) { echo $error['weight'];}?></span></label><br>
              <input type="number" name="weight" class="userinfo" value="" min="0" max="300" placeholder="en Kg"><br><br>
 
-             <label for="userheight">Taille</label><br>
-             <input type="number" name="height" class="userinfo" value="" min="0" max="300" placeholder="en Cm"><br><br>
+             <label for="userheight">Taille<span class="error"><?php if (!empty($error['height'])) { echo $error['height'];}?></span></label><br>
+             <input type="number" name="height" class="userinfo" value="" min="0" max="250" placeholder="en Cm"><br><br>
 
-             <label for="usersex">Sexe</label><br>
-             <input type="radio" name="sex" class="userinfo" value="Homme">
-             <input type="radio" name="sex" class="userinfo" value="Femme">
+             <label for="usersex">Sexe
+             <span class="sex"><input type="radio" name="sex" value="Homme" checked="checked">Homme</span>
+             <span class="sex"><input type="radio" name="sex" value="Femme">Femme</span>
+             </label><br>
 
              <input type="submit" name="submitted" id="submit" value="Enregistrer">
-
 
          </form>
 
          <?php
          if (!empty($user)) {
-           $body = '<p>Veuillez cliquer sur le lien ci-dessous</p>';
-           $body .= '<a href="passwordmodif.php?email='.urlencode($user['email']).'&token='.urlencode($user['token']).'">ici !</a>';
-
+           $body = '<p>Modifiez votre mot de passe <a href="passwordmodif.php">ici !</a></p>';
            echo $body;
          } ?>
     </div>

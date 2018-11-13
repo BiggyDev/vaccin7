@@ -21,20 +21,61 @@ function transformdate($date){
 //Fin fonction
 
 
-// Vérifie si les champs sont remplis et de la bonne longueur
-function verificationField($error,$field, $textfield, $min, $max) {
+// Vérifie si les champs sont de la bonne longueur
+function verificationLenghtField($error,$field, $textfield, $min, $max) {
   if(!empty($field)){
       if(strlen($field) < $min ) {
           $error[$textfield] = 'Champ trop court. (Minimum ' . $min . ' caractères)';
       } elseif(strlen($field) > $max) {
           $error[$textfield] = 'Champ trop long. (Maximum ' . $max . ' caractères)';
-  } else {
-      $error[$textfield] = 'Veuillez renseigner ce champ';
-  }
-  }
+      }
  return $error;
+  }
 }
 // Fin fonction
+
+// Vérifie si les champs sont remplis et de la bonne longueur
+function verificationfullField($error,$field, $textfield, $min, $max) {
+  if(!empty($field)){
+      if(strlen($field) < $min ) {
+          $error[$textfield] = 'Champ trop court. (Minimum ' . $min . ' caractères)';
+      } elseif(strlen($field) > $max) {
+          $error[$textfield] = 'Champ trop long. (Maximum ' . $max . ' caractères)';
+      } else {
+        $error[$textfield] = 'Veuillez renseigner ce champ';
+      }
+ return $error;
+  }
+}
+// Fin fonction
+
+// Vérifie si l'ancien mot de passe de l'utilisateur est correct
+function verifyOldPassword($error, $user) {
+  if(!empty($password)){
+      if($oldpassword !== $user['password']) {
+          $error['oldpassword'] = 'Ancien mot de passe incorrect';
+      } else {
+        $error['oldpassword'] = 'Veuillez renseigner ce champ';
+      }
+ return $error;
+  }
+}
+// Fin fonction
+
+
+//Vérifie si les deux mots de passes renseignés sont identiques
+function verifySamePassword($error) {
+    if (!empty($password2)){
+        if($password2 !== $password) {
+          $error['password2'] = 'Les mots de passes renseignés ne correspondent pas';
+        }
+    } else {
+      $error['password2'] = 'Veuillez réécrire le mot de passe renseigné ci-dessus';
+    }
+  return $error;
+}
+//Fin fonction
+
 
 //Vérifie si l'utilisateur est connecté
 function isLogged () {
