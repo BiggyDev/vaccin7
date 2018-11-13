@@ -52,7 +52,8 @@ a {
 }
 
 #header {
-    height: 15em;
+    height: 12em;
+    box-shadow: 0 5px 5px #888888;
 }
 
 nav.firstnavbar {
