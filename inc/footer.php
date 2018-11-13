@@ -17,7 +17,7 @@
               </div>
               <div class="mail">
                 <i class="material-icons">email</i>
-                <span>vactualise@gmail.com</span>
+                <span><a href="mailto:vactualise@gmail.com">vactualise@gmail.com</a></span>
               </div>
           </div>
 
@@ -26,9 +26,14 @@
             <h5 class="text-uppercase">Liens Utiles</h5>
             <ul class="list-unstyled">
               <li><a href="#">Mentions légales</a></li>
-              <li><a href="#">FAQ</a></li>
+              <li><a href="FAQ.php">FAQ</a></li>
+
+              <li><a href="#haut">Retour en haut de la page</a></li>
+
               <li><a href="#">Plan du site</a></li>
+
             </ul>
+
           </div>
 
 
@@ -48,6 +53,14 @@
       </div>
 
 </footer>
-
+<script   src="https://code.jquery.com/jquery-1.6.2.min.js"
+          integrity="sha256-0W0HoDU0BfzslffvxQomIbx0Jfml6IlQeDlvsNxGDE8="
+          crossorigin="anonymous"></script>
+<script src="asset/slicknav/jquery.slicknav.min.js"></script>
+<script>
+    $(function(){
+        $('.menu').slicknav();
+    });
+</script>
 </body>
 </html>

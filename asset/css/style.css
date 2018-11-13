@@ -52,7 +52,8 @@ a {
 }
 
 #header {
-    height: 15em;
+    height: 12em;
+    box-shadow: 0 5px 5px #888888;
 }
 
 nav.firstnavbar {
@@ -60,7 +61,7 @@ nav.firstnavbar {
     padding: 60px;
     position: relative;
     z-index: 2;
-    height: 15em;
+    height: 12em;
 }
 
 nav.firstnavbar h1 img.logo{
@@ -114,6 +115,9 @@ nav.firstnavbar a:hover {
     background: #fff;
 }
 
+.slicknav_menu {
+    display:none;
+}
 
 div#content {
     min-height: 500px;
@@ -149,6 +153,8 @@ section.section2 {
     margin: auto;
 }
 
+/*Formulaire inscription*/
+
 form.inscription {
     margin: auto;
     text-transform: uppercase;
@@ -164,6 +170,8 @@ form.inscription {
 form.inscription .needed {
     font-size: 0.7em;
 }
+
+/*Formulaire connexion*/
 
 form.connexion {
     margin: auto;
@@ -225,7 +233,82 @@ input [input type="text"] {
     border-bottom: none;
 }
 
+/*FAQ*/
 
+.faq{
+    font-size: 42px;
+    border-bottom: 1px dotted #ccc;
+    padding: 24px;
+}
+
+.faq-content {
+    margin: 0 auto;
+}
+
+.faq-question {
+    padding: 20px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+.panel-title {
+    font-size: 24px;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 10px 10px 0 48px;
+    display: block;
+    cursor: pointer;
+}
+
+.panel-content {
+    font-size: 20px;
+    padding: 0px 14px;
+    margin: 0 40px;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
+    opacity: 0;
+    -webkit-transition: .4s ease;
+    -moz-transition: .4s ease;
+    -o-transition: .4s ease;
+    transition: .4s ease;
+}
+
+.panel:checked ~ .panel-content{
+    height: auto;
+    opacity: 1;
+    padding: 14px;
+}
+
+.plus {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 4px;
+    z-index: 5;
+    font-size: 42px;
+    line-height: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+}
+
+.panel:checked ~ .plus {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.panel {
+    display: none;
+}
 
 #footer .coordonnee {
     list-style:none;
@@ -251,9 +334,7 @@ input [input type="text"] {
   padding: 10px 0;
 }
 
-
-
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
     nav.firstnavbar {
         background: #2e6da4;
         padding: 60px;
@@ -290,9 +371,14 @@ input [input type="text"] {
         width: 30%;
     }
 
+    header {
+        display:none;
+    }
+
+    .slicknav_menu {
+        display:block;
+    }
 }
-
-
 
      #footer .cordonnees {
 
@@ -358,7 +444,6 @@ footer .container-fluid {
         margin-right: 6%;
 }
 
-
 footer .list-unstyled img:hover  {
         background-color: white;
         border-radius: 5px;
@@ -384,11 +469,14 @@ footer {
 .col-md-6 {
       flex: 0 0 50%;
       max-width: 50%;
+
     }
 
-}
+    .col-md-6 .mail a:hover {
+      font-weight: bold;
+    }
 
-.col-md-3, .col-md-6 {
+.col-md-3 .col-md-6 {
     position: relative;
     width: 100%;
     min-height: 1px;
@@ -396,6 +484,24 @@ footer {
     padding-left: 15px;
 }
 
+.col-md-3 a:hover {
+  font-weight: bold;
+}
+
+
 .text-uppercase {
     text-transform: uppercase;
+}
+
+    .col-md-3 .col-md-6 {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .text-uppercase {
+        text-transform: uppercase;
+    }
 }
