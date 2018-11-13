@@ -26,34 +26,50 @@ include('inc/header.php'); ?>
 
         <div class="connexionInfos">
             <div class="float-label">
-                   <input type="text" name="f-name" value="" id="userName" placeholder="Nom et Prénom ">
+                   <input type="text" name="f-name" value="" id="userName">Nom et Prénom
                    <p><?= $user['firstlastname']; ?></p><br>
             </div>
 
             <div class="float-label">
-                  <input type="text" name="f-name" value="" id="userMail" placeholder="E-mail ">
+                  <input type="text" name="f-name" value="" id="userMail">Adresse e-mail
                   <p><?= $user['email']; ?></p><br>
             </div>
         </div>
         <div class="ProfileInfos">
             <div class="float-label">
-                   <input type="text" name="f-name" value="" id="userAge" placeholder="Age">
-                   <p><?= $user['age']; ?></p><br>
+                   <input type="text" name="f-name" value="" id="userAge">Age
+                   <p><?php if(!empty($user['age'])) {
+                     echo $user['age'];
+                   } else {
+                     echo 'Non renseigné';
+                   } ?></p><br>
             </div>
 
             <div class="float-label">
-                   <input type="text" name="f-name" value="" id="userHeight" placeholder="Taille">
-                   <p><?= $user['height']; ?></p><br>
+                   <input type="text" name="f-name" value="" id="userHeight">Taille
+                   <p><?php if(!empty($user['height'])) {
+                     echo $user['height'];
+                   } else {
+                     echo 'Non renseigné';
+                   } ?></p><br>
             </div>
 
             <div class="float-label">
-                   <input type="text" name="f-name" value="" id="userWeigt" placeholder="Poids ">
-                   <p><?= $user['weight']; ?></p><br>
+                   <input type="text" name="f-name" value="" id="userWeigt">Poids
+                   <p><?php if(!empty($user['weight'])) {
+                     echo $user['weight'];
+                   } else {
+                     echo 'Non renseigné';
+                   } ?></p><br>
             </div>
 
             <div class="float-label">
-                   <input type="text" name="f-name" value="" id="userSex" placeholder="Sexe ">
-                   <p><?= $user['sex']; ?></p><br>
+                   <input type="text" name="f-name" value="" id="userSex">Sexe
+                   <p><?php if(!empty($user['sex'])) {
+                     echo $user['sex'];
+                   } else {
+                     echo 'Non renseigné';
+                   } ?></p><br>
             </div>
         </div>
 
