@@ -10,7 +10,6 @@ body {
    font: 400 16px/1.3 verdana, arial, sans-serif;
    color: #000;
     /*background-color: aquamarine;*/
-   background-image: url("../img/pattern.jpg");
    opacity: 10%;
    min-height: 100%;
    margin: 0;
