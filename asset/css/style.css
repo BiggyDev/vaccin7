@@ -375,11 +375,6 @@ footer {
     flex: 0 0 25%;
     max-width: 25%;
 
-
-@media(min-width: 768px ) {
-  .col-md-3 {
-      flex: 0 0 25%;
-      max-width: 25%;
     }
   .col-md-6 {
       flex: 0 0 50%;
@@ -388,13 +383,18 @@ footer {
 
 }
 
-.col-md-3, .col-md-6 {
+.col-md-3 .col-md-6 {
     position: relative;
     width: 100%;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
 }
+
+.col-md-3 a:hover {
+  font-weight: bold;
+}
+
 
 .text-uppercase {
     text-transform: uppercase;

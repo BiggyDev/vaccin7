@@ -10,6 +10,7 @@
     <title><?php echo $title; ?></title>
   </head>
   <body>
+    <a id="haut"></a>
 <header id="header">
     <nav class="firstnavbar">
         <h1><img class="logo" src="asset/img/logo_vactualise.svg" alt="Logo Vactualise" ></h1>
