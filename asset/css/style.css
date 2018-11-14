@@ -53,8 +53,7 @@ a {
 }
 
 #header {
-    height: 12em;
-    box-shadow: 0 5px 5px #888888;
+    height: 15em;
 }
 
 nav.firstnavbar {
@@ -185,7 +184,11 @@ input.loginsignup {
     font-family: 'Amaranth', sans-serif;
 }
 
+<<<<<<< HEAD
+input {
+=======
 input input[type="text"] {
+>>>>>>> 1d02b65387d78cc8c1315770f6d225b69fd1becd
     font-size: 18px;
     -webkit-appearance: none;
     display: block;
@@ -221,13 +224,7 @@ p#forgottenpassword a:hover{
   padding: 10px 0;
 }
 
-.sex
-{
-  text-align: center;
-  margin: 0 auto;
-}
-
-.profil input #submit {
+input#submit {
     text-transform: uppercase;
     font-size: 1em;
     width: 70%;
@@ -347,7 +344,6 @@ p#forgottenpassword a:hover{
         height: 21em;
     }
 
-
     nav.firstnavbar ul.menu {
         /*display: none;*/
         padding: 10px;
@@ -382,10 +378,14 @@ p#forgottenpassword a:hover{
     .slicknav_menu {
         display:block;
     }
+
+    .col-md-3 {
+        max-width: 100%;
+        margin-top: 10px;
+    }
 }
 
      #footer .cordonnees {
-
        margin-top: 20px;
        margin-bottom: 20px;
        margin-left: 20px;
@@ -464,23 +464,22 @@ footer {
     margin-left: 15px;
 }
 
+@media (min-width: 768px ) {
+    .col-md-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
 
-@media(min-width: 768px){
-.col-md-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
-}
-.col-md-6 {
-      flex: 0 0 50%;
-      max-width: 50%;
-
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 
     .col-md-6 .mail a:hover {
       font-weight: bold;
     }
 
-.col-md-3 .col-md-6 {
+    .col-md-3 .col-md-6 {
     position: relative;
     width: 100%;
     min-height: 1px;
@@ -488,24 +487,12 @@ footer {
     padding-left: 15px;
 }
 
-.col-md-3 a:hover {
-  font-weight: bold;
+    .col-md-3 a:hover {
+    font-weight: bold;
 }
-
 
 .text-uppercase {
     text-transform: uppercase;
 }
 
-    .col-md-3 .col-md-6 {
-        position: relative;
-        width: 100%;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-
-    .text-uppercase {
-        text-transform: uppercase;
-    }
 }
