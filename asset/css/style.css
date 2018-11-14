@@ -218,6 +218,8 @@ p#forgottenpassword a:hover{
 {
   border: 2px solid #2E6DA4;
   padding: 10px 0;
+  margin: 0 auto;
+  text-align: center;
 }
 
 input#submit {
@@ -323,6 +325,15 @@ input#submit {
 }
 
 .profil h3
+{
+  text-align: center;
+  border: 2px solid #2E6DA4;
+  border-radius: 5px;
+  background-color: #2E6DA4;
+  padding: 10px 0;
+}
+
+.vaccins h3
 {
   text-align: center;
   border: 2px solid #2E6DA4;

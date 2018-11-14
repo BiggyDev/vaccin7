@@ -43,7 +43,7 @@ function showAllVaccin(){
 function showVaccinInPagination($offset, $itemsPerPage){
   global $pdo;
   $sql = "SELECT * FROM yjlv_vaccins
-          ORDER BY name ASC
+          ORDER BY created_at ASC
           LIMIT $offset,$itemsPerPage";
   $stmt = $pdo->prepare($sql);
   $stmt->execute();
