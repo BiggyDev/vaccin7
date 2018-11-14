@@ -159,13 +159,14 @@ section.section2 {
     font-weight: bold;
     font-family: 'Amaranth', sans-serif;
     font-size: 1em;
-    text-align: left;
+    text-align: center;
     color: #185875;
 }
 
 .vaccins td {
     font-weight: normal;
     font-size: 1em;
+    text-align: center;
     font-family: 'Amaranth', sans-serif;
     -webkit-box-shadow: 0 2px 2px -2px #0E1119;
     -moz-box-shadow: 0 2px 2px -2px #0E1119;
@@ -199,6 +200,26 @@ section.section2 {
     color: green;
 }
 
+.vaccins table
+{
+  margin:50px auto;
+}
+
+.addvaccin form
+{
+  text-align: center;
+  margin:0 auto;
+}
+
+.addvaccin label
+{
+  padding: 10px 0;
+}
+
+#datevaccin
+{
+  margin: 20px 0;
+}
 
 /*Formulaire inscription*/
 
@@ -285,21 +306,46 @@ p#forgottenpassword a:hover {
   padding: 10px 0;
 }
 
-.userinfo{
+.float-label
+{
+  text-align: center;
+  margin: 20px auto;
+}
+
+.userinfo
+{
   border: 2px solid #2E6DA4;
   padding: 10px 0;
   margin: 0 auto;
   text-align: center;
 }
 
+.modifProfileInfos
+{
+  width: 20%;
+  height: 50px;
+  background:#254896;
+  border-radius: 45px;
+  border-color: #fff;
+  margin: 0 auto;
+}
+
+.modifProfileInfos p a
+{
+  text-align: center;
+  color: #fff;
+}
+
 input#submit {
     text-transform: uppercase;
     font-size: 1em;
-    width: 70%;
-    height: 60px;
-    background:#BF406B;
+    width: 20%;
+    height: 50px;
+    background:#254896;
     border-radius: 50px;
     border-bottom: none;
+    border-color: #254896;
+    margin: 0 auto 35px auto;
 }
 
 /*FAQ*/
@@ -391,6 +437,8 @@ input#submit {
   border-radius: 5px;
   background-color: #2E6DA4;
   padding: 10px 0;
+  width: 50%;
+  margin:0 auto;
 }
 
 .vaccins h3

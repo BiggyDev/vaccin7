@@ -15,7 +15,7 @@ function generateRandomString($length) {
 
 //Transforme la date au format français
 function transformdate($date){
-  $newdate = date("d/m/Y H:i", strtotime($date));
+  $newdate = date("d/m/Y", strtotime($date));
   return $newdate;
 }
 //Fin fonction
@@ -103,4 +103,3 @@ function isAdmin () {
     return false;
 }
 //Fin fonction
-
