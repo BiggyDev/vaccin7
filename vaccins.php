@@ -9,6 +9,7 @@ $vaccins = showAllVaccin();
 include('inc/header.php');?>
 
 <div class="wrap">
+  <div class="vaccins">
     <h2>Les vaccins</h2>
 
     <table class="vaccins">
@@ -30,7 +31,7 @@ include('inc/header.php');?>
 
         </tbody>
     </table>
-
+  </div>
 </div>
 
 <?php include('inc/footer.php');
