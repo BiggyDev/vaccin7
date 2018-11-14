@@ -18,13 +18,8 @@
     <nav class="firstnavbar">
         <h1><a href="index.php"><img class="logo" src="asset/img/logo_vactualise.svg" alt="Logo Vactualise" ></a></h1>
         <ul class="menu">
-            <li><a href="index.php">Accueil</a></li>
-            <li><a href="#" onclick="return false">Vaccination</a>
-                <ul class="submenu">
-                    <li><a href="calendriers.php">les calendriers vaccinaux</a></li>
-                    <li><a href="vaccins.php">les vaccins</a></li>
-                </ul>
-            </li>
+            <li><a href="vaccins.php">les vaccins</a></li>
+            <li><a href="calendriers.php">les calendriers vaccinaux</a></li>
 
             <?php if(!isLogged()) { ?>
                     <li><a href="inscription.php">Inscription</a></li>
