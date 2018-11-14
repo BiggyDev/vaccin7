@@ -34,8 +34,8 @@
             <h5 class="text-uppercase">Réseaux Sociaux</h5>
 
             <ul class="list-unstyled">
-                <li class="fb"><a target="_blank" href="https://fr-fr.facebook.com/"><img src="asset/img/facebookcarre.png" alt="facebook"></a></li>
-                <li class="twt"><a target="_blank" href="https://twitter.com/?lang=fr"><img src="asset/img/twittercarre.png" alt="twitter"></a></li>
+                <li class="fb"><a target="_blank" href="https://fr-fr.facebook.com/"><img src="asset/img/fbwhite.png" alt="facebook"></a></li>
+                <li class="twt"><a target="_blank" href="https://twitter.com/?lang=fr"><img src="asset/img/twtwhite.png" alt="twitter"></a></li>
 
             </ul>
 

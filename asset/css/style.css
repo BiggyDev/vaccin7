@@ -484,9 +484,10 @@ footer .container-fluid {
 }
 
 footer .list-unstyled img:hover  {
-        background-color: white;
+        background-color: blue;
         border-radius: 5px;
 }
+
 
 footer .material-icons {
         vertical-align: middle;
@@ -539,4 +540,8 @@ footer {
     text-transform: uppercase;
 }
 
+}
+
+.content object {
+  width: 50%;
 }
