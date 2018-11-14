@@ -180,8 +180,11 @@ include('inc/header.php');?>
             <div class="faq-question">
                 <input id="q14" type="checkbox" class="panel">
                 <div class="plus">+</div>
-                <label for="q14" class="panel-title">Je suis enceinte. Est-ce une contre-indication aux vaccinations ?</label>
-                <div class="panel-content">C'est une contre-indication à certaines vaccinations, notamment aux vaccins vivants.
+                <label for="q14" class="panel-title">Je suis asthmatique. Est-ce une contre-indication aux vaccinations ?</label>
+                <div class="panel-content">Non seulement l'asthme n'est pas une contre-indication aux vaccinations mais
+                    au contraire il s'agit d'une indication de certaines vaccinations en raison de la fragilité
+                    que cette maladie confère vis-à-vis de certaines infections respiratoires,
+                    notamment contre la grippe et le pneumocoque.
                 </div>
             </div>
         </div>

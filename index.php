@@ -8,11 +8,19 @@ $title = 'Accueil';
 include('inc/header.php');?>
     <section class="section1">
         <h2>Bienvenue sur <span id="gris">vact</span><span id="vert">ualise</span></h2>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Ab accusamus consequuntur, cumque deserunt excepturi ipsum non odio,
-            pariatur perferendis sapiente vitae voluptates.
-            Deleniti error ex facere fuga perspiciatis quisquam suscipit?</p>
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="http://lorempixel.com/400/200/" />
+                </li>
+                <li>
+                    <img src="http://lorempixel.com/400/200/sport/1" />
+                </li>
+                <li>
+                    <img src="http://lorempixel.com/400/200/sport/2" />
+                </li>
+            </ul>
+        </div>
     </section>
 
 
