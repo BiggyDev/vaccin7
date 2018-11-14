@@ -184,11 +184,7 @@ input.loginsignup {
     font-family: 'Amaranth', sans-serif;
 }
 
-<<<<<<< HEAD
-input {
-=======
 input input[type="text"] {
->>>>>>> 1d02b65387d78cc8c1315770f6d225b69fd1becd
     font-size: 18px;
     -webkit-appearance: none;
     display: block;
