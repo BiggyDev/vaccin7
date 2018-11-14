@@ -14,9 +14,7 @@ include('inc/header.php');?>
 <!--////global($pdo);-->
 <div class="wrap">
     <h2>Les vaccins</h2>
-    <div id="content">
 
-    </div>
 </div>
 
 <?php include('inc/footer.php');

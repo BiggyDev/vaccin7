@@ -168,16 +168,23 @@ include('inc/header.php');?>
                 <input id="q13" type="checkbox" class="panel">
                 <div class="plus">+</div>
                 <label for="q13" class="panel-title">De quoi se composent les vaccins ?</label>
-                <div class="panel-content">Les vaccins comportent des antigènes c'est-à-dire des éléments qui vont induire une réponse immunitaire capable de protéger l’individu contre l’infection naturelle ou d’en atténuer les conséquences. (bactéries ou virus vivants atténués, agent bactérien ou viral entier inactivé, fractions antigéniques ou sous-unités vaccinantes).
-                    Les autres composants sont les adjuvants (sels d’aluminium, adjuvant lipidique..) qui stimulent la réaction immunitaire induite par les vaccins, les conservateurs (thiomersal) qui évitent le risque infectieux principalement retrouvé dans les présentations multidoses, et des agents inactivants (formaldéhyde) pour l’inactivation et la détoxification des agents infectieux.
+                <div class="panel-content">Les vaccins comportent des antigènes c'est-à-dire des éléments qui vont induire
+                    une réponse immunitaire capable de protéger l’individu contre l’infection naturelle ou d’en atténuer les conséquences.
+                    (bactéries ou virus vivants atténués, agent bactérien ou viral entier inactivé, fractions antigéniques ou sous-unités vaccinantes).
+                    Les autres composants sont les adjuvants (sels d’aluminium, adjuvant lipidique..) qui stimulent la réaction immunitaire induite par les vaccins,
+                    les conservateurs (thiomersal) qui évitent le risque infectieux principalement retrouvé dans les présentations multidoses,
+                    et des agents inactivants (formaldéhyde) pour l’inactivation et la détoxification des agents infectieux.
                     Source : ANSM.
                 </div>
             </div>
             <div class="faq-question">
                 <input id="q14" type="checkbox" class="panel">
                 <div class="plus">+</div>
-                <label for="q14" class="panel-title">Je suis enceinte. Est-ce une contre-indication aux vaccinations ?</label>
-                <div class="panel-content">C'est une contre-indication à certaines vaccinations, notamment aux vaccins vivants.
+                <label for="q14" class="panel-title">Je suis asthmatique. Est-ce une contre-indication aux vaccinations ?</label>
+                <div class="panel-content">Non seulement l'asthme n'est pas une contre-indication aux vaccinations mais
+                    au contraire il s'agit d'une indication de certaines vaccinations en raison de la fragilité
+                    que cette maladie confère vis-à-vis de certaines infections respiratoires,
+                    notamment contre la grippe et le pneumocoque.
                 </div>
             </div>
         </div>

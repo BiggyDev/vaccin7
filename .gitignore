@@ -3,3 +3,4 @@ inc/pdo.php
 vendor/
 yjlv_p1_carnet.sql
 .DS_Store
+composer.phar
