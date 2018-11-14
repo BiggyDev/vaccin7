@@ -11,7 +11,7 @@ include('inc/header.php');?>
     <h2>Calendriers vaccinaux</h2>
 
           <section class="calendriers">
-              <p><a href="asset/pdf/calendrier_vaccinations.pdf" target="_blank">Calendrier des vaccinations et recommandations vaccinales 2018</a></p>
+              <p><a href="asset/pdf/calendrier_vaccinations.pdf" target="_blank"><img src="asset/img/calendrier_vaccinations.png" width=20% alt=""><br>Calendrier des vaccinations et recommandations vaccinales 2018</a></p>
               <p><a href="asset/pdf/calendrier_simplifie.pdf" target="_blank">Calendrier vaccinal simplifié 2018</a></p>
               <p><a href="asset/pdf/calendrier_enfants_ados.pdf" target="_blank">Calendrier vaccinal 2018 - enfants adolescents</a></p>
               <p><a href="asset/pdf/calendrier_adultes.pdf" target="_blank">Calendrier vaccinal 2018 - adultes </a></p>
