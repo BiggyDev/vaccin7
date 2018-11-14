@@ -8,18 +8,21 @@ $title = 'Accueil';
 include('inc/header.php');?>
     <section class="section1">
         <h2>Bienvenue sur <span id="gris">vact</span><span id="vert">ualise</span></h2>
+
+      <div class="wrap">
         <div class="flexslider">
             <ul class="slides">
                 <li>
-                    <img src="http://lorempixel.com/400/200/" />
+                    <img src="asset/img/grippe.jpg" />
                 </li>
                 <li>
-                    <img src="http://lorempixel.com/400/200/sport/1" />
+                    <img src="asset/img/assurance-maladie.jpg" />
                 </li>
                 <li>
-                    <img src="http://lorempixel.com/400/200/sport/2" />
+                    <img src="asset/img/oms.png" />
                 </li>
             </ul>
+        </div>
         </div>
     </section>
 
