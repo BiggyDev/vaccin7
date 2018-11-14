@@ -103,3 +103,4 @@ function isAdmin () {
     return false;
 }
 //Fin fonction
+
