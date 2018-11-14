@@ -15,16 +15,7 @@ body {
 }
 
 
-h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 0.8em;
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.2;
-    color: inherit;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-}
+
 
 .h5, h5 {
     font-size: 1.25rem;
@@ -51,25 +42,28 @@ a {
 }
 
 #header {
-    height: 15em;
+    height: 12em;
+    box-shadow: 0px 0px 18px #888888;
 }
 
 nav.firstnavbar {
     background: #2e6da4;
-    padding: 60px;
+    padding: 40px 60px;
     position: relative;
     z-index: 2;
     height: 12em;
 }
 
 nav.firstnavbar h1 img.logo{
-    width: 15%;
+    width: 18%;
     float: left;
+
 }
 
 ul.menu {
     text-align: center;
     float: right;
+    padding-top: 18px;
 }
 
 ul.menu li {
@@ -91,7 +85,7 @@ ul.menu li a {
 }
 
 nav.firstnavbar a:hover {
-    color: #C18055;
+    color: #3dd36a;
     background: #fff;
 }
 
@@ -108,6 +102,7 @@ h2 {
     width: 100%;
     padding: 10px 10px;
     font-family: 'Amaranth', sans-serif;
+    margin-bottom: 20px;
 
 }
 
@@ -116,7 +111,7 @@ h2 span#gris {
 }
 
 h2 span#vert {
-    color: green;
+    color: #3dd36a;
 }
 
 section.section2 {
@@ -238,6 +233,7 @@ form.inscription {
 }
 
 form.inscription .needed, form.connexion .needed {
+    color: white;
     font-size: 1.1em;
     font-family: 'Amaranth', sans-serif;
 }
@@ -259,6 +255,7 @@ form.connexion {
 }
 
 label {
+    color: white;
     margin: auto;
     display: block;
     width: 70%;
@@ -270,8 +267,8 @@ input.loginsignup {
     margin: auto;
     display: block;
     width: 70%;
-    border-radius: 30px;
-    height: 2em;
+    border-radius: 10px;
+    height: 1.7em;
     font-size: 1.5em;
     font-family: 'Amaranth', sans-serif;
 }
@@ -284,10 +281,10 @@ input [type="text"] {
     width: 300px;
     border: none;
     border-radius: 0;
-    border-bottom: 1px solid antiquewhite;
 }
 
 form.connexion p#forgottenpassword, form.connexion p#notsignup {
+    color: white;
     margin: auto;
     font-family: 'Amaranth', sans-serif;
     text-align: center;
@@ -337,11 +334,18 @@ p#forgottenpassword a:hover {
 }
 
 input#submit {
+    color: white;
     text-transform: uppercase;
     font-size: 1em;
+<<<<<<< HEAD
     width: 20%;
     height: 50px;
     background:#254896;
+=======
+    width: 70%;
+    height: 60px;
+    background:#3dd36a;
+>>>>>>> 9ddd0b3c6e2c9f5901e47595f3ec40e67d4f831b
     border-radius: 50px;
     border-bottom: none;
     border-color: #254896;
@@ -532,9 +536,10 @@ footer .container-fluid {
 }
 
 footer .list-unstyled img:hover  {
-        background-color: white;
+        background-color: blue;
         border-radius: 5px;
 }
+
 
 footer .material-icons {
         vertical-align: middle;
@@ -587,4 +592,8 @@ footer {
     text-transform: uppercase;
 }
 
+}
+
+.content object {
+  width: 50%;
 }
