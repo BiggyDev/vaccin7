@@ -46,10 +46,10 @@
       </div>
 
 </footer>
-<script   src="https://code.jquery.com/jquery-1.6.2.min.js"
-          integrity="sha256-0W0HoDU0BfzslffvxQomIbx0Jfml6IlQeDlvsNxGDE8="
-          crossorigin="anonymous"></script>
-<script src="asset/slicknav/jquery.slicknav.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script><script src="asset/slicknav/jquery.slicknav.min.js"></script>
 <script src="asset/flexslider/jquery.flexslider.js"></script>
 <script>
     $(function(){
