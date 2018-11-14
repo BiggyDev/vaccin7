@@ -57,9 +57,13 @@
           integrity="sha256-0W0HoDU0BfzslffvxQomIbx0Jfml6IlQeDlvsNxGDE8="
           crossorigin="anonymous"></script>
 <script src="asset/slicknav/jquery.slicknav.min.js"></script>
+<script src="asset/flexslider/jquery.flexslider.js"></script>
 <script>
     $(function(){
         $('.menu').slicknav();
+    });
+    $(window).load(function() {
+        $('.flexslider').flexslider();
     });
 </script>
 </body>
