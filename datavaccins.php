@@ -11,8 +11,8 @@ require('vendor/autoload.php');
 
 use JasonGrimes\Paginator;
 
-$totalItems = 200; //Nombre total d'articles
-$itemsPerPage = 25; // Nombre d'articles par page
+$totalItems = 20; //Nombre total d'articles
+$itemsPerPage = 10; // Nombre d'articles par page
 $currentPage = 1; // Page par défaut
 $offset = 0; // offset par défaut
 $urlPattern = '?page=(:num)';
@@ -66,17 +66,17 @@ $title = 'Vaccins'; ?>
                                     <tr class="odd gradeX">
                                         <td><?= $vaccin['id']; ?></td>
                                         <td><?= $vaccin['name']; ?></td>
-                                        <td><?= $vaccin['description,']; ?></td>
+                                        <td><?= $vaccin['description']; ?></td>
                                         <td class="center"><?= $vaccin['type_vaccin']; ?></td>
                                         <td class="center">
-                                          <?php $date = transformdate($user['created_at']);
+                                          <?php $date = transformdate($vaccin['created_at']);
                                                 echo $date; ?>
                                         </td>
                                     </tr>
                                   <?php } ?>
                                 </tbody>
                               </table>
-                              <?php echo $paginator; ?>
+                              <?= $paginator; ?>
                             </div>
                             <!-- /.table-responsive -->
                         </div>
