@@ -18,7 +18,7 @@
         <h1><img class="logo" src="asset/img/logo_vactualise.svg" alt="Logo Vactualise" ></h1>
         <ul class="menu">
             <li><a href="index.php">Accueil</a></li>
-            <li><a href="#">Vaccination</a>
+            <li><a href="#" onclick="return false">Vaccination</a>
                 <ul class="submenu">
                     <li><a href="calendriers.php">les calendriers vaccinaux</a></li>
                     <li><a href="vaccins.php">les vaccins</a></li>
