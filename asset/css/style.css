@@ -142,11 +142,11 @@ form.inscription {
     padding: 20px;
     background-color: #2e6da4;
     margin-top: 100px;
+    box-shadow: 5px 10px 5px  #888888;
 }
 
 form.inscription .needed, form.connexion .needed {
-    font-size: 1em;
-    padding-top: 10px;
+    font-size: 1.1em;
     font-family: 'Amaranth', sans-serif;
 }
 
@@ -163,6 +163,7 @@ form.connexion {
     padding: 20px;
     background-color: #2e6da4;
     margin-top: 100px;
+    box-shadow: 5px 10px 5px  #888888;
 }
 
 label {
@@ -194,12 +195,11 @@ input [type="text"] {
     border-bottom: 1px solid antiquewhite;
 }
 
-p#forgottenpassword, p#notsignup {
+form.connexion p#forgottenpassword, form.connexion p#notsignup {
     margin: auto;
+    font-family: 'Amaranth', sans-serif;
     text-align: center;
-    background-color: #2e6da4;
     padding: 10px;
-    max-width:50%;
 }
 
 p#forgottenpassword a:hover{

@@ -68,12 +68,13 @@ $title = 'Connexion'; ?>
 
         <input class="loginsignup" type="submit" name="submitted" id="submit" value="Connexion">
         <p><span class="needed">* = Champs obligatoires</span></p>
+        <p id="forgottenpassword"><a href="passwordforget.php">Mot de passe oublié ?</a></p>
+        <p id="notsignup"><span><em>Pas encore inscrit ? Cliquez <a href="inscription.php">ici </a>!</em></span></p>
       </form>
 
 
 
-      <p id="forgottenpassword"><a href="passwordforget.php">Mot de passe oublié ?</a></p>
-      <p id="notsignup"><span><em>Pas encore inscrit ? Cliquez <a href="inscription.php">ici </a>!</em></span></p>
+
     </div>
 
 <?php include('inc/footer.php');
