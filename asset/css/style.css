@@ -101,9 +101,6 @@ nav.firstnavbar a:hover {
     display:none;
 }
 
-
-
-
 h2 {
     color: black;
     font-size: 3em;
@@ -258,11 +255,11 @@ form.connexion p#forgottenpassword, form.connexion p#notsignup {
     padding: 10px;
 }
 
-p#forgottenpassword a:hover{
+p#forgottenpassword a:hover {
     color: white;
 }
-.profil label
-{
+
+.profil label{
   text-align: center;
   border: 2px solid #2E6DA4;
   border-radius: 5px;
@@ -270,10 +267,11 @@ p#forgottenpassword a:hover{
   padding: 10px 0;
 }
 
-.userinfo
-{
+.userinfo{
   border: 2px solid #2E6DA4;
   padding: 10px 0;
+  margin: 0 auto;
+  text-align: center;
 }
 
 input#submit {
@@ -363,22 +361,21 @@ input#submit {
     display: none;
 }
 
-#footer .coordonnee {
-    list-style:none;
-    text-align: center;
-    color: red;
-}
-
-.contact {
-    margin: 20px;
-}
-
 .profil
 {
   margin: 50px 0;
 }
 
 .profil h3
+{
+  text-align: center;
+  border: 2px solid #2E6DA4;
+  border-radius: 5px;
+  background-color: #2E6DA4;
+  padding: 10px 0;
+}
+
+.vaccins h3
 {
   text-align: center;
   border: 2px solid #2E6DA4;
@@ -433,67 +430,39 @@ input#submit {
     }
 }
 
-     #footer .cordonnees {
-       margin-top: 20px;
-       margin-bottom: 20px;
-       margin-left: 20px;
-      }
-
-      #footer .cordonnees .mail {
-        color: blue;
-      }
-
-      #footer .liens-utiles a{
-         text-decoration: none;
-         margin-right: 10px;
-      }
-
-      #footer .liens-utiles li {
-        display: inline;
-      }
-
-      #footer .liens-utiles ul {
-        margin-left: 20px;
-      }
-
-      .float-label input {
-        -webkit-appearance: none;
-        outline: none;
-        border: none;
-        margin: 0 auto;
-        width: 100%;
-        display: block;
-        -moz-border-radius: 0;
-        border-radius: 0;
-        font-family: 'Lato', sans-serif;
-        font-size: 18px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.7);
-        background: transparent;
-        color: #757575;
-        padding: 5px 15px 7px 10px;
-      }
-
-footer{
+footer {
         bottom: 0;
         padding: 20px 60px;
         background-color:#2e6da4;
         box-shadow: 0px 0px 18px #888888;
 }
 
-
- footer h5{
+ footer h5 {
         font-family: 'Amaranth', sans-serif;
         color: #fff;
- }
-
+        text-transform: uppercase;
+}
 
  footer a {
         color: #fff;
+        display:inline-block;
+        padding-bottom: 3px;
  }
+
+footer .fb a {
+        float: left;
+}
+
+footer .twt a {
+        padding-left: 10px;
+}
+
 footer .container-fluid {
         width: auto;
         margin-left: 6%;
         margin-right: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
 }
 
 footer .list-unstyled img:hover  {
@@ -501,9 +470,16 @@ footer .list-unstyled img:hover  {
         border-radius: 5px;
 }
 
-footer {
-    color: #fff;
+footer .material-icons {
+        vertical-align: middle;
+      l ine-height: 1.5;
 }
+
+
+footer {
+      color: #fff;
+}
+
 
 .row{
     display: flex;
@@ -516,11 +492,13 @@ footer {
     .col-md-3 {
         flex: 0 0 25%;
         max-width: 25%;
+
     }
 
     .col-md-6 {
         flex: 0 0 50%;
         max-width: 50%;
+        padding-top: 5px;
     }
 
     .col-md-6 .mail a:hover {
