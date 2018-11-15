@@ -46,6 +46,7 @@
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script><script src="asset/slicknav/jquery.slicknav.min.js"></script>
 <script src="asset/flexslider/jquery.flexslider.js"></script>
+<script src="asset/js/fittext.js"></script>
 <script>
     $(function(){
         $('.menu').slicknav();
@@ -53,7 +54,7 @@
     $(window).load(function() {
         $('.flexslider').flexslider();
     });
+    window.fitText( document.getElementById("header"), 8);
 </script>
-
 </body>
 </html>

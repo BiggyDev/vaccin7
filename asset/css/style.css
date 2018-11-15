@@ -72,7 +72,6 @@ nav.firstnavbar h1 img.logo{
 ul.menu {
     text-align: center;
     float: right;
-    padding-top: 18px;
 }
 
 ul.menu li {
@@ -124,6 +123,9 @@ h2 span#vert {
 }
 
 /* index  */
+
+
+
 
 section.section2 {
     width: 100%;
@@ -303,6 +305,10 @@ label {
     width: 70%;
     font-family: 'Amaranth', sans-serif;
     font-size: 1.2em;
+}
+
+input {
+    border: none;
 }
 
 input.loginsignup {
@@ -592,7 +598,6 @@ input#submit {
 }
 
 #ourteam > hr {
-    /*border: none;*/
     border: 1px solid #fff;
     width: 80%;
 }
@@ -702,7 +707,8 @@ input#submit {
     }
 
     h2 {
-        width: 30%;
+        font-size: 1.5em;
+        width: 100%;
     }
 
     header {
@@ -713,10 +719,28 @@ input#submit {
         display:block;
     }
 
+    form.inscription, form.connexion {
+        width: 100%;
+        max-width: 80%;
+        height: 120px;
+    }
+
+    input.loginsignup {
+        height: 1.4em;
+    }
+
     .vaccins td:nth-child(4),
     .vaccins th:nth-child(4) {
         display: none;
     }
+
+    .calendriers p a img {
+        height: 80px;
+    }
+    .calendriers p a {
+        font-size: 0.7em;
+    }
+
 }
 
 /*footer  */
