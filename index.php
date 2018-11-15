@@ -34,17 +34,18 @@ include('inc/header.php');?>
             <section class="section2">
 
               <div class="actu">
+                <h5>Informations</h5>
+                <img src="asset/img/Vaccins.jpg" alt="chu"></a>
+              </div>
 
-                <h5>Information</h5>
-                <img src="asset/img/chu.png" alt="chu"></a>
-
+              <div class="twitteractu">
+                <a class="twitter-timeline" data-width="400" data-height="400"  data-link-color="#2E6DA4" href="https://twitter.com/vactualise?ref_src=twsrc%5Etfw">Tweets by vactualise</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
               </div>
 
 
-
               <div class="presentation">
-                <h5>Recommandé par</h5>
-
+                <h5>Recommandé Par</h5>
                   <ul>
                     <li class="chu">
                       <a href="https://www.chu-rouen.fr/centre-de-vaccinations-internationales-sante-voyages/" target="_blank" >
@@ -58,32 +59,9 @@ include('inc/header.php');?>
                     <li class="ars">
                       <a href="https://www.normandie.ars.sante.fr/" target="_blank"> <img src="asset/img/ars.jpg" alt="AgenceRegionaleSante"></a></li>
                   </ul>
-
-
-                <!-- <p>Pourquoi le carnet de vaccination électronique ?</p>
-
-              <p>Pourquoi le carnet de vaccination électronique ?</p>
-                <ul>
-                    <li>Simple, pratique et gratuit</li>
-                    <li>Centralisez les vaccins de toute la famille</li>
-                    <li>Confidentiel et sécurisé</li>
-
-                    <li>Independant des firmes Pharmaceutiques</li>
-                </ul>
-
-                <object type="" data="https://www.santemagazine.fr/actualites">
-
-                </object>
-<!--                <a href="http://www.vaccinesafetynet.org/#gsc.tab=0" target="_blank">-->
-<!--                    <img src="asset/img/vaccine_safety_net.png" alt="Vaccine Safety Net Member">-->
-<!--                </a>-->
                 </div>
 
-                <div class="twitteractu">
-                  <a class="twitter-timeline" data-width="400" data-height="600"  data-link-color="#2E6DA4" href="https://twitter.com/vactualise?ref_src=twsrc%5Etfw">Tweets by vactualise</a>
-                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-            </section>
+
 
             <div id='ourteam'>
                 <h3>Notre Equipe </h3>

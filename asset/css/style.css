@@ -123,6 +123,10 @@ h2 span#vert {
 }
 
 /* index  */
+.section1 {
+  height: 800px;
+}
+
 
 section.section2 {
     width: 100%;
@@ -142,23 +146,53 @@ section.section2 {
   margin-bottom: 20px;
 }
 
-.section2 .presentation {
-  width: 50%;
-  float: left;
+.section2 h5 {
+  color: #2e6da4;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 50px;
+  font-family: 'Amaranth', sans-serif;
+  margin-top: 30px;
 }
 
-.section2 .presentation li {
-  width: 50%;
-  float: left;
-  padding-left: 10px;
+.section2 .presentation {
+  width: 100%;
+  text-align: center;
 }
+
+.section2 .presentation ul {
+  padding-bottom: 200px;
+
+}
+
+.section2 .presentation li a img {
+  float: left;
+  padding-left: 20px;
+  /* padding-left:160px; */
+  /* margin: auto; */
+
+}
+
+
 
 .section2 .twitteractu {
   display: inline-block;
   margin-bottom: 20%;
   padding: 10px 70px 10px 70px
-  background-color: blue;
   border: solid;
+  padding-top: 110px;
+}
+
+.section2 .actu {
+width: 60%;
+padding-bottom: 80px;
+float:left;
+
+}
+
+.section2 .actu img{
+  margin-bottom: 40px;
+  overflow: hidden;
 }
 
 /*Page les calendriers*/
@@ -586,7 +620,6 @@ input#submit {
 #ourteam {
     width: auto;
     height: auto;
-    padding-top: 200px;
     -webkit-perspective: 800px;
     perspective: 800px;
     text-align: center;
@@ -814,8 +847,4 @@ footer {
     text-transform: uppercase;
 }
 
-}
-
-.content object {
-  width: 50%;
 }
