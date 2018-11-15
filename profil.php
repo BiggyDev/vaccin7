@@ -25,13 +25,14 @@
               $id_vaccin     = trim(strip_tags($_POST['choosevaccins']));
               $datevaccin    = trim(strip_tags($_POST['datevaccin']));
 
-              $sql ="INSERT INTO yjlv_pivot (id_user, id_vaccin, datevaccin, created_at) VALUES ($id, $id_vaccin, $datevaccin, NOW())";
+
+
+              $sql ="INSERT INTO yjlv_pivot (id_user, id_vaccin, datevaccin, created_at) VALUES ($id, :id_vaccin, :datevaccin, NOW())";
               $query = $pdo -> prepare($sql);
               $query -> bindValue(':id_vaccin', $id_vaccin, PDO::PARAM_INT);
               $query -> bindValue(':datevaccin', $datevaccin);
-              $pivot = $query -> execute();
-              // header('Location: profil.php');
-              // die('404');
+              $query -> execute();
+              header('Location: profil.php');
             }
           } else {
             header('Location: 403.php');
@@ -64,7 +65,7 @@ include('inc/header.php'); ?>
             <h3>Vos informations personnelles</h3>
             <div class="float-label">
                    <p>Votre âge : <?php if(!empty($user['age'])) {
-                     echo $user['age'];
+                     echo $user['age'] . ' ans';
                    } else {
                      echo 'Non renseigné';
                    } ?></p><br>
@@ -72,7 +73,7 @@ include('inc/header.php'); ?>
 
             <div class="float-label">
                    <p>Votre taille : <?php if(!empty($user['height'])) {
-                     echo $user['height'];
+                     echo $user['height']. ' cm';
                    } else {
                      echo 'Non renseigné';
                    } ?></p><br>
@@ -80,7 +81,7 @@ include('inc/header.php'); ?>
 
             <div class="float-label">
                    <p>Votre poids : <?php if(!empty($user['weight'])) {
-                     echo $user['weight'];
+                     echo $user['weight'] . ' kg';
                    } else {
                      echo 'Non renseigné';
                    } ?></p><br>
@@ -117,25 +118,29 @@ include('inc/header.php'); ?>
           <td><?= $uservaccin['vaccin_name']; ?></td>
           <td><?= $uservaccin['vaccin_description']; ?></td>
           <td><?= $uservaccin['ptv']; ?></td>
-          <td><?= $uservaccin['pdv']; ?></td>
+          <td><?php $date = transformdate($uservaccin['pdv']);
+                echo $date; ?></td>
         </tbody>
         <?php  } ?>
       </table>
 
       <div class="addvaccin">
+        <h3>Ajouter un vaccin</h3>
         <form class="" action="" method="post">
 
-          <label for="">Nom du vaccin :</label>
-          <select class="chooseVaccins" name="choosevaccins">
+          <label for="">Nom du vaccin :</label><br>
+          <div class="select">
+            <select class="chooseVaccins" name="choosevaccins">
             <?php foreach($vaccins as $vaccin) { ?>
                   <option value="<?= $vaccin['id']; ?>"><?= $vaccin['name'] . ' - ' . $vaccin['description']; ?></option>
             <?php  } ?>
-          </select><br><br>
+            </select>
+          </div><br><br>
 
           <label for="">Date de la vaccination :</label>
-          <input type="date" name="datevaccin" value="" placeholder="jj/mm/aaaa">
+          <input type="date" id="datevaccin" name="datevaccin" value="" placeholder="jj/mm/aaaa"><br><br>
 
-          <input type="submit" name="submitted" value="Ajouter">
+          <input type="submit" id="submit" name="submitted" value="Ajouter">
 
         </form>
       </div>
