@@ -3,49 +3,58 @@
 <?php include('inc/requests.php'); ?>
 <?php
 
+if(isLogged()) {
+        $id = $_SESSION['yjlv_users']['id'];
+        //Requête BDD affichage données utilisateur
+        $user = showConnectedUserInfo($id);
+
 $error = array();
 
-if(!empty($user['email']) && !empty($user['token'])) {
-  $email = $user['email'];
-  $token = $user['token'];
-  $sql = "SELECT id FROM yjlv_users WHERE email = :email AND token = :token";
-  $query = $pdo -> prepare($sql);
-  $query -> bindValue(':email', $email, PDO::PARAM_STR);
-  $query -> bindValue(':token', $token, PDO::PARAM_STR);
-  $query -> execute();
-  $user = $query -> fetch();
 
-if (!empty($user)) {
-    if (!empty($_POST['submitted']) ) {
-        // Protection faille XSS
-        $oldpassword    = trim(strip_tags($_POST['oldpassword']));
-        $password       = trim(strip_tags($_POST['password']));
-        $password2      = trim(strip_tags($_POST['password2']));
+    if(!empty($user['email']) && !empty($user['token'])) {
+      $email = $user['email'];
+      $token = $user['token'];
+      $sql = "SELECT id FROM yjlv_users WHERE email = :email AND token = :token";
+      $query = $pdo -> prepare($sql);
+      $query -> bindValue(':email', $email, PDO::PARAM_STR);
+      $query -> bindValue(':token', $token, PDO::PARAM_STR);
+      $query -> execute();
+      $user = $query -> fetch();
 
-        //Vérification des champs du formulaire
-        verifyOldPassword($error, $user);
-        verificationfullField($error, $password, 'password', 6, 255);
-        verifySamePassword($error);
 
-        //Si aucune erreur
-        if (count($error) == 0) {
-          $hash = password_hash($password, PASSWORD_DEFAULT);
-          $token = generateRandomString(120);
-          $sql = "UPDATE yjlv_users SET password = :password, token = :token WHERE id = :id";
-          $query = $pdo -> prepare($sql);
-          $query -> bindValue(':password', $hash, PDO::PARAM_STR);
-          $query -> bindValue(':token', $token, PDO::PARAM_STR);
-          $query -> bindValue(':id', $user['id'], PDO::PARAM_INT);
-          $query -> execute();
-          // header('Location: connexion.php');
-          // die;
-        }
-      }
+        if (!empty($user)) {
+          if (!empty($_POST['submitted']) ) {
+              // Protection faille XSS
+              $oldpassword    = trim(strip_tags($_POST['oldpassword']));
+              $password       = trim(strip_tags($_POST['password']));
+              $password2      = trim(strip_tags($_POST['password2']));
+
+              //Vérification des champs du formulaire
+              verifyOldPassword($error, $user);
+              verificationfullField($error, $password, 'password', 6, 255);
+              verifySamePassword($error);
+
+              //Si aucune erreur
+              if (count($error) == 0) {
+                $hash = password_hash($password, PASSWORD_DEFAULT);
+                $token = generateRandomString(120);
+                $sql = "UPDATE yjlv_users SET password = :password, token = :token WHERE id = :id";
+                $query = $pdo -> prepare($sql);
+                $query -> bindValue(':password', $hash, PDO::PARAM_STR);
+                $query -> bindValue(':token', $token, PDO::PARAM_STR);
+                $query -> bindValue(':id', $user['id'], PDO::PARAM_INT);
+                $query -> execute();
+                header('Location: deconnexion.php');
+              }
+            }
+          } else {
+            die('404 1');
+          }
     } else {
-      die('404 1');
+      die('404 2');
     }
 } else {
-  die('404 2');
+  die('404 3');
 }
 
 $title = 'Changement de mot de passe'?>
@@ -56,15 +65,15 @@ $title = 'Changement de mot de passe'?>
   <form class="passwordmodif" action="" method="post">
 
       <label for="">Votre ancien mot de passe : </label><br>
-      <input type="password" name="oldpassword" id="oldpassword" value=""><br><br>
+      <input type="password" name="oldpassword" value=""><br><br>
 
       <label for="">Votre nouveau mot de passe : </label><br>
-      <input type="password" name="password" id="password" value=""><br><br>
+      <input type="password" name="password" value=""><br><br>
 
       <label for="">Confirmez votre nouveau mot de passe : </label><br>
-      <input type="password" name="password2" id="password2" value=""><br><br>
+      <input type="password" name="password2" value=""><br><br>
 
-      <input type="submit" name="submitted" value="Modifier">
+      <input type="submit" name="submitted" id="submit" value="Modifier">
 
   </form>
 

@@ -7,8 +7,8 @@ if(isLogged()) {
         $id = $_SESSION['yjlv_users']['id'];
         //Requête BDD affichage données utilisateur
         $user = showConnectedUserInfo($id);
-          if(!empty($user)) {
 
+          if(!empty($user)) {
               $error = array();
               $success = false;
 

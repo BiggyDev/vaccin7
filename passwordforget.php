@@ -34,6 +34,8 @@ if (!empty($_POST['submitted'])) {
 }
 
 include('inc/header.php'); ?>
+
+
 <div class="wrap">
   <form class="passwordforget" action="" method="post">
 
