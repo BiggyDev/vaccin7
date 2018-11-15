@@ -15,13 +15,13 @@ include('inc/header.php');?>
             <ul class="slides">
 
               <li>
-                    <img src="asset/img/grippe.jpg" />
+                    <img src="asset/img/slider1.svg" />
                 </li>
                 <li>
-                    <img src="asset/img/assurance-maladie.jpg" />
+                    <img src="asset/img/slider2.svg" />
                 </li>
                 <li>
-                    <img src="asset/img/oms.png" />
+                    <img src="asset/img/slider3.svg" />
                 </li>
             </ul>
         </div>
@@ -32,10 +32,25 @@ include('inc/header.php');?>
     <div class="wrap">
         <div id="content">
             <section class="section2">
+
+              <div class="actu">
+
+                <h5>Information</h5>
+                <img src="asset/img/chu.png" alt="chu"></a>
+
+              </div>
+
+
+
               <div class="presentation">
                 <h5>Recommandé par</h5>
-                  <ul>
+<<<<<<< HEAD
 
+                  <ul>
+=======
+>>>>>>> c6d61ed9d4b9bf71f5015c2e0428a6a33f063050
+
+                  <ul>
                     <li class="chu">
                       <a href="https://www.chu-rouen.fr/centre-de-vaccinations-internationales-sante-voyages/" target="_blank" >
                       <img src="asset/img/chu.png" alt="chu"></a>
@@ -50,23 +65,10 @@ include('inc/header.php');?>
                   </ul>
 
 
-                <!-- <p>Pourquoi le carnet de vaccination électronique ?</p>
-
-              <p>Pourquoi le carnet de vaccination électronique ?</p>
-                <ul>
-                    <li>Simple, pratique et gratuit</li>
-                    <li>Centralisez les vaccins de toute la famille</li>
-                    <li>Confidentiel et sécurisé</li>
-
-                    <li>Independant des firmes Pharmaceutiques</li>
-                </ul>
-
                 <object type="" data="https://www.santemagazine.fr/actualites">
 
                 </object>
-<!--                <a href="http://www.vaccinesafetynet.org/#gsc.tab=0" target="_blank">-->
-<!--                    <img src="asset/img/vaccine_safety_net.png" alt="Vaccine Safety Net Member">-->
-<!--                </a>-->
+
                 </div>
 
                 <div class="twitteractu">
