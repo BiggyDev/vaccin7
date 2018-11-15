@@ -7,7 +7,6 @@ include('inc/requests.php');
 $title = 'Accueil';
 include('inc/header.php');?>
     <section class="section1">
-        <h2>Bienvenue sur <span id="gris">vact</span><span id="vert">ualise</span></h2>
         <h3>Votre carnet de vaccination en ligne</h3>
 
       <div class="wrap">
@@ -44,11 +43,6 @@ include('inc/header.php');?>
 
               <div class="presentation">
                 <h5>Recommandé par</h5>
-<<<<<<< HEAD
-
-                  <ul>
-=======
->>>>>>> c6d61ed9d4b9bf71f5015c2e0428a6a33f063050
 
                   <ul>
                     <li class="chu">
