@@ -7,6 +7,7 @@ include('inc/requests.php');
 $title = 'Accueil';
 include('inc/header.php');?>
     <section class="section1">
+
         <h2>Votre carnet de vaccination en ligne</h2>
 
       <div class="wrap">
