@@ -187,7 +187,7 @@ section.section2 {
     background-color: #c7ddef;
 }
 .vaccins th {
-    t
+
 }
 
 .vaccins td:first-child {
@@ -452,10 +452,7 @@ input#submit {
     box-sizing: border-box;
     font-family: 'Muli', sans-serif;
 }
-// body {
-   //     background: url('http://www.platehelp.nl/media/W1siZiIsIjIwMTUvMTAvMjcvMTBfNTZfMjBfNTU3X0lNR18xOTAxXzEuanBnIl1d/IMG_1901-1.jpg');
-   //     background-size: cover;
-   // }
+
 #ourteam {
     width: auto;
     height: auto;
