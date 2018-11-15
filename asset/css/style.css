@@ -1,8 +1,8 @@
 @import 'reset.css';
 
-/* html {
+html {
   height: 100%;
-} */
+}
 
 body {
 
@@ -12,11 +12,19 @@ body {
    margin: 0;
    padding: 0;
    position: relative;
-   background-color: 	#ddd;
+   background-color: #ddd;
 }
 
-.h5, h5
-{
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.8em;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+.h5, h5 {
     font-size: 1.25rem;
 }
 
@@ -39,7 +47,6 @@ a {
     width: 100%;
     margin: 0 auto;
     min-height: 1000px;
-    background-color: white;
 }
 
 #header {
@@ -75,7 +82,7 @@ ul.menu li a {
     text-decoration: none;
     display: block;
     padding: 5px 10px;
-    /*margin: 0 10px;*/
+    margin: 0 10px;
     color: #eee;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
@@ -86,7 +93,7 @@ ul.menu li a {
 }
 
 nav.firstnavbar a:hover {
-    color: #3dd36a;
+    color: #65C05D;
     background: #fff;
 }
 
@@ -94,15 +101,6 @@ nav.firstnavbar a:hover {
 {
     display:none;
 }
-
-
-h2 {
-    color: black;
-
-h2
-{
-    color: #2e6da4;
-
 
 h2
 {
@@ -114,7 +112,6 @@ h2
     width: 100%;
     padding: 10px 10px;
     font-family: 'Amaranth', sans-serif;
-    margin-bottom: 20px;
 }
 
 h2 span#gris {
@@ -125,9 +122,43 @@ h2 span#vert {
     color: #3dd36a;
 }
 
+/* index  */
+
 section.section2 {
     width: 100%;
     margin: auto;
+}
+
+.section1 h3
+{
+  color: #2e6da4;
+  font-size: 3em;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 10px 10px;
+  font-family: 'Amaranth', sans-serif;
+  margin-bottom: 20px;
+}
+
+.section2 .presentation {
+  width: 50%;
+  float: left;
+}
+
+.section2 .presentation li {
+  width: 50%;
+  float: left;
+  padding-left: 10px;
+}
+
+.section2 .twitteractu {
+  display: inline-block;
+  margin-bottom: 20%;
+  padding: 10px 70px 10px 70px
+  background-color: blue;
+  border: solid;
 }
 
 /*Page les calendriers*/
@@ -160,6 +191,7 @@ section.section2 {
     display: table;
     box-shadow: 0 4px 4px -4px #0E1119;;
 }
+
 
 .vaccins th {
     font-weight: bold;
@@ -196,7 +228,7 @@ section.section2 {
     background-color: #c7ddef;
 }
 .vaccins th {
-
+  background-color: #2E6DA4;
 }
 
 .vaccins td:first-child {
@@ -217,6 +249,7 @@ section.section2 {
 .addvaccin label
 {
   padding: 10px 0;
+  color: #000;
 }
 
 #datevaccin
@@ -236,7 +269,7 @@ form.inscription {
     position:relative;
     padding: 20px;
     background-color: #2e6da4;
-    margin-top: 100px;
+    color: #fff;
     box-shadow: 5px 10px 5px  #888888;
 }
 
@@ -258,7 +291,7 @@ form.connexion {
     position:relative;
     padding: 20px;
     background-color: #2e6da4;
-    margin-top: 100px;
+    color: #fff;
     box-shadow: 5px 10px 5px  #888888;
 }
 
@@ -291,24 +324,49 @@ input [type="text"] {
     border-radius: 0;
 }
 
-form.connexion p#forgottenpassword, form.connexion p#notsignup {
-    color: white;
-    margin: auto;
-    font-family: 'Amaranth', sans-serif;
-    text-align: center;
-    padding: 10px;
+form.connexion p#forgottenpassword
+{
+  margin: auto;
+  font-family: 'Amaranth', sans-serif;
+  text-align: center;
+  padding: 10px;
 }
 
-p#forgottenpassword a:hover {
-    color: white;
+form.connexion p#forgottenpassword a {
+    color: #fff;
 }
 
-.profil label{
+form.connexion p#notsignup
+{
+  margin: auto;
+  font-family: 'Amaranth', sans-serif;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+}
+
+form.connexion p#notsignup a
+{
+  color: #3DD36A;
+}
+
+form.connexion p#notsignup a:hover
+{
+  color: #ddd;
+}
+
+form.connexion p#forgottenpassword a:hover {
+    color: #3DD36A;
+}
+
+.profil label
+{
   text-align: center;
   border: 2px solid #2E6DA4;
   border-radius: 5px;
   background-color: #2E6DA4;
   padding: 10px 0;
+  color: #fff;
 }
 
 .float-label
@@ -326,17 +384,23 @@ p#forgottenpassword a:hover {
 
 .modifProfileInfos
 {
-  width: 20%;
-  height: 50px;
-  background:#254896;
-  border-radius: 45px;
-  border-color: #fff;
-  margin: 0 auto;
+  font-size: 1em;
+  width: 70%;
+  height: 60px;
+  background:#3dd36a;
+  border-radius: 50px;
+  border-bottom: none;
+  margin: 0 auto 35px auto;
+}
+
+.modifProfileInfos p
+{
+  text-align: center;
+  padding-top: 15px;
 }
 
 .modifProfileInfos p a
 {
-  text-align: center;
   color: #fff;
 }
 
@@ -349,7 +413,6 @@ input#submit {
     background:#3dd36a;
     border-radius: 50px;
     border-bottom: none;
-    border-color: #2E6DA4;
     margin: 0 auto 35px auto;
 }
 
@@ -431,10 +494,6 @@ input#submit {
     display: none;
 }
 
-.profil
-{
-  margin: 50px 0;
-}
 
 .profil h3
 {
@@ -443,9 +502,57 @@ input#submit {
   border-radius: 5px;
   background-color: #2E6DA4;
   padding: 10px 0;
-  width: 50%;
+  color: #fff;
+}
+
+.float-label
+{
+  text-align: center;
+}
+
+.profil .container input
+{
+  display: block;
   margin:0 auto;
-  color: white;
+}
+
+.profil input#submit
+{
+  display: block;
+  margin: 0 auto;
+}
+
+.profil .container span
+{
+  display:
+
+  text-align: center;
+  margin:0 auto;
+}
+
+.modifPassword
+{
+  text-align: center;
+  color: #fff;
+  font-family: 'Amaranth', sans-serif;
+  font-size: 1.2em;
+  width: 70%;
+  height: 60px;
+  border: 2px solid #2E6DA4;
+  border-radius: 5px;
+  background-color: #2E6DA4;
+  padding: 10px 0;
+  margin: 30px auto 0 auto;
+}
+
+.modifPassword a
+{
+  color: #3dd36a;
+}
+
+.modifPassword a:hover
+{
+  font-weight: bold;
 }
 
 .vaccins h3
@@ -455,6 +562,7 @@ input#submit {
   border-radius: 5px;
   background-color: #2E6DA4;
   padding: 10px 0;
+  color: #fff;
 }
 /*Notre equipe*/
 

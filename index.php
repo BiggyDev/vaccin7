@@ -33,11 +33,19 @@ include('inc/header.php');?>
         <div id="content">
             <section class="section2">
 
+              <div class="actu">
+
+                <h5>Information</h5>
+                <img src="asset/img/chu.png" alt="chu"></a>
+
+              </div>
+
+
+
               <div class="presentation">
                 <h5>Recommandé par</h5>
 
                   <ul>
-
                     <li class="chu">
                       <a href="https://www.chu-rouen.fr/centre-de-vaccinations-internationales-sante-voyages/" target="_blank" >
                       <img src="asset/img/chu.png" alt="chu"></a>
@@ -55,7 +63,6 @@ include('inc/header.php');?>
                 <!-- <p>Pourquoi le carnet de vaccination électronique ?</p>
 
               <p>Pourquoi le carnet de vaccination électronique ?</p>
-
                 <ul>
                     <li>Simple, pratique et gratuit</li>
                     <li>Centralisez les vaccins de toute la famille</li>
