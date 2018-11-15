@@ -165,8 +165,7 @@ section.section2 {
 /*Page les calendriers*/
 
 .calendriers {
-    margin: auto;
-
+    margin: 0 auto;
 }
 
 .calendriers p {
@@ -261,7 +260,7 @@ section.section2 {
 /*Formulaire inscription*/
 
 form.inscription {
-    margin: auto;
+    margin: 0 auto;
     text-transform: uppercase;
     text-align: center;
     width:100%;
@@ -413,7 +412,6 @@ input#submit {
     height: 60px;
     background:#3dd36a;
     border-radius: 50px;
-    border-bottom: none;
     margin: 0 auto 35px auto;
 }
 
@@ -814,6 +812,24 @@ footer {
 }
 
 }
+
+@media (max-width: 768px) {
+
+  .calendriers p {
+      width: 100%;
+      float: none;
+      padding: 10px 10px;
+      margin:0 auto;
+  }
+}
+
+@media (max-width: 321px) {
+
+  form.inscription {
+    margin-bottom: 40px;
+  }
+}
+
 
 .content object {
   width: 50%;

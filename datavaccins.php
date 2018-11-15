@@ -59,6 +59,7 @@ $title = 'Vaccins'; ?>
                                         <th>Description</th>
                                         <th>Type de vaccin</th>
                                         <th>Ajouté le</th>
+                                        <th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -71,6 +72,10 @@ $title = 'Vaccins'; ?>
                                         <td class="center">
                                           <?php $date = transformdate($vaccin['created_at']);
                                                 echo $date; ?>
+                                        </td>
+                                        <td>
+                                          <a href="modifvaccins.php?id=<?= $vaccin['id']; ?>"><i class="fa fa-gears"></i></a>
+                                          <a href="deletevaccin.php?id=<?= $vaccin['id']; ?>"><i class="fa fa-times"></i></a>
                                         </td>
                                     </tr>
                                   <?php } ?>

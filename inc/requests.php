@@ -109,3 +109,28 @@ function updateProfileUserInfo($user, $age, $weight, $height, $sex) {
   $query ->execute();
 }
 //Fin fonction
+
+//Met à jour un vaccin de la BDD
+function updateVaccin($id, $name, $description, $type_vaccin) {
+  global $pdo;
+
+  $sql = "UPDATE yjlv_vaccins SET name = :name, description = :description, type_vaccin = :type_vaccin, modified_at = NOW() WHERE id = :id";
+  $query = $pdo -> prepare($sql);
+  $query -> bindValue(':name', $name, PDO::PARAM_STR);
+  $query -> bindValue(':description', $description, PDO::PARAM_STR);
+  $query -> bindValue(':type_vaccin', $type_vaccin, PDO::PARAM_STR);
+  $query ->bindValue(':id', $id, PDO::PARAM_INT);
+  $query ->execute();
+}
+//Fin fonction
+
+//Supprime un utilisateur ou un vaccin de la BDD
+function delete($nomTable,$id){
+  global $pdo;
+
+  $sql="DELETE FROM $nomTable WHERE id=:id";
+  $query = $pdo ->prepare($sql);
+  $query -> bindValue(':id',$id,PDO::PARAM_INT);
+  $query -> execute();
+}
+//Fin fonction
