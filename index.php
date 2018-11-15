@@ -8,6 +8,7 @@ $title = 'Accueil';
 include('inc/header.php');?>
     <section class="section1">
         <h2>Bienvenue sur <span id="gris">vact</span><span id="vert">ualise</span></h2>
+        <h3>Votre carnet de vaccination en ligne</h3>
 
       <div class="wrap">
         <div class="flexslider">

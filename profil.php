@@ -47,9 +47,8 @@ include('inc/header.php'); ?>
 
 <div class="wrap">
     <div class="profil">
-        <div class="profile">
-            <h2>Mon profil</h2>
-        </div>
+
+        <h2>Mon profil</h2>
 
         <div class="connexionInfos">
             <h3>Vos informations de connexion</h3>
