@@ -49,18 +49,29 @@ header('Location: 403.php');
         <form class="profil" action="" method="post">
 
              <label for="userage">Age<span class="error"><?php if (!empty($error['age'])) { echo $error['age'];}?></span></label><br>
-             <input type="number" name="age" class="userinfo" value="" min="0" max="140" placeholder="ans"><br><br>
+             <div class="container">
+             <input type="number" name="age" class="userinfo" value="" min="0" max="140" placeholder="ans">
+             </div><br><br>
 
              <label for="userweight">Poids<span class="error"><?php if (!empty($error['weight'])) { echo $error['weight'];}?></span></label><br>
-             <input type="number" name="weight" class="userinfo" value="" min="0" max="300" placeholder="en Kg"><br><br>
+             <div class="container">
+             <input type="number" name="weight" class="userinfo" value="" min="0" max="300" placeholder="en Kg">
+             </div><br><br>
 
              <label for="userheight">Taille<span class="error"><?php if (!empty($error['height'])) { echo $error['height'];}?></span></label><br>
-             <input type="number" name="height" class="userinfo" value="" min="0" max="250" placeholder="en Cm"><br><br>
+             <div class="container">
+             <input type="number" name="height" class="userinfo" value="" min="0" max="250" placeholder="en Cm">
+             </div><br><br>
 
              <label for="usersex">Sexe</label><br>
-             <input type="radio" name="sex" value="Homme" checked="checked">Homme
-             <input type="radio" name="sex" value="Femme">Femme
-             <br><br>
+             <div class="container">
+             <input type="radio" name="sex" value="Homme" checked="checked">
+             <br>
+             <span>Homme</span>
+             <input type="radio" name="sex" value="Femme">
+             <br>
+             <span>Femme</span>
+             </div><br><br>
 
 
              <input type="submit" name="submitted" id="submit" value="Enregistrer">

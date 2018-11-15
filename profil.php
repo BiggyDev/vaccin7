@@ -51,7 +51,7 @@ include('inc/header.php'); ?>
         <h2>Mon profil</h2>
 
         <div class="connexionInfos">
-            <h3>Vos informations de connexion</h3>
+            <h3>Mes informations de connexion</h3>
             <div class="float-label">
                   <p>Votre nom et prénom : <?= $user['firstlastname']; ?></p><br>
             </div>
@@ -61,7 +61,7 @@ include('inc/header.php'); ?>
             </div>
         </div>
         <div class="ProfileInfos">
-            <h3>Vos informations personnelles</h3>
+            <h3>Mes informations personnelles</h3>
             <div class="float-label">
                    <p>Votre âge : <?php if(!empty($user['age'])) {
                      echo $user['age'] . ' ans';

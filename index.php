@@ -35,6 +35,22 @@ include('inc/header.php');?>
               <div class="presentation">
                 <h5>Recommandé par</h5>
 
+                  <ul>
+
+                    <li class="chu">
+                      <a href="https://www.chu-rouen.fr/centre-de-vaccinations-internationales-sante-voyages/" target="_blank" >
+                      <img src="asset/img/chu.png" alt="chu"></a>
+                    </li>
+
+                    <li class="gouv">
+                      <a href="https://solidarites-sante.gouv.fr/" target="_blank"> <img src="asset/img/gouv.png" alt="ministereSante"></a></li>
+
+
+                    <li class="ars">
+                      <a href="https://www.normandie.ars.sante.fr/" target="_blank"> <img src="asset/img/ars.jpg" alt="AgenceRegionaleSante"></a></li>
+                  </ul>
+
+
                 <object type="" data="https://www.santemagazine.fr/actualites">
 
                 </object>
