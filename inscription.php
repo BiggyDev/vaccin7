@@ -104,7 +104,8 @@ if (!empty($_POST['submitted']) ) {
 <?php include('inc/header.php'); ?>
 
 <div class="wrap">
-
+  <div class="container">
+    <h2>Inscription</h2>
 
         <form class="inscription" action="" method="post">
 
@@ -128,7 +129,9 @@ if (!empty($_POST['submitted']) ) {
           <p><span class="needed">* = Champs obligatoires</span></p>
 
         </form>
-    </div>
+
+  </div>
+</div>
 
 
 

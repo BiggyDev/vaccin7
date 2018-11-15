@@ -7,7 +7,8 @@ include('inc/requests.php');
 $title = 'Accueil';
 include('inc/header.php');?>
     <section class="section1">
-        <h2>Bienvenue sur <span id="vert">vactualise</span></h2>
+        <h2>Bienvenue sur <span id="gris">vact</span><span id="vert">ualise</span></h2>
+        <h3>Votre carnet de vaccination en ligne</h3>
 
       <div class="wrap">
         <div class="flexslider">
@@ -33,6 +34,7 @@ include('inc/header.php');?>
             <section class="section2">
               <div class="presentation">
                 <h5>Recommandé par</h5>
+<<<<<<< HEAD
                   <ul>
 
                     <li class="chu">
@@ -50,12 +52,20 @@ include('inc/header.php');?>
 
 
                 <!-- <p>Pourquoi le carnet de vaccination électronique ?</p>
+=======
+              <p>Pourquoi le carnet de vaccination électronique ?</p>
+>>>>>>> 2cfef5a237c13f029c10309aee33fcc43d7fff56
                 <ul>
                     <li>Simple, pratique et gratuit</li>
                     <li>Centralisez les vaccins de toute la famille</li>
                     <li>Confidentiel et sécurisé</li>
-                    <li>Independant des firmes pharmaceutiques</li>
-                </ul> -->
+
+                    <li>Independant des firmes Pharmaceutiques</li>
+                </ul>
+
+                <object type="" data="https://www.santemagazine.fr/actualites">
+
+                </object>
 <!--                <a href="http://www.vaccinesafetynet.org/#gsc.tab=0" target="_blank">-->
 <!--                    <img src="asset/img/vaccine_safety_net.png" alt="Vaccine Safety Net Member">-->
 <!--                </a>-->
