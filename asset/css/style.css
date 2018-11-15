@@ -72,7 +72,6 @@ nav.firstnavbar h1 img.logo{
 ul.menu {
     text-align: center;
     float: right;
-    padding-top: 18px;
 }
 
 ul.menu li {
@@ -124,6 +123,13 @@ h2 span#vert {
 }
 
 /* index  */
+.section1 {
+  height: 800px;
+}
+
+
+
+
 
 section.section2 {
     width: 100%;
@@ -143,16 +149,34 @@ section.section2 {
   margin-bottom: 20px;
 }
 
-.section2 .presentation {
-  width: 50%;
-  float: left;
+.section2 h5 {
+  color: #2e6da4;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 50px;
+  font-family: 'Amaranth', sans-serif;
+  margin-top: 30px;
 }
 
-.section2 .presentation li {
-  width: 50%;
-  float: left;
-  padding-left: 10px;
+.section2 .presentation {
+  width: 100%;
+  text-align: center;
 }
+
+.section2 .presentation ul {
+  padding-bottom: 200px;
+
+}
+
+.section2 .presentation li a img {
+  float: left;
+  padding-left: 20px;
+  /* padding-left:160px; */
+  /* margin: auto; */
+
+}
+
+
 
 .section2 .twitteractu {
   display: inline-block;
@@ -160,6 +184,19 @@ section.section2 {
   padding: 10px 70px 10px 70px;
   background-color: blue;
   border: solid;
+  padding-top: 110px;
+}
+
+.section2 .actu {
+width: 60%;
+padding-bottom: 80px;
+float:left;
+
+}
+
+.section2 .actu img{
+  margin-bottom: 40px;
+  overflow: hidden;
 }
 
 /*Page les calendriers*/
@@ -302,6 +339,10 @@ label {
     width: 70%;
     font-family: 'Amaranth', sans-serif;
     font-size: 1.2em;
+}
+
+input {
+    border: none;
 }
 
 input.loginsignup {
@@ -583,14 +624,12 @@ input#submit {
 #ourteam {
     width: auto;
     height: auto;
-    padding-top: 200px;
     -webkit-perspective: 800px;
     perspective: 800px;
     text-align: center;
 }
 
 #ourteam > hr {
-    /*border: none;*/
     border: 1px solid #fff;
     width: 80%;
 }
@@ -700,7 +739,8 @@ input#submit {
     }
 
     h2 {
-        width: 30%;
+        font-size: 1.5em;
+        width: 100%;
     }
 
     header {
@@ -711,10 +751,28 @@ input#submit {
         display:block;
     }
 
+    form.inscription, form.connexion {
+        width: 100%;
+        max-width: 80%;
+        height: 120px;
+    }
+
+    input.loginsignup {
+        height: 1.4em;
+    }
+
     .vaccins td:nth-child(4),
     .vaccins th:nth-child(4) {
         display: none;
     }
+
+    .calendriers p a img {
+        height: 80px;
+    }
+    .calendriers p a {
+        font-size: 0.7em;
+    }
+
 }
 
 /*footer  */
@@ -812,6 +870,7 @@ footer {
 }
 
 }
+<<<<<<< HEAD
 
 @media (max-width: 768px) {
 
@@ -834,3 +893,5 @@ footer {
 .content object {
   width: 50%;
 }
+=======
+>>>>>>> fd789260ff41edd493f8b813f528d8ea76680cd8

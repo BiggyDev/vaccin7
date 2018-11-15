@@ -47,6 +47,7 @@
   crossorigin="anonymous"></script>
 <script src="asset/slicknav/jquery.slicknav.min.js"></script>
 <script src="asset/flexslider/jquery.flexslider.js"></script>
+<script src="asset/js/fittext.js"></script>
 <script>
     $(function(){
         $('.menu').slicknav();
@@ -57,8 +58,8 @@
         controlNav: false,
         directionNav: false
     });
+    window.fitText( document.getElementById("header"), 8);
   });
 </script>
-
 </body>
 </html>

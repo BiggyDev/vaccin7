@@ -34,17 +34,18 @@ include('inc/header.php');?>
             <section class="section2">
 
               <div class="actu">
+                <h5>Informations</h5>
+                <img src="asset/img/Vaccins.jpg" alt="chu"></a>
+              </div>
 
-                <h5>Information</h5>
-                <img src="asset/img/chu.png" alt="chu"></a>
-
+              <div class="twitteractu">
+                <a class="twitter-timeline" data-width="400" data-height="400"  data-link-color="#2E6DA4" href="https://twitter.com/vactualise?ref_src=twsrc%5Etfw">Tweets by vactualise</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
               </div>
 
 
-
               <div class="presentation">
-                <h5>Recommandé par</h5>
-
+                <h5>Recommandé Par</h5>
                   <ul>
                     <li class="chu">
                       <a href="https://www.chu-rouen.fr/centre-de-vaccinations-internationales-sante-voyages/" target="_blank" >
@@ -58,14 +59,13 @@ include('inc/header.php');?>
                     <li class="ars">
                       <a href="https://www.normandie.ars.sante.fr/" target="_blank"> <img src="asset/img/ars.jpg" alt="AgenceRegionaleSante"></a></li>
                   </ul>
+<<<<<<< HEAD
+=======
 
+>>>>>>> 44755a808635ddbba67f15dc2055b4ad14279209
                 </div>
 
-                <div class="twitteractu">
-                  <a class="twitter-timeline" data-width="400" data-height="600"  data-link-color="#2E6DA4" href="https://twitter.com/vactualise?ref_src=twsrc%5Etfw">Tweets by vactualise</a>
-                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-            </section>
+
 
             <div id='ourteam'>
                 <h3>Notre Equipe </h3>
@@ -79,7 +79,11 @@ include('inc/header.php');?>
                     </div>
                     <div class='back'>
                         <span>Skills:</span>
+<<<<<<< HEAD
                         <p>PHP, HTML5, CSS3</p>
+=======
+                        <p>HTML, CSS, PHP, Git</p>
+>>>>>>> fd789260ff41edd493f8b813f528d8ea76680cd8
                         <span>Social media </span>
                         <div class='icons'>
                             <svg class="icon" id="twitter-icon" viewBox="0 0 512 512"><path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"/></svg>
@@ -98,7 +102,7 @@ include('inc/header.php');?>
                     </div>
                     <div class='back'>
                         <span>Skills:</span>
-                        <p> JIRA, FogBugz, Pivotal Tracker, Trac</p>
+                        <p>HTML, CSS, PHP, Git</p>
                         <span>Social media </span>
                         <div class='icons'>
                             <svg class="icon" id="twitter-icon" viewBox="0 0 512 512"><path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"/></svg>
@@ -113,11 +117,11 @@ include('inc/header.php');?>
                         <img src='https://s-media-cache-ak0.pinimg.com/736x/5b/f0/5b/5bf05ba3dcf234eb4bdd86495c790f74.jpg' class='contact' />
                         <span class='name'>Yamna Melki</span>
                         <hr>
-                        <span class='job'> - front-end developer - </span>
+                        <span class='job'> - front-end web developer - </span>
                     </div>
                     <div class='back'>
                         <span>Skills:</span>
-                        <p>GCD, Swift, Git</p>
+                        <p>HTML, CSS, PHP, Git</p>
                         <span>Social media </span>
                         <div class='icons'>
                             <svg class="icon" id="twitter-icon" viewBox="0 0 512 512"><path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"/></svg>
