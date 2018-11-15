@@ -7,7 +7,8 @@ include('inc/requests.php');
 $title = 'Accueil';
 include('inc/header.php');?>
     <section class="section1">
-        <h3>Votre carnet de vaccination en ligne</h3>
+
+        <h2>Votre carnet de vaccination en ligne</h2>
 
       <div class="wrap">
         <div class="flexslider">
@@ -57,11 +58,6 @@ include('inc/header.php');?>
                     <li class="ars">
                       <a href="https://www.normandie.ars.sante.fr/" target="_blank"> <img src="asset/img/ars.jpg" alt="AgenceRegionaleSante"></a></li>
                   </ul>
-
-
-                <object type="" data="https://www.santemagazine.fr/actualites">
-
-                </object>
 
                 </div>
 
