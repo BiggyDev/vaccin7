@@ -12,6 +12,7 @@ include('inc/header.php');?>
       <div class="wrap">
         <div class="flexslider">
             <ul class="slides">
+
               <li>
                     <img src="asset/img/grippe.jpg" />
                 </li>
@@ -37,10 +38,6 @@ include('inc/header.php');?>
                     <li>Confidentiel et sécurisé</li>
                     <li>Independant des firmes pharmaceutiques</li>
                 </ul>
-
-                <object type="" data="https://www.santemagazine.fr/actualites">
-
-                </object>
 <!--                <a href="http://www.vaccinesafetynet.org/#gsc.tab=0" target="_blank">-->
 <!--                    <img src="asset/img/vaccine_safety_net.png" alt="Vaccine Safety Net Member">-->
 <!--                </a>-->
