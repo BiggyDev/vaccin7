@@ -47,6 +47,7 @@ a {
     width: 100%;
     margin: 0 auto;
     min-height: 1000px;
+
 }
 
 #header {
@@ -71,7 +72,6 @@ nav.firstnavbar h1 img.logo{
 ul.menu {
     text-align: center;
     float: right;
-    padding-top: 18px;
 }
 
 ul.menu li {
@@ -128,6 +128,9 @@ h2 span#vert {
 }
 
 
+
+
+
 section.section2 {
     width: 100%;
     margin: auto;
@@ -178,7 +181,8 @@ section.section2 {
 .section2 .twitteractu {
   display: inline-block;
   margin-bottom: 20%;
-  padding: 10px 70px 10px 70px
+  padding: 10px 70px 10px 70px;
+  background-color: blue;
   border: solid;
   padding-top: 110px;
 }
@@ -338,6 +342,10 @@ label {
     font-size: 1.2em;
 }
 
+input {
+    border: none;
+}
+
 input.loginsignup {
     margin: auto;
     display: block;
@@ -468,7 +476,7 @@ input#submit {
 }
 
 .panel-title {
-    font-size: 24px;
+    font-size: 1.6em;
     width: 100%;
     position: relative;
     margin: 0;
@@ -500,11 +508,11 @@ input#submit {
 }
 
 .plus {
+    color: #2E6DA4;
     position: absolute;
-    margin-left: 20px;
-    margin-top: 4px;
+    padding: 10px;
     z-index: 5;
-    font-size: 42px;
+    font-size: 2.1em;
     line-height: 100%;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -558,8 +566,6 @@ input#submit {
 
 .profil .container span
 {
-  display:
-
   text-align: center;
   margin:0 auto;
 }
@@ -626,7 +632,6 @@ input#submit {
 }
 
 #ourteam > hr {
-    /*border: none;*/
     border: 1px solid #fff;
     width: 80%;
 }
@@ -736,7 +741,8 @@ input#submit {
     }
 
     h2 {
-        width: 30%;
+        font-size: 1.5em;
+        width: 100%;
     }
 
     header {
@@ -747,10 +753,28 @@ input#submit {
         display:block;
     }
 
+    form.inscription, form.connexion {
+        width: 100%;
+        max-width: 80%;
+        height: 120px;
+    }
+
+    input.loginsignup {
+        height: 1.4em;
+    }
+
     .vaccins td:nth-child(4),
     .vaccins th:nth-child(4) {
         display: none;
     }
+
+    .calendriers p a img {
+        height: 80px;
+    }
+    .calendriers p a {
+        font-size: 0.7em;
+    }
+
 }
 
 /*footer  */
