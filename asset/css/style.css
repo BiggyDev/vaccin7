@@ -99,8 +99,14 @@ nav.firstnavbar a:hover {
     display:none;
 }
 
+<<<<<<< HEAD
 h2 {
     color: black;
+=======
+h2
+{
+    color: #2e6da4;
+>>>>>>> 75966d941c7432bec99efc7a31a0e5e0741ff19a
     font-size: 3em;
     text-align: center;
     font-weight: bold;
@@ -413,6 +419,19 @@ input#submit {
   background-color: #2E6DA4;
   padding: 10px 0;
 }
+/*Notre equipe*/
+
+#ourteam h3{
+    color: #2E6DA4;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px 10px;
+    font-family: 'Amaranth', sans-serif;
+    margin-bottom: 20px;
+}
 
 #ourteam {
     box-sizing: border-box;
@@ -422,16 +441,13 @@ input#submit {
 #ourteam {
     width: auto;
     height: auto;
-    margin-top: 120px;
+    padding-top: 200px;
     -webkit-perspective: 800px;
     perspective: 800px;
     text-align: center;
     padding-bottom: 30px;
 }
-#ourteam h1 {
-    color: #ECF6CE;
-    margin-bottom: 30px;
-}
+
 #ourteam > hr {
     /*border: none;*/
     border: 1px solid #fff;
@@ -462,14 +478,14 @@ input#submit {
 }
 .front {
     transform: rotateY(0deg);
-    background: -webkit-linear-gradient(top left, #84DD63, #009970);
-    background: linear-gradient(to bottom right, #84DD63, #009970);
+    background: -webkit-linear-gradient(top left, #2E6DA4, #5bc0de);
+    background: linear-gradient(to bottom right, #2E6DA4, #5bc0de);
     text-align: center;
     padding: 30px;
 }
 .back {
-    background: -webkit-linear-gradient(top left, #009970, #84DD63);
-    background: linear-gradient(to bottom right, #009970, #84DD63);
+    background: -webkit-linear-gradient(top left, #2E6DA4, #5bc0de);
+    background: linear-gradient(to bottom right, #2E6DA4, #5bc0de);
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     padding: 40px 15px;
@@ -483,14 +499,13 @@ input#submit {
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
 }
-/*//styling*/
-  .front .contact {
-      height: 120px;
-      width: 120px;
-      border: 5px solid #B2DBBF;
-      border-radius: 50%;
-      display: inline-block;
-      margin-bottom: 10px;
+.front .contact {
+    height: 120px;
+    width: 120px;
+    border: 5px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 10px;
   }
 .front .name {
     display: inline-block;
@@ -501,13 +516,11 @@ input#submit {
     color: #fff;
 }
 .front hr {
-    border: none;
-    color: #B2DBBF;
+    color: white;
     border: 1px solid;
 }
 .back .icon {
     fill: currentColor;
-    color: inherit;
     height: 33px;
     width: 33px;
     margin-top: 15px;
@@ -515,7 +528,7 @@ input#submit {
 }
 .back .icon:hover {
     cursor: pointer;
-    color: #648767;
+    color: #c4e3f3;
 }
 @media screen and (max-width: 700px) {
     nav.firstnavbar {

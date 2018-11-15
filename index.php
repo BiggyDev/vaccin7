@@ -7,7 +7,7 @@ include('inc/requests.php');
 $title = 'Accueil';
 include('inc/header.php');?>
     <section class="section1">
-        <h2>Bienvenue sur <span id="gris">vact</span><span id="vert">ualise</span></h2>
+        <h2>Bienvenue sur <span id="vert">vactualise</span></h2>
 
       <div class="wrap">
         <div class="flexslider">
@@ -52,7 +52,7 @@ include('inc/header.php');?>
             </section>
 
             <div id='ourteam'>
-                <h1>Notre Equipe </h1>
+                <h3>Notre Equipe </h3>
                 <hr>
                 <div class='card'>
                     <div class='front'>
