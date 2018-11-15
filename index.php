@@ -7,11 +7,13 @@ include('inc/requests.php');
 $title = 'Accueil';
 include('inc/header.php');?>
     <section class="section1">
-        <h2>Bienvenue sur <span id="vert">vactualise</span></h2>
+        <h2>Bienvenue sur <span id="gris">vact</span><span id="vert">ualise</span></h2>
+        <h3>Votre carnet de vaccination en ligne</h3>
 
       <div class="wrap">
         <div class="flexslider">
             <ul class="slides">
+
               <li>
                     <img src="asset/img/grippe.jpg" />
                 </li>
@@ -30,11 +32,14 @@ include('inc/header.php');?>
     <div class="wrap">
         <div id="content">
             <section class="section2">
-                <p>Pourquoi le carnet de vaccination électronique ?</p>
+              <div class="presentation">
+                <h5>Recommandé par</h5>
+              <p>Pourquoi le carnet de vaccination électronique ?</p>
                 <ul>
                     <li>Simple, pratique et gratuit</li>
                     <li>Centralisez les vaccins de toute la famille</li>
                     <li>Confidentiel et sécurisé</li>
+
                     <li>Independant des firmes Pharmaceutiques</li>
                 </ul>
 
@@ -44,6 +49,12 @@ include('inc/header.php');?>
 <!--                <a href="http://www.vaccinesafetynet.org/#gsc.tab=0" target="_blank">-->
 <!--                    <img src="asset/img/vaccine_safety_net.png" alt="Vaccine Safety Net Member">-->
 <!--                </a>-->
+                </div>
+
+                <div class="twitteractu">
+                  <a class="twitter-timeline" data-width="400" data-height="600"  data-link-color="#2E6DA4" href="https://twitter.com/vactualise?ref_src=twsrc%5Etfw">Tweets by vactualise</a>
+                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
             </section>
 
             <div id='ourteam'>
@@ -106,6 +117,9 @@ include('inc/header.php');?>
                     </div>
                 </div>
             </div>
+
+
+
         </div>
     </div>
 

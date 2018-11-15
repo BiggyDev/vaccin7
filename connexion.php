@@ -56,7 +56,7 @@ $title = 'Connexion'; ?>
 <?php include('inc/header.php'); ?>
     <div class="wrap">
 
-
+      <h2>Connexion</h2>
 
       <form class="connexion" action="" method="post">
 

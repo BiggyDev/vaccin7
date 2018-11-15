@@ -57,10 +57,11 @@ header('Location: 403.php');
              <label for="userheight">Taille<span class="error"><?php if (!empty($error['height'])) { echo $error['height'];}?></span></label><br>
              <input type="number" name="height" class="userinfo" value="" min="0" max="250" placeholder="en Cm"><br><br>
 
-             <label for="usersex">Sexe
-             <span class="sex"><input type="radio" name="sex" value="Homme" checked="checked">Homme</span>
-             <span class="sex"><input type="radio" name="sex" value="Femme">Femme</span>
-             </label><br>
+             <label for="usersex">Sexe</label><br>
+             <input type="radio" name="sex" value="Homme" checked="checked">Homme
+             <input type="radio" name="sex" value="Femme">Femme
+             <br><br>
+
 
              <input type="submit" name="submitted" id="submit" value="Enregistrer">
 
@@ -68,7 +69,7 @@ header('Location: 403.php');
 
          <?php
          if (!empty($user)) {
-           $body = '<p>Modifiez votre mot de passe <a href="passwordmodif.php">ici !</a></p>';
+           $body = '<p class="modifPassword">Modifiez votre mot de passe <a href="passwordmodif.php">ici !</a></p>';
            echo $body;
          } ?>
     </div>
