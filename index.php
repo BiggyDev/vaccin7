@@ -32,9 +32,10 @@ include('inc/header.php');?>
     <div class="wrap">
         <div id="content">
             <section class="section2">
+
               <div class="presentation">
                 <h5>Recommandé par</h5>
-<<<<<<< HEAD
+
                   <ul>
 
                     <li class="chu">
@@ -44,7 +45,7 @@ include('inc/header.php');?>
 
                     <li class="gouv">
                       <a href="https://solidarites-sante.gouv.fr/" target="_blank"> <img src="asset/img/gouv.png" alt="ministereSante"></a></li>
-                  
+
 
                     <li class="ars">
                       <a href="https://www.normandie.ars.sante.fr/" target="_blank"> <img src="asset/img/ars.jpg" alt="AgenceRegionaleSante"></a></li>
@@ -52,9 +53,9 @@ include('inc/header.php');?>
 
 
                 <!-- <p>Pourquoi le carnet de vaccination électronique ?</p>
-=======
+
               <p>Pourquoi le carnet de vaccination électronique ?</p>
->>>>>>> 2cfef5a237c13f029c10309aee33fcc43d7fff56
+
                 <ul>
                     <li>Simple, pratique et gratuit</li>
                     <li>Centralisez les vaccins de toute la famille</li>

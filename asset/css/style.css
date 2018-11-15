@@ -95,7 +95,6 @@ nav.firstnavbar a:hover {
     display:none;
 }
 
-<<<<<<< HEAD
 
 h2 {
     color: black;
@@ -104,11 +103,10 @@ h2
 {
     color: #2e6da4;
 
-=======
+
 h2
 {
     color: #2e6da4;
->>>>>>> 2cfef5a237c13f029c10309aee33fcc43d7fff56
     font-size: 3em;
     text-align: center;
     font-weight: bold;
@@ -613,6 +611,8 @@ input#submit {
         display: none;
     }
 }
+
+/*footer  */
 
 footer {
         bottom: 0;
