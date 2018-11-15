@@ -124,6 +124,20 @@ section.section2 {
     margin: auto;
 }
 
+.section2 .presentation {
+  width: 50%;
+  float: left;
+}
+
+.section2 .twitteractu {
+  width: 40%;
+  display: inline-block;
+  margin-bottom: 20%;
+  padding: 10px 70px 10px 70px
+  background-color: blue;
+  border: solid;
+}
+
 /*Page les calendriers*/
 
 .calendriers {
@@ -412,6 +426,7 @@ input#submit {
     -webkit-perspective: 800px;
     perspective: 800px;
     text-align: center;
+    padding-bottom: 30px;
 }
 #ourteam h1 {
     color: #ECF6CE;
