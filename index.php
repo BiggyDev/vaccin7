@@ -32,11 +32,25 @@ include('inc/header.php');?>
     <div class="wrap">
         <div id="content">
             <section class="section2">
+
+              <div class="actu">
+
+                <h5>Information</h5>
+                <img src="asset/img/chu.png" alt="chu"></a>
+
+              </div>
+
+
+
               <div class="presentation">
                 <h5>Recommandé par</h5>
+<<<<<<< HEAD
 
                   <ul>
+=======
+>>>>>>> c6d61ed9d4b9bf71f5015c2e0428a6a33f063050
 
+                  <ul>
                     <li class="chu">
                       <a href="https://www.chu-rouen.fr/centre-de-vaccinations-internationales-sante-voyages/" target="_blank" >
                       <img src="asset/img/chu.png" alt="chu"></a>

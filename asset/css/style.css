@@ -125,6 +125,8 @@ h2 span#vert {
     color: #3dd36a;
 }
 
+/* index  */
+
 section.section2 {
     width: 100%;
     margin: auto;
@@ -148,8 +150,13 @@ section.section2 {
   float: left;
 }
 
+.section2 .presentation li {
+  width: 50%;
+  float: left;
+  padding-left: 10px;
+}
+
 .section2 .twitteractu {
-  width: 40%;
   display: inline-block;
   margin-bottom: 20%;
   padding: 10px 70px 10px 70px;
@@ -713,6 +720,8 @@ input#submit {
         display: none;
     }
 }
+
+/*footer  */
 
 footer {
         bottom: 0;
