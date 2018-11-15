@@ -22,7 +22,7 @@
             <h5 class="text-uppercase">Liens Utiles</h5>
 
             <ul class="list-unstyled">
-              <li><a href="#">Mentions légales</a></li>
+              <li><a href="mentionslegales.php">Mentions légales</a></li>
               <li><a href="FAQ.php">FAQ</a></li>
               <li><a href="#haut">Retour en haut de la page</a></li>
             </ul>

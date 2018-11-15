@@ -12,14 +12,23 @@ body {
    margin: 0;
    padding: 0;
    position: relative;
-   background-color: 	#ddd;
 }
 
-.h5, h5
-{
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.8em;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+.h5, h5 {
     font-size: 1.25rem;
 }
-
 a {
     cursor: pointer;
     text-decoration: none;
@@ -42,13 +51,12 @@ a {
 }
 
 #header {
-    height: 12em;
-    box-shadow: 0px 0px 18px #888888;
+    height: 15em;
 }
 
 nav.firstnavbar {
     background: #2e6da4;
-    padding: 40px 60px;
+    padding: 60px;
     position: relative;
     z-index: 2;
     height: 12em;
@@ -57,13 +65,11 @@ nav.firstnavbar {
 nav.firstnavbar h1 img.logo{
     width: 15%;
     float: left;
-
 }
 
 ul.menu {
     text-align: center;
     float: right;
-    padding-top: 18px;
 }
 
 ul.menu li {
@@ -85,18 +91,17 @@ ul.menu li a {
 }
 
 nav.firstnavbar a:hover {
-    color: #3dd36a;
+    color: #C18055;
     background: #fff;
 }
 
-.slicknav_menu
-{
+.slicknav_menu {
     display:none;
 }
 
 h2
 {
-    color: white;
+    color: #2e6da4;
     font-size: 3em;
     text-align: center;
     font-weight: bold;
@@ -105,6 +110,7 @@ h2
     width: 100%;
     padding: 30px 0;
     font-family: 'Amaranth', sans-serif;
+
 }
 
 h2 span#gris {
@@ -112,7 +118,7 @@ h2 span#gris {
 }
 
 h2 span#vert {
-    color: #3dd36a;
+    color: green;
 }
 
 section.section2 {
@@ -133,6 +139,19 @@ section.section2 {
   margin-bottom: 20px;
 }
 
+.section2 .presentation {
+  width: 50%;
+  float: left;
+}
+
+.section2 .twitteractu {
+  width: 40%;
+  display: inline-block;
+  margin-bottom: 20%;
+  padding: 10px 70px 10px 70px
+  background-color: blue;
+  border: solid;
+}
 
 /*Page les calendriers*/
 
@@ -168,16 +187,15 @@ section.section2 {
     width: 100%;
     margin: 0 auto 60px auto;
     display: table;
-    box-shadow: 0 4px 4px -4px #0E1119;;
+    margin-bottom: 4em;
 }
 
 .vaccins th {
     font-weight: bold;
     font-family: 'Amaranth', sans-serif;
     font-size: 1em;
-    text-transform: uppercase;
-    color: white;
-    background-color: #2e6da4;
+    text-align: left;
+    color: #185875;
 }
 
 .vaccins td {
@@ -196,6 +214,7 @@ section.section2 {
 .vaccins td, .vaccins th {
     padding-bottom: 2%;
     padding-top: 2%;
+    padding-left:2%;
 }
 
 .vaccins tr:nth-child(odd) {
@@ -206,7 +225,7 @@ section.section2 {
     background-color: #c7ddef;
 }
 .vaccins th {
-    t
+
 }
 
 .vaccins td:first-child {
@@ -254,7 +273,6 @@ form.inscription {
 }
 
 form.inscription .needed, form.connexion .needed {
-    color: white;
     font-size: 1.1em;
     font-family: 'Amaranth', sans-serif;
 }
@@ -275,7 +293,6 @@ form.connexion {
 }
 
 label {
-    color: white;
     margin: auto;
     display: block;
     width: 70%;
@@ -287,8 +304,8 @@ input.loginsignup {
     margin: auto;
     display: block;
     width: 70%;
-    border-radius: 10px;
-    height: 1.7em;
+    border-radius: 30px;
+    height: 2em;
     font-size: 1.5em;
     font-family: 'Amaranth', sans-serif;
 }
@@ -301,10 +318,10 @@ input [type="text"] {
     width: 300px;
     border: none;
     border-radius: 0;
+    border-bottom: 1px solid antiquewhite;
 }
 
 form.connexion p#forgottenpassword, form.connexion p#notsignup {
-    color: white;
     margin: auto;
     font-family: 'Amaranth', sans-serif;
     text-align: center;
@@ -323,15 +340,9 @@ p#forgottenpassword a:hover {
   padding: 10px 0;
 }
 
-.float-label
-{
-  text-align: center;
-  margin: 20px auto;
-}
-
-.userinfo
-{
+.userinfo{
   border: 2px solid #2E6DA4;
+  padding: 10px 0;
   margin: 0 auto;
   text-align: center;
 }
@@ -361,12 +372,12 @@ p#forgottenpassword a:hover {
 }
 
 input#submit {
-    color: white;
     text-transform: uppercase;
     font-size: 1em;
     width: 70%;
     height: 60px;
     background:#3dd36a;
+    color: #fff;
     border-radius: 50px;
     border-bottom: none;
     margin: 0 auto 35px auto;
@@ -397,7 +408,6 @@ input#submit {
     padding: 10px 10px 0 48px;
     display: block;
     cursor: pointer;
-    color: black;
 }
 
 .panel-content {
@@ -463,9 +473,6 @@ input#submit {
   border-radius: 5px;
   background-color: #2E6DA4;
   padding: 10px 0;
-  width: 50%;
-  margin:0 auto;
-  color: white;
 }
 
 .vaccins h3
@@ -476,7 +483,117 @@ input#submit {
   background-color: #2E6DA4;
   padding: 10px 0;
 }
+/*Notre equipe*/
 
+#ourteam h3{
+    color: #2E6DA4;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px 10px;
+    font-family: 'Amaranth', sans-serif;
+    margin-bottom: 20px;
+}
+
+#ourteam {
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+}
+
+#ourteam {
+    width: auto;
+    height: auto;
+    padding-top: 200px;
+    -webkit-perspective: 800px;
+    perspective: 800px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#ourteam > hr {
+    /*border: none;*/
+    border: 1px solid #fff;
+    width: 80%;
+}
+.card {
+    margin: 10px;
+    display: inline-block;
+    position: relative;
+    width: 220px;
+    height: 260px;
+    opacity: 0.85;
+}
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 300ms;
+    transition: -webkit-transform 300ms;
+    transition: transform 300ms;
+    transition: -webkit-transform 300ms;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    border-radius: 5px;
+}
+.front {
+    transform: rotateY(0deg);
+    background: -webkit-linear-gradient(top left, #2E6DA4, #5bc0de);
+    background: linear-gradient(to bottom right, #2E6DA4, #5bc0de);
+    text-align: center;
+    padding: 30px;
+}
+.back {
+    background: -webkit-linear-gradient(top left, #2E6DA4, #5bc0de);
+    background: linear-gradient(to bottom right, #2E6DA4, #5bc0de);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    padding: 40px 15px;
+    color: #fff;
+}
+.card:hover .front {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.card:hover .back {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+.front .contact {
+    height: 120px;
+    width: 120px;
+    border: 5px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+.front .name {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+}
+.front .job {
+    color: #fff;
+}
+.front hr {
+    color: white;
+    border: 1px solid;
+}
+.back .icon {
+    fill: currentColor;
+    height: 33px;
+    width: 33px;
+    margin-top: 15px;
+    color: white;
+}
+.back .icon:hover {
+    cursor: pointer;
+    color: #c4e3f3;
+}
 @media screen and (max-width: 700px) {
     nav.firstnavbar {
         background: #2e6da4;
