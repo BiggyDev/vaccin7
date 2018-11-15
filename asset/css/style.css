@@ -49,13 +49,14 @@ a {
     min-height: 1000px;
 }
 
-/* #header {
-    height: 15em;
-} */
+#header {
+    height: 12em;
+    box-shadow: 0px 0px 18px #888888;
+}
 
 nav.firstnavbar {
     background: #2e6da4;
-    padding: 60px;
+    padding: 40px 60px;
     position: relative;
     z-index: 2;
     height: 12em;
@@ -64,11 +65,13 @@ nav.firstnavbar {
 nav.firstnavbar h1 img.logo{
     width: 15%;
     float: left;
+
 }
 
 ul.menu {
     text-align: center;
     float: right;
+    padding-top: 18px;
 }
 
 ul.menu li {
@@ -94,7 +97,8 @@ nav.firstnavbar a:hover {
     background: #fff;
 }
 
-.slicknav_menu {
+.slicknav_menu
+{
     display:none;
 }
 
@@ -105,11 +109,9 @@ h2
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
-    margin:0 auto;
     width: 100%;
-    padding: 30px 0;
+    padding: 10px 10px;
     font-family: 'Amaranth', sans-serif;
-
 }
 
 h2 span#gris {
@@ -117,7 +119,7 @@ h2 span#gris {
 }
 
 h2 span#vert {
-    color: green;
+    color: #3dd36a;
 }
 
 section.section2 {
@@ -174,19 +176,13 @@ section.section2 {
 
 /*Page les vaccins*/
 
-.vaccins h3
-{
-  color: #fff;
-  margin-bottom: 30px;
-}
-
 .vaccins table {
     text-align: center;
     overflow: hidden;
     width: 100%;
-    margin: 0 auto 60px auto;
+    margin: auto auto;
     display: table;
-    margin-bottom: 4em;
+    box-shadow: 0 4px 4px -4px #0E1119;;
 }
 
 
@@ -194,9 +190,9 @@ section.section2 {
     font-weight: bold;
     font-family: 'Amaranth', sans-serif;
     font-size: 1em;
-    text-align: center;
-    color: #fff;
     text-transform: uppercase;
+    color: white;
+    background-color: #2e6da4;
 }
 
 .vaccins td {
@@ -232,10 +228,9 @@ section.section2 {
     color: green;
 }
 
-.addvaccin h3
+.vaccins table
 {
-  color: #fff;
-  margin-bottom: 20px;
+  margin:50px auto;
 }
 
 .addvaccin form
@@ -246,8 +241,8 @@ section.section2 {
 
 .addvaccin label
 {
-  color: #000;
   padding: 10px 0;
+  color: #000;
 }
 
 #datevaccin
@@ -258,12 +253,11 @@ section.section2 {
 /*Formulaire inscription*/
 
 form.inscription {
-    margin:0 auto;
+    margin: auto;
     text-transform: uppercase;
     text-align: center;
     width:100%;
     max-width:50%;
-    min-width: 30%;
     min-height:21.875em;
     position:relative;
     padding: 20px;
@@ -273,6 +267,7 @@ form.inscription {
 }
 
 form.inscription .needed, form.connexion .needed {
+    color: white;
     font-size: 1.1em;
     font-family: 'Amaranth', sans-serif;
 }
@@ -294,6 +289,7 @@ form.connexion {
 }
 
 label {
+    color: white;
     margin: auto;
     display: block;
     width: 70%;
@@ -305,8 +301,8 @@ input.loginsignup {
     margin: auto;
     display: block;
     width: 70%;
-    border-radius: 30px;
-    height: 2em;
+    border-radius: 10px;
+    height: 1.7em;
     font-size: 1.5em;
     font-family: 'Amaranth', sans-serif;
 }
@@ -319,7 +315,6 @@ input [type="text"] {
     width: 300px;
     border: none;
     border-radius: 0;
-    border-bottom: 1px solid antiquewhite;
 }
 
 form.connexion p#forgottenpassword
@@ -367,9 +362,15 @@ form.connexion p#forgottenpassword a:hover {
   color: #fff;
 }
 
-.userinfo{
+.float-label
+{
+  text-align: center;
+  margin: 20px auto;
+}
+
+.userinfo
+{
   border: 2px solid #2E6DA4;
-  padding: 10px 0;
   margin: 0 auto;
   text-align: center;
 }
@@ -382,7 +383,6 @@ form.connexion p#forgottenpassword a:hover {
   background:#3dd36a;
   border-radius: 50px;
   border-bottom: none;
-  border-color: #2E6DA4;
   margin: 0 auto 35px auto;
 }
 
@@ -394,17 +394,16 @@ form.connexion p#forgottenpassword a:hover {
 
 .modifProfileInfos p a
 {
-  color: white;
-  text-transform: uppercase;
+  color: #fff;
 }
 
 input#submit {
+    color: white;
     text-transform: uppercase;
     font-size: 1em;
     width: 70%;
     height: 60px;
     background:#3dd36a;
-    color: #fff;
     border-radius: 50px;
     border-bottom: none;
     margin: 0 auto 35px auto;
@@ -435,6 +434,7 @@ input#submit {
     padding: 10px 10px 0 48px;
     display: block;
     cursor: pointer;
+    color: black;
 }
 
 .panel-content {
@@ -555,6 +555,7 @@ input#submit {
   border-radius: 5px;
   background-color: #2E6DA4;
   padding: 10px 0;
+  color: #fff;
 }
 /*Notre equipe*/
 
@@ -582,7 +583,6 @@ input#submit {
     -webkit-perspective: 800px;
     perspective: 800px;
     text-align: center;
-    padding-bottom: 30px;
 }
 
 #ourteam > hr {
