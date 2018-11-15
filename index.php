@@ -35,7 +35,7 @@ include('inc/header.php');?>
                     <li>Simple, pratique et gratuit</li>
                     <li>Centralisez les vaccins de toute la famille</li>
                     <li>Confidentiel et sécurisé</li>
-                    <li>Independant des firmes pharmaceutiques</li>
+                    <li>Independant des firmes Pharmaceutiques</li>
                 </ul>
 
                 <object type="" data="https://www.santemagazine.fr/actualites">
