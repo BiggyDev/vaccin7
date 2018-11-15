@@ -35,31 +35,33 @@ include('inc/header.php');?>
 
               <div class="actu">
                 <h5>Informations</h5>
-                <img src="asset/img/Vaccins.jpg" alt="chu"></a>
-              </div>
 
-              <div class="twitteractu">
+                <img src="asset/img/Vaccins.jpg" alt="chu">
+
                 <a class="twitter-timeline" data-width="400" data-height="400"  data-link-color="#2E6DA4" href="https://twitter.com/vactualise?ref_src=twsrc%5Etfw">Tweets by vactualise</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
               </div>
 
 
               <div class="presentation">
                 <h5>Recommandé Par</h5>
-                  <ul>
-                    <li class="chu">
-                      <a href="https://www.chu-rouen.fr/centre-de-vaccinations-internationales-sante-voyages/" target="_blank" >
-                      <img src="asset/img/chu.png" alt="chu"></a>
-                    </li>
 
-                    <li class="gouv">
-                      <a href="https://solidarites-sante.gouv.fr/" target="_blank"> <img src="asset/img/gouv.png" alt="ministereSante"></a></li>
+                <div class="recommanded">
 
+                  <a href="https://www.chu-rouen.fr/centre-de-vaccinations-internationales-sante-voyages/" target="_blank" >
+                    <img src="asset/img/chu.png" alt="chu">
+                  </a>
 
-                    <li class="ars">
-                      <a href="https://www.normandie.ars.sante.fr/" target="_blank"> <img src="asset/img/ars.jpg" alt="AgenceRegionaleSante"></a></li>
-                  </ul>
+                  <a href="https://solidarites-sante.gouv.fr/" target="_blank">
+                    <img src="asset/img/gouv.png" alt="ministereSante">
+                  </a>
+
+                  <a href="https://www.normandie.ars.sante.fr/" target="_blank">
+                    <img src="asset/img/ars.jpg" alt="AgenceRegionaleSante">
+                  </a>
+
                 </div>
+                <div class="clear"></div>
+              </div>
 
 
 

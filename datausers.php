@@ -56,29 +56,29 @@ $title = 'Utilisateurs'; ?>
                             <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                                 <thead>
                                     <tr>
-                                        <th>id</th>
+                                        <th class="hiddenperso">id</th>
                                         <th>Nom</th>
                                         <th>E-mail</th>
-                                        <th>Age</th>
-                                        <th>Sexe</th>
-                                        <th>Taille</th>
-                                        <th>Poids</th>
+                                        <th class="hiddenperso">Age</th>
+                                        <th class="hiddenperso">Sexe</th>
+                                        <th class="hiddenperso">Taille</th>
+                                        <th class="hiddenperso">Poids</th>
                                         <th>Rôle</th>
-                                        <th>Ajouté le</th>
+                                        <th class="hiddenperso">Ajouté le</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                   <?php foreach ($users as $user) { ?>
                                     <tr class="odd gradeX">
-                                        <td><?= $user['id']; ?></td>
+                                        <td class="hiddenperso"><?= $user['id']; ?></td>
                                         <td><?= $user['firstlastname']; ?></td>
                                         <td><?= $user['email']; ?></td>
-                                        <td><?= $user['age']; ?> ans</td>
-                                        <td><?= $user['sex']; ?></td>
-                                        <td><?= $user['height']; ?> cm</td>
-                                        <td><?= $user['weight']; ?> kg</td>
+                                        <td class="hiddenperso"><?= $user['age']; ?> ans</td>
+                                        <td class="hiddenperso"><?= $user['sex']; ?></td>
+                                        <td class="hiddenperso"><?= $user['height']; ?> cm</td>
+                                        <td class="hiddenperso"><?= $user['weight']; ?> kg</td>
                                         <td><?= $user['role']; ?></td>
-                                        <td><?php $date = transformdate($user['created_at']);
+                                        <td class="hiddenperso"><?php $date = transformdate($user['created_at']);
                                                   echo $date;
                                             ?>
                                         </td>

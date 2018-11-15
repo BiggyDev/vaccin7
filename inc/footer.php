@@ -48,6 +48,7 @@
 <script src="asset/slicknav/jquery.slicknav.min.js"></script>
 <script src="asset/flexslider/jquery.flexslider.js"></script>
 <script src="asset/js/fittext.js"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script>
     $(function(){
         $('.menu').slicknav();
