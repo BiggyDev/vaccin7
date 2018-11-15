@@ -47,7 +47,7 @@ include('inc/header.php');?>
             </section>
 
             <div id='ourteam'>
-                <h1>Notre equipe </h1>
+                <h1>Notre Equipe </h1>
                 <hr>
                 <div class='card'>
                     <div class='front'>
