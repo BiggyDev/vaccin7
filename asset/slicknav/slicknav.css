@@ -58,6 +58,7 @@
     display: block; }
   .slicknav_nav li {
     text-transform: uppercase;
+    font-weight: bold;
     display: block; }
   .slicknav_nav .slicknav_arrow {
     font-size: 0.8em;
