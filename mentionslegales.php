@@ -23,17 +23,17 @@ $title= 'Mentions légales'?>
         Téléphone :02 32 10 25 01 - Fax : 02 32 10 25 36
         Email : vactualise@gmail.com
         Site Web : <a href="http://www.vactualise.com">www.vactualise.com</a>
-        </br>
+        </br><br>
         <p style="color: #b51a00;"><b><span style="color: rgb(0, 0, 0);">Hébergement :</span> </b></p>
         Hébergeur : OVH
         2 Rue Kellermann, 59100 Roubaix
         Site Web :  <a href="http://www.ovh.com/fr">www.ovh.com/fr</a>
-        </br>
+        </br><br>
         <p style="color: #b51a00;"><span style="color: rgb(0, 0, 0);"><b>Développement</b><b> : </b></span></p>
         Seal Team 7
         Adresse : 24 Place Saint-Marc, 76000 Rouen
         Site Web : <a href="http://www.sealteam7.com">www.sealteam7.com</a>
-        </br>
+        </br><br>
         <p style="color: #b51a00;"><span style="color: rgb(0, 0, 0);"><b>Conditions d’utilisation : </b></span></p>
         Ce site (<a href="http://www.vactualise.com">www.vactualise.com</a>) est proposé en différents langages web (HTML, HTML5, Javascript, CSS, etc…) pour un meilleur confort d'utilisation et un graphisme plus agréable, nous vous recommandons de recourir à des navigateurs modernes comme Internet explorer, Safari, Firefox, Google Chrome, etc…
         Les mentions légales ont été générées sur le site <a title="générateur de mentions légales pour site internet gratuit" href="http://www.generateur-de-mentions-legales.com">Générateur de mentions légales</a>, offert par <a title="imprimerie paris, imprimeur paris" href="http://welye.com">Welye</a>.
