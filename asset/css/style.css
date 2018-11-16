@@ -61,7 +61,7 @@ nav.firstnavbar {
 nav.firstnavbar h1 img.logo{
     width: 15%;
     float: left;
-
+    height: auto;
 }
 
 ul.menu {
