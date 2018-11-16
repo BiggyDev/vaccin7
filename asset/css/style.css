@@ -417,26 +417,27 @@ form.connexion p#forgottenpassword a:hover {
   text-align: center;
 }
 
-.modifProfileInfos
-{
-  font-size: 1em;
-  width: 70%;
-  height: 60px;
-  background:#3dd36a;
-  border-radius: 50px;
-  border-bottom: none;
-  margin: 0 auto 35px auto;
-}
-
-.modifProfileInfos p
-{
-  text-align: center;
-  padding-top: 15px;
-}
-
 .modifProfileInfos p a
 {
-  color: #fff;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1em;
+  background:#3dd36a;
+  border-radius: 50px;
+  margin: 0 auto 35px auto;
+  padding: 20px 50px;
+}
+
+.modifProfileInfos p a:hover
+{
+  color: white;
+  text-transform: uppercase;
+  font-size: 1em;
+  background:#2E6DA4;
+  border-radius: 50px;
+  margin: 0 auto 35px auto;
+  cursor: pointer;
+  padding: 10px 60px;
 }
 
 input#submit {
@@ -448,6 +449,18 @@ input#submit {
     background:#3dd36a;
     border-radius: 50px;
     margin: 0 auto 35px auto;
+}
+
+input#submit:hover{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1em;
+    width: 70%;
+    height: 60px;
+    background:#2E6DA4;
+    border-radius: 50px;
+    margin: 0 auto 35px auto;
+    cursor: pointer;
 }
 
 /*FAQ*/
@@ -531,6 +544,7 @@ input#submit {
 .profil
 {
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .profil h3
@@ -552,6 +566,7 @@ input#submit {
 {
   display: block;
   margin:0 auto;
+  padding: 10px 20px;
 }
 
 .profil input#submit

@@ -66,10 +66,8 @@ header('Location: 403.php');
              <label for="usersex">Sexe</label><br>
              <div class="container">
              <input type="radio" name="sex" value="Homme" checked="checked">
-             <br>
-             <span>Homme</span>
+             <span>Homme</span><br><br>
              <input type="radio" name="sex" value="Femme">
-             <br>
              <span>Femme</span>
              </div><br><br>
 
