@@ -34,7 +34,7 @@ include('inc/header.php');?>
             <section class="section2">
 
               <div class="actu">
-                <h5>Informations</h5>
+                <h2>Informations</h2>
 
                 <img src="asset/img/Vaccins.jpg" alt="chu">
 
@@ -43,7 +43,7 @@ include('inc/header.php');?>
               <div class="clear"></div>
 
               <div class="presentation">
-                <h5>Recommandé Par</h5>
+                <h2>Recommandé Par</h2>
 
                 <div class="recommanded">
 
