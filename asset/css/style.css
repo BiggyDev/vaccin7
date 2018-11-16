@@ -259,6 +259,11 @@ section.section2 {
   margin:0 auto;
 }
 
+.addvaccin select
+{
+  width: 50%;
+}
+
 .addvaccin label
 {
   padding: 10px 0;
