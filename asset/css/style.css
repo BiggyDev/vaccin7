@@ -897,6 +897,38 @@ footer {
       padding: 10px 10px;
       margin:0 auto;
   }
+
+  form.inscription {
+      margin: 0 auto;
+      text-transform: uppercase;
+      text-align: center;
+      width:100%;
+      max-width:50%;
+      min-height:21.875em;
+      height: 70%;
+      position:relative;
+      padding: 20px 0 100px 0;
+      background-color: #2e6da4;
+      color: #fff;
+      box-shadow: 5px 10px 5px  #888888;
+      margin-bottom: 100px;
+  }
+
+  form.connexion {
+      margin: 0 auto;
+      text-transform: uppercase;
+      text-align: center;
+      width:100%;
+      max-width:50%;
+      min-height:21.875em;
+      height: 70%;
+      position:relative;
+      padding: 20px 0 100px 0;
+      background-color: #2e6da4;
+      color: #fff;
+      box-shadow: 5px 10px 5px  #888888;
+      margin-bottom: 100px;
+  }
 }
 
 @media (max-width: 321px) {
@@ -904,10 +936,6 @@ footer {
   form.inscription {
     margin-bottom: 40px;
   }
-}
-
-.content object {
-  width: 50%;
 }
 
 @media (max-width: 1439px) {
@@ -938,5 +966,4 @@ footer {
   {
     width: 75%;
   }
-
 }
