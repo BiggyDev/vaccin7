@@ -55,7 +55,7 @@
     });
 
     $(document).ready(function(){
-        $('.slicknav_menu').prepend('<a href="index.php"><img class="logo" src="asset/img/logo_vactualise.svg" alt="Logo Vactualise" width="20%" style="margin: 20px 0 0 20px;"></a>');
+        $('.slicknav_menu').prepend('<a href="index.php"><img class="logo" src="asset/img/logo_vactualise.svg" alt="Logo Vactualise" width="20%" style="margin: 20px 0 0 15px;"></a>');
     });
 
 
