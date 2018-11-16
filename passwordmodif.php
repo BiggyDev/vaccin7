@@ -65,13 +65,13 @@ $title = 'Changement de mot de passe'?>
   <form class="passwordmodif" action="" method="post">
 
       <label for="">Votre ancien mot de passe : </label><br>
-      <input type="password" name="oldpassword" value=""><br><br>
+      <input type="password" name="oldpassword" value=""><br>
 
       <label for="">Votre nouveau mot de passe : </label><br>
-      <input type="password" name="password" value=""><br><br>
+      <input type="password" name="password" value=""><br>
 
       <label for="">Confirmez votre nouveau mot de passe : </label><br>
-      <input type="password" name="password2" value=""><br><br>
+      <input type="password" name="password2" value=""><br>
 
       <input type="submit" name="submitted" id="submit" value="Modifier">
 

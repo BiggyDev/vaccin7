@@ -42,7 +42,7 @@ include('inc/header.php'); ?>
       <label for="">Votre adresse e-mail :</label>
       <input type="email" name="passwordforget" value="">
 
-      <input type="submit" name="submitted" value="Envoyer">
+      <input type="submit" name="submitted" id="submit" value="Envoyer">
 
   </form>
 </div>

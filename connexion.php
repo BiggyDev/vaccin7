@@ -61,10 +61,12 @@ $title = 'Connexion'; ?>
       <form class="connexion" action="" method="post">
 
         <label for="login" >Votre Email* :</label><br>
-        <input class="loginsignup" type="text" name="login" id="login" value=""><br><br>
+        <input class="loginsignup" type="text" name="login" id="login" value="<?php if(!empty($_POST['login'])) {echo $_POST['login']; } ?>">
+        <span class="error" style="color:red"><?php if(!empty($error['login'])) { echo $error['login']; } ?></span><br><br>
 
         <label for="password" >Votre Mot de Passe* :</label><br>
-        <input class="loginsignup" type="password" name="password" id="password" value=""><br><br>
+        <input class="loginsignup" type="password" name="password" id="password" value="">
+        <span class="error" style="color:red"><?php if(!empty($error['password'])) { echo $error['password']; } ?></span><br><br>
 
         <input class="loginsignup" type="submit" name="submitted" id="submit" value="Connexion">
         <p><span class="needed"><strong>* = Champs obligatoires</strong></span></p>
