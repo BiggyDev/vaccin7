@@ -23,17 +23,17 @@ $title= 'Mentions légales'?>
         Téléphone :02 32 10 25 01 - Fax : 02 32 10 25 36
         Email : vactualise@gmail.com
         Site Web : <a href="http://www.vactualise.com">www.vactualise.com</a>
-        </br>
+        </br><br>
         <p style="color: #b51a00;"><b><span style="color: rgb(0, 0, 0);">Hébergement :</span> </b></p>
         Hébergeur : OVH
         2 Rue Kellermann, 59100 Roubaix
         Site Web :  <a href="http://www.ovh.com/fr">www.ovh.com/fr</a>
-        </br>
+        </br><br>
         <p style="color: #b51a00;"><span style="color: rgb(0, 0, 0);"><b>Développement</b><b> : </b></span></p>
         Seal Team 7
         Adresse : 24 Place Saint-Marc, 76000 Rouen
         Site Web : <a href="http://www.sealteam7.com">www.sealteam7.com</a>
-        </br>
+        </br><br>
         <p style="color: #b51a00;"><span style="color: rgb(0, 0, 0);"><b>Conditions d’utilisation : </b></span></p>
         Ce site (<a href="http://www.vactualise.com">www.vactualise.com</a>) est proposé en différents langages web (HTML, HTML5, Javascript, CSS, etc…) pour un meilleur confort d'utilisation et un graphisme plus agréable, nous vous recommandons de recourir à des navigateurs modernes comme Internet explorer, Safari, Firefox, Google Chrome, etc…
         Les mentions légales ont été générées sur le site <a title="générateur de mentions légales pour site internet gratuit" href="http://www.generateur-de-mentions-legales.com">Générateur de mentions légales</a>, offert par <a title="imprimerie paris, imprimeur paris" href="http://welye.com">Welye</a>.
@@ -47,18 +47,18 @@ $title= 'Mentions légales'?>
         Les utilisateurs, les abonnés et les visiteurs des sites internet de ne peuvent mettre en place un hyperlien en direction de ce site sans l'autorisation expresse et préalable de VACTUALISE & CO.
 
         Dans l'hypothèse où un utilisateur ou visiteur souhaiterait mettre en place un hyperlien en direction d’un des sites internet de VACTUALISE & CO, il lui appartiendra d'adresser un email accessible sur le site afin de formuler sa demande de mise en place d'un hyperlien. VACTUALISE & CO se réserve le droit d’accepter ou de refuser un hyperlien sans avoir à en justifier sa décision.
-        </br>
+        </br><br>
         <p style="color: #b51a00;"><span style="color: rgb(0, 0, 0);"><b>Services fournis : </b></span></p>
         <p style="color: #323333;">L'ensemble des activités de la société ainsi que ses informations sont présentés sur notre site <a href="http://www.vactualise.com">www.vactualise.com</a>.</p>
         <p style="color: #323333;">VACTUALISE & CO s’efforce de fournir sur le site www.vactualise.com des informations aussi précises que possible. les renseignements figurant sur le site <a href="http://www.vactualise.com">www.vactualise.com</a> ne sont pas exhaustifs et les photos non contractuelles. Ils sont donnés sous réserve de modifications ayant été apportées depuis leur mise en ligne. Par ailleurs, tous les informations indiquées sur le site www.vactualise.com<span style="color: #000000;"><b> </b></span>sont données à titre indicatif, et sont susceptibles de changer ou d’évoluer sans préavis.  </p>
-        </br>
+        </br><br>
         <p style="color: #b51a00;"><span style="color: rgb(0, 0, 0);"><b>Limitation contractuelles sur les données : </b></span></p>
         Les informations contenues sur ce site sont aussi précises que possible et le site remis à jour à différentes périodes de l’année, mais peut toutefois contenir des inexactitudes ou des omissions. Si vous constatez une lacune, erreur ou ce qui parait être un dysfonctionnement, merci de bien vouloir le signaler par email, à l’adresse vactualise@gmail.com, en décrivant le problème de la manière la plus précise possible (page posant problème, type d’ordinateur et de navigateur utilisé, …).
 
         Tout contenu téléchargé se fait aux risques et périls de l'utilisateur et sous sa seule responsabilité. En conséquence, ne saurait être tenu responsable d'un quelconque dommage subi par l'ordinateur de l'utilisateur ou d'une quelconque perte de données consécutives au téléchargement. <span style="color: #323333;">De plus, l’utilisateur du site s’engage à accéder au site en utilisant un matériel récent, ne contenant pas de virus et avec un navigateur de dernière génération mis-à-jour</span>
 
         Les liens hypertextes mis en place dans le cadre du présent site internet en direction d'autres ressources présentes sur le réseau Internet ne sauraient engager la responsabilité de VACTUALISE & CO.
-        </br>
+        </br><br>
         <p style="color: #b51a00;"><span style="color: rgb(0, 0, 0);"><b>Propriété intellectuelle :</b></span></p>
         Tout le contenu du présent sur le site <a href="http://www.vactualise.com">www.vactualise.com</a>, incluant, de façon non limitative, les graphismes, images, textes, vidéos, animations, sons, logos, gifs et icônes ainsi que leur mise en forme sont la propriété exclusive de la société à l'exception des marques, logos ou contenus appartenant à d'autres sociétés partenaires ou auteurs.
 
@@ -66,10 +66,10 @@ $title= 'Mentions légales'?>
         </br>
         <p style="color: #b51a00;"><span style="color: rgb(0, 0, 0);"><b>Déclaration à la CNIL : </b></span></p>
         Conformément à la loi 78-17 du 6 janvier 1978 (modifiée par la loi 2004-801 du 6 août 2004 relative à la protection des personnes physiques à l'égard des traitements de données à caractère personnel) relative à l'informatique, aux fichiers et aux libertés, ce site n'a pas fait l'objet d'une déclaration  auprès de la Commission nationale de l'informatique et des libertés (<a href="http://www.cnil.fr/">www.cnil.fr</a>).
-        </br>
+        </br><br>
         <p style="color: #b51a00;"><span style="color: rgb(0, 0, 0);"><b>Litiges : </b></span></p>
         Les présentes conditions du site <a href="http://www.vactualise.com">www.vactualise.com</a> sont régies par les lois françaises et toute contestation ou litiges qui pourraient naître de l'interprétation ou de l'exécution de celles-ci seront de la compétence exclusive des tribunaux dont dépend le siège social de la société. La langue de référence, pour le règlement de contentieux éventuels, est le français.
-        </br>
+        </br><br>
         <p style="color: #b51a00;"><span style="color: rgb(0, 0, 0);"><b>Données personnelles :</b></span></p>
         De manière générale, vous n’êtes pas tenu de nous communiquer vos données personnelles lorsque vous visitez notre site Internet <a href="http://www.vactualise.com">www.vactualise.com</a>.
 
