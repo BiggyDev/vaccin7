@@ -40,7 +40,7 @@ include('inc/header.php');?>
 
                 <a class="twitter-timeline" data-width="400" data-height="400"  data-link-color="#2E6DA4" href="https://twitter.com/vactualise?ref_src=twsrc%5Etfw">Tweets by vactualise</a>
               </div>
-
+              <div class="clear"></div>
 
               <div class="presentation">
                 <h5>Recommandé Par</h5>
