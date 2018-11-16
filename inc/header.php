@@ -25,7 +25,7 @@
                     <li><a href="inscription.php">Inscription</a></li>
                     <li><a href="connexion.php">Connexion</a></li>
             <?php } elseif (isAdmin()) { ?>
-                    <li><a href="indexb.php">Admin Dashboard</a></li>
+                    <li><a href="indexb.php">Admin</a></li>
                     <li><a href="profil.php">Mon compte</a></li>
             <?php } else { ?>
                     <li><a href="profil.php">Mon compte</a></li>
